@@ -1,0 +1,7 @@
+@tailwind base;
+
+@tailwind components;
+.josefin{
+    font-family: 'josefin sans'
+}
+@tailwind utilities;
