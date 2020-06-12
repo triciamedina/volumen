@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import Navbar from '../components/Navbar'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import './tailwind.css'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()

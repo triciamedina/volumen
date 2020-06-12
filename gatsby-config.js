@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Volumen Digital",
-    description:
-      "Small business campaign",
+    description: "Small business campaign",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -65,21 +64,32 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-postcss",
+      options: {
+        postCssPlugins: [
+          require(`tailwindcss`)(`./tailwind.config.js`),
+          require(`autoprefixer`),
+          require(`cssnano`),
+        ],
+      },
+    },
+    {
       resolve: "gatsby-plugin-purgecss",
       // purges all unused/unreferenced css rules
       options: {
-        develop: true,
+        printRejected: false,
+        develop: false,
+        tailwind: true,
       },
     }, // must be after other CSS plugins
     "gatsby-plugin-netlify", // make sure to keep it last in the array
-    "gatsby-plugin-postcss",
+
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `josefin sans`],
-        display: 'swap'
-      }
-    }
+        fonts: [`josefin sans`],
+        display: "swap",
+      },
+    },
   ],
 };
