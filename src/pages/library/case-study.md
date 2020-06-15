@@ -14,3 +14,6 @@ This is where one would write the entry paragraph to an article, it will be cut 
 ![Image](/img/yogaGirl.png)
 
 
+I can add more and more text
+
+

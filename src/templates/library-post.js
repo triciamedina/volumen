@@ -17,20 +17,20 @@ export const LibraryPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section className="px-40">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+      <div className="">
+        <div className="">
+          <div className="">
+            <h1 className="text-6xl">
               {title}
             </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
+            <p className='text-4xl'>{description}</p>
+            <PostContent className='' content={content} />
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
+              <div className='flex inline-flex align-middle py-8' >
+                <h4 className='text-lg'>Tags:</h4>
+                <ul className="text-orange-500 font-bold ml-4 flex inline-flex">
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>

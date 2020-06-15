@@ -9,6 +9,7 @@ import Img from "gatsby-image";
 
 export const IndexPageTemplate = ({
   image,
+  secondImage,
   title,
   heading,
   subheading,
@@ -16,13 +17,13 @@ export const IndexPageTemplate = ({
   description,
   // intro,
 }) => (
-  <div>
-    <div id="COLS" className="flex bg-orange-200 josefin">
+  <div className=''>
+    <div id="COLS" className="flex bg-orange-200 pl-40 josefin">
       <div
         id="LEFTCOL"
         className="w-1/2 flex content-center flex-wrap justify-center"
       >
-        <div className="w-10/12">
+        <div className="w-full">
           <h1 className="text-6xl leading-tight">{title}</h1>
           <h3 className="text-2xl">{subheading}</h3>
         </div>
@@ -32,16 +33,16 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div id="PINK" className="flex bg-red-200 josefin">
-      <div id="LEFTCOL" className="w-1/2 flex justify-center">
-        <Img className="w-1/2" fluid={image.childImageSharp.fluid}></Img>
+    <div id="PINK" className="flex bg-red-200 josefin justify-between">
+      <div id="LEFTCOL" className="w-1/2 flex">
+        <Img className="w-full" fluid={secondImage.childImageSharp.fluid}></Img>
       </div>
 
       <div
         id="RIGHTCOL"
-        className="w-1/2 flex content-center flex-wrap justify-center"
+        className="w-1/2 flex content-center flex-wrap pr-40"
       >
-        <div className="w-10/12">
+        <div className="w-full">
           <h3 className="text-3xl">{mainpitch.description}</h3>
         </div>
       </div>
@@ -53,12 +54,12 @@ export const IndexPageTemplate = ({
       </div>
     </section>
 
-    <section className="bg-red-200 p-20">
+    <section className="bg-red-200 px-40 py-20">
       <div className="grid grid-cols-2 gap-20">
         {["Business Loans", "Social Media", "E-Commerce", "Adaptation"].map(
           (name) => (
             <div
-              className="bg-white flex flex-col shadow-lg text-center"
+              className="bg-white flex flex-col shadow-lg rounded text-center"
               key={name}
             >
               <h1 className="text-2xl">{name}</h1>
@@ -83,6 +84,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  secondImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
@@ -100,6 +102,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
+        secondImage={frontmatter.secondImage}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -133,6 +136,13 @@ export const pageQuery = graphql`
             }
           }
         }
+        secondImage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         heading
         subheading
         mainpitch {
@@ -140,20 +150,7 @@ export const pageQuery = graphql`
           description
         }
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
+        
       }
     }
   }
