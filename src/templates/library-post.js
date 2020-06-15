@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 
 export const LibraryPostTemplate = ({
   content,
@@ -14,24 +14,26 @@ export const LibraryPostTemplate = ({
   title,
   helmet,
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
   return (
-    <section className="px-40">
-      {helmet || ''}
+    <section className="px-48 py-8 bg-orange-100">
+      {helmet || ""}
       <div className="">
         <div className="">
           <div className="">
-            <h1 className="text-6xl">
+            <h1 className="text-6xl heaviest josefin leading-tight text-gray-900">
               {title}
             </h1>
-            <p className='text-4xl'>{description}</p>
-            <PostContent className='' content={content} />
+            <p className="text-4xl opensans">
+              <span className="highlight josefin pt-1 pr-1">{description}</span>
+            </p>
+            <PostContent className="text-xl font-serif" content={content} />
             {tags && tags.length ? (
-              <div className='flex inline-flex align-middle py-8' >
-                <h4 className='text-lg'>Tags:</h4>
+              <div className="flex inline-flex align-middle py-8">
+                <h4 className="text-lg">Tags:</h4>
                 <ul className="text-orange-500 font-bold ml-4 flex inline-flex">
-                  {tags.map(tag => (
+                  {tags.map((tag) => (
                     <li key={tag + `tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                     </li>
@@ -43,8 +45,8 @@ export const LibraryPostTemplate = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 LibraryPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
@@ -52,10 +54,10 @@ LibraryPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-}
+};
 
 const LibraryPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -76,16 +78,16 @@ const LibraryPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </Layout>
-  )
-}
+  );
+};
 
 LibraryPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-}
+};
 
-export default LibraryPost
+export default LibraryPost;
 
 export const pageQuery = graphql`
   query LibraryPostByID($id: String!) {
@@ -100,4 +102,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

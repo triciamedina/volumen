@@ -4,4 +4,13 @@
 .josefin{
     font-family: 'josefin sans'
 }
+.heaviest{
+    font-weight: 700
+}
+.opensans{
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif
+}
+.highlight{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 25%, #f6ad55 25%);
+}
 @tailwind utilities;

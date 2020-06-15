@@ -40,7 +40,7 @@ class LibraryRoll extends React.Component {
                   </Link>
                 </div>
                 <p className="text-gray-700 text-lg">
-                  {post.excerpt}
+                  {post.frontmatter.description}
                   <br />
                   <br />
                   <Link className="text-orange-600 font-bold" to={post.fields.slug}>
@@ -89,6 +89,7 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
+                description
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 600, quality: 100) {

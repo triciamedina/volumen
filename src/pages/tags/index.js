@@ -13,16 +13,15 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <section className="section">
+    <section className="bg-orange-100 px-48 py-8 h-screen">
       <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
+      <div className="">
+        <div className="">
           <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
+            className=""
           >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
+            <h1 className="josefin heaviest text-gray-900 text-2xl">Tags</h1>
+            <ul className="">
               {group.map(tag => (
                 <li key={tag.fieldValue}>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>

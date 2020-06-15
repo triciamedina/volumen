@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full bg-orange-200 px-40 py-4"
+      className="w-full bg-orange-100 px-40 py-4"
       role="navigation"
       aria-label="main-navigation"
     >

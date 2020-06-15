@@ -59,7 +59,7 @@ class FeaturedRoll extends React.Component {
                     </Link>
                   </div>
                   <p className="text-gray-700 text-base">
-                    {post.excerpt}
+                    {post.description}
                     <br />
                     <br />
                     <Link className="button" to={post.fields.slug}>
@@ -109,6 +109,7 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 tags
+                description
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
