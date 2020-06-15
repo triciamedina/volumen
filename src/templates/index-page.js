@@ -2,8 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import LibraryRoll from "../components/LibraryRoll";
+import Features from "../components/Features";
 import StyleRoll from "../components/StyleRoll";
+import IconGrid from '../components/IconGrid'
 import Img from "gatsby-image";
 
 export const IndexPageTemplate = ({
@@ -38,37 +39,25 @@ export const IndexPageTemplate = ({
         id="RIGHTCOL"
         className="w-1/2 flex content-center flex-wrap justify-center"
       >
-        <div className="w-full">
-          <h3 className="text-3xl">{mainpitch.description}</h3>
+        <div className="w-full pr-40">
+          <h3 className="text-2xl">{mainpitch.description}</h3>
         </div>
       </div>
     </div>
 
     <section className="bg-orange-200 flex justify-center">
       <div className="w-3/4 my-16">
-        <LibraryRoll />
+        <StyleRoll />
       </div>
     </section>
 
-    <section className="bg-red-200 p-20">
-      <div className="grid grid-cols-2 gap-20">
-        {["Business Loans", "Social Media", "E-Commerce", "Adaptation"].map(
-          (name) => (
-            <div
-              className="bg-white flex flex-col shadow-lg text-center"
-              key={name}
-            >
-              <h1 className="text-2xl">{name}</h1>
-              <p>Description of category here</p>
-            </div>
-          )
-        )}
-      </div>
+    <section className="bg-red-200 py-20 px-40">
+      <IconGrid/>
     </section>
 
     <section className="bg-orange-200 flex justify-center">
-      <div className="w-3/4 my-16">
-        <StyleRoll />
+      <div className="w-full my-16 flex">
+        <Features />
       </div>
     </section>
 

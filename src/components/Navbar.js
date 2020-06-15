@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
 const Navbar = () => {
+  
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "Logo.png" }) {
@@ -28,7 +29,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="w-3/4 justify-end text-2xl flex">
+        <div className="w-3/4 justify-end text-xl flex text-gray-800 josefin">
           <div className="inline-block">
             <Link className="mr-6" to="/">
               Home

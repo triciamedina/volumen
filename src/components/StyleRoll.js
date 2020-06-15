@@ -40,7 +40,7 @@ class StyleRoll extends React.Component {
                   </Link>
                 </div>
                 <p className="text-gray-700 text-lg">
-                  {post.excerpt}
+                  {post.frontmatter.description}
                   <br />
                   <br />
                   <Link className="text-orange-600 font-bold" to={post.fields.slug}>
@@ -75,7 +75,7 @@ export default () => (
       query StyleRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "style-post" } } }
+          filter: { frontmatter: { featuredpost: { eq: true } } }
         ) {
           edges {
             node {
@@ -87,6 +87,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
+                description
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {
