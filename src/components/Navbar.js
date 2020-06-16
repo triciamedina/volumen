@@ -42,7 +42,7 @@ const Navbar = () => {
             />
           </div>
 
-        <div className="w-3/4 justify-end text-xl hidden md:flex text-gray-800 josefin">
+        <div className="w-3/4 justify-end text-xl hidden md:flex text-gray-800 josefin pt-4">
           <div className="inline-block">
             <Link className="mr-6" to="/">
               Home
