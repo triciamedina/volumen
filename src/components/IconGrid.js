@@ -25,7 +25,7 @@ const IconGrid = () => {
 
   `);
   return (
-    <div className="grid grid-cols-2 gap-20">
+    <div className="grid grid-cols-2 md:gap-20 gap-10">
       {[
           {Title: "Finance", icon: data.money.childImageSharp.fluid, link: '/tags/finance'},
           {Title: "Social Media", icon: data.phone.childImageSharp.fluid, link: '/tags/social-media'},
@@ -38,7 +38,7 @@ const IconGrid = () => {
             key={name.Title}
           >
             <Img className='w-1/3 mx-auto' fluid={name.icon} />
-            <h1 className="text-4xl josefin text-gray-900">{name.Title}</h1>
+            <h1 className="md:text-4xl text-2xl josefin text-gray-900">{name.Title}</h1>
             <p>Description of category here</p>
           </div>
         )

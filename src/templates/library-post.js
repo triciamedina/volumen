@@ -17,18 +17,18 @@ export const LibraryPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="px-48 py-8 bg-orange-100">
+    <section className="lg:px-48 px-12 py-8 bg-orange-100">
       {helmet || ""}
       <div className="">
         <div className="">
           <div className="">
-            <h1 className="text-6xl heaviest josefin leading-tight text-gray-900">
+            <h1 className="lg:text-6xl text-4xl heaviest josefin leading-tight text-gray-900">
               {title}
             </h1>
-            <p className="text-4xl opensans">
+            <p className="lg:text-4xl text-2xl">
               <span className="highlight josefin pt-1 pr-1">{description}</span>
             </p>
-            <PostContent className="text-xl font-serif" content={content} />
+            <PostContent className="text-lg pt-4 font-serif" content={content} />
             {tags && tags.length ? (
               <div className="flex inline-flex align-middle py-8">
                 <h4 className="text-lg">Tags:</h4>

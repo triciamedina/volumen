@@ -13,4 +13,15 @@
 .highlight{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0) 25%, #f6ad55 25%);
 }
+#SideMenu{
+    /* transform: translateX(100%); */
+    transform: translateX(100%);
+    transition: transform .5s;
+
+}
+#SideMenu.true{
+    transform: translateX(0%);
+    transition: transform .5s
+
+}
 @tailwind utilities;

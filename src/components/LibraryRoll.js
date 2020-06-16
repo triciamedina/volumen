@@ -13,10 +13,10 @@ class LibraryRoll extends React.Component {
       {posts &&
         posts.map(({ node: post }) => (
           <div
-            className="max-w-sm w-full lg:max-w-full lg:flex bg-white p-4 rounded-md shadow-lg mb-8"
-            key={post.id}
+          className="max-w-sm w-full md:max-w-full md:flex bg-white p-4 mb-4 rounded-md shadow-lg"
+          key={post.id}
           >
-            <div className="w-1/2 text-center rounded-md">
+            <div className="md:w-1/2 w-full text-center rounded-md">
               {post.frontmatter.featuredimage ? (
                 <div className="">
                   <PreviewCompatibleImage
@@ -28,7 +28,7 @@ class LibraryRoll extends React.Component {
                 </div>
               ) : null}
             </div>
-            <div className="w-5/12 flex flex-col justify-between leading-normal mt-4 pl-4">
+            <div className="md:w-5/12 w-full flex flex-col justify-between leading-normal mt-4">
               <div className="mb-8">
                 <div className="text-gray-900 font-bold mb-2">
                   <Link

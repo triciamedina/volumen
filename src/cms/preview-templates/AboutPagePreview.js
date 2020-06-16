@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { AboutPageTemplate } from '../../templates/about-page'
+import '../../components/tailwind.css'
 
 const AboutPagePreview = ({ entry, widgetFor }) => (
   <AboutPageTemplate

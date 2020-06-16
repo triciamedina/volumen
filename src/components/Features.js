@@ -9,11 +9,11 @@ class StyleRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="flex flex-row jusitfy-between mx-auto">
+      <div className="flex md:flex-row flex-col jusitfy-between mx-auto">
         {posts &&
           posts.map(({ node: post }) => (
             <div
-              class="max-w-sm mx-8 rounded overflow-hidden bg-white shadow-lg"
+              class="max-w-sm mx-8 my-4 rounded overflow-hidden bg-white shadow-lg"
               key={post.id}
             >
               {post.frontmatter.featuredimage ? (

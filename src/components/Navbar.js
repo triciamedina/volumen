@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Link, graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
+import { HamburgerSqueeze } from 'react-animated-burgers';
+
 
 const Navbar = () => {
+  const [isActive, toggleButton] = useState(false);
+
   
   const data = useStaticQuery(graphql`
     query {
@@ -18,18 +22,27 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full bg-orange-100 px-40 py-4"
+      className="w-full bg-orange-100 lg:px-40 px-8 py-0"
       role="navigation"
       aria-label="main-navigation"
     >
-      <div className="flex inline">
-        <div className="w-1/4 flex justify-start">
+      <div className="flex justify-between">
+        <div className="md:w-1/4 w-3/4 flex justify-start pt-4">
           <Link to="/" className="w-full" title="Logo">
             <Img fluid={data.file.childImageSharp.fluid} />
           </Link>
         </div>
+        <div className='block md:hidden flex rounded-none justify-end pt-4'>
+            <HamburgerSqueeze
+              className='z-20 p-0 straight'
+              buttonStyle={{ padding: '0px' }}
+              isActive={isActive}
+              onClick={() => toggleButton(!isActive)}
+              barColor={!isActive ? '#2D3748' : '#FFFFFF'}
+            />
+          </div>
 
-        <div className="w-3/4 justify-end text-xl flex text-gray-800 josefin">
+        <div className="w-3/4 justify-end text-xl hidden md:flex text-gray-800 josefin">
           <div className="inline-block">
             <Link className="mr-6" to="/">
               Home
@@ -47,6 +60,34 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        <div
+        className={`${isActive? `true` : `false`} fixed bg-gray-800 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden z-10`}
+        id='SideMenu'
+      >
+        <ul className='flex-col mt-16'>
+          {[
+            { title: 'Home', route: '/' },
+            { title: 'About', route: '/about' },
+            { title: 'Library', route: '/library' },
+            { title: 'Get Started', route: '/library' }
+          ].map(navigationItem => (
+            <li
+              className='mt-3 md:mt-0 md:ml-6'
+              key={navigationItem.title + 'side'}
+            >
+              <Link
+              activeClassName='font-bold'
+                to={navigationItem.route}
+                onClick={() => toggleButton(!isActive)}
+              >
+                <p className=' text-white block ml-4 text-2xl'>
+                  {navigationItem.title}
+                </p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
       </div>
     </nav>
   );
