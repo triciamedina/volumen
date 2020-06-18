@@ -70,21 +70,10 @@ module.exports = {
           require(`tailwindcss`)(`./tailwind.config.js`),
           require("postcss-nesting"),
           require(`autoprefixer`),
-          require(`cssnano`),
+          // require(`cssnano`),
         ],
       },
     },
-    {
-      resolve: "gatsby-plugin-purgecss",
-      // purges all unused/unreferenced css rules
-      options: {
-        printRejected: false,
-        develop: false,
-        tailwind: true,
-      },
-    }, // must be after other CSS plugins
-    "gatsby-plugin-netlify", // make sure to keep it last in the array
-
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -92,5 +81,6 @@ module.exports = {
         display: "swap",
       },
     },
+    "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };

@@ -23,12 +23,8 @@
     @apply text-blue-500;
     @apply font-bold;
   }
-  & strong,
-  & strong a {
+  & strong {
     @apply font-bold;
-  }
-  & ul {
-    @apply list-disc;
   }
 }
 /* purgecss end ignore */
