@@ -16,7 +16,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="josefin heaviest text-4xl text-gray-900">
                 {title}
               </h2>
-              <PageContent className="font-serif text-xl " content={content} />
+              <PageContent className="font-serif text-xl markdown " content={content} />
             </div>
           </div>
         </div>

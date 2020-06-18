@@ -1,6 +1,7 @@
 @tailwind base;
 
 @tailwind components;
+@tailwind utilities;
 .josefin{
     font-family: 'josefin sans'
 }
@@ -24,4 +25,5 @@
     transition: transform .5s
 
 }
-@tailwind utilities;
+@import url('./markdown.css');
+

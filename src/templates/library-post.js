@@ -28,7 +28,7 @@ export const LibraryPostTemplate = ({
             <p className="lg:text-4xl text-2xl">
               <span className="highlight josefin pt-1 pr-1">{description}</span>
             </p>
-            <PostContent className="text-lg pt-4 font-serif" content={content} />
+            <PostContent className="text-lg pt-4 font-serif markdown" content={content} />
             {tags && tags.length ? (
               <div className="flex inline-flex align-middle py-8">
                 <h4 className="text-lg">Tags:</h4>

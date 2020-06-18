@@ -68,6 +68,7 @@ module.exports = {
       options: {
         postCssPlugins: [
           require(`tailwindcss`)(`./tailwind.config.js`),
+          require("postcss-nesting"),
           require(`autoprefixer`),
           require(`cssnano`),
         ],
