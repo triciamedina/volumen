@@ -22,11 +22,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full bg-orange-100 lg:px-40 px-8 py-0"
+      className="w-full bg-orange-100 px-8 py-2"
       role="navigation"
       aria-label="main-navigation"
     >
-      <div className="flex justify-between">
+      <div className="flex justify-between max-w-6xl mx-auto">
         <div className="md:w-1/4 w-3/4 flex justify-start pt-4">
           <Link to="/" className="w-full" title="Logo">
             <Img fluid={data.file.childImageSharp.fluid} />
@@ -42,7 +42,7 @@ const Navbar = () => {
             />
           </div>
 
-        <div className="w-3/4 justify-end text-xl hidden md:flex text-gray-800 josefin pt-4">
+        <div className="w-3/4 justify-end text-xl hidden md:flex text-gray-800 lato pt-4">
           <div className="inline-block">
             <Link className="mr-6" to="/">
               Home
@@ -54,7 +54,7 @@ const Navbar = () => {
               Library
             </Link>
             <Link className="" to="/library">
-              <button class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 Get Started
               </button>
             </Link>

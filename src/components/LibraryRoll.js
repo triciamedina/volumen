@@ -13,12 +13,12 @@ class LibraryRoll extends React.Component {
       {posts &&
         posts.map(({ node: post }) => (
           <div
-          className="max-w-sm w-full md:max-w-full md:flex bg-white p-4 mb-4 rounded-md shadow-lg"
+          className="md:flex bg-white p-4 mb-4 rounded-md shadow-lg"
           key={post.id}
           >
-            <div className="md:w-1/2 w-full text-center rounded-md">
+            <div className="md:w-1/2 w-full text-center rounded-md flex">
               {post.frontmatter.featuredimage ? (
-                <div className="">
+                <div className="self-center w-full">
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: post.frontmatter.featuredimage,
@@ -28,11 +28,11 @@ class LibraryRoll extends React.Component {
                 </div>
               ) : null}
             </div>
-            <div className="md:w-5/12 w-full flex flex-col justify-between leading-normal mt-4">
+            <div className="md:w-1/2 md:pl-4 w-full flex flex-col justify-between leading-normal mt-4">
               <div className="mb-8">
-                <div className="text-gray-900 font-bold mb-2">
+                <div className="text-gray-900 mb-2">
                   <Link
-                    className="josefin text-4xl"
+                    className="volkorn italic text-4xl leading-tight"
                     to={post.fields.slug}
                     // to={`/${SlugParser(post.fields.slug)}/`}
                   >

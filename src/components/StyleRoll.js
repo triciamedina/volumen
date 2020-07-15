@@ -13,12 +13,12 @@ class StyleRoll extends React.Component {
       {posts &&
         posts.map(({ node: post }) => (
           <div
-            className="max-w-sm w-full md:max-w-full md:flex bg-white p-4 rounded-md shadow-lg"
+            className="max-w-xl w-full md:max-w-6xl md:flex bg-white p-4 rounded-md shadow-lg mx-auto"
             key={post.id}
           >
-            <div className="md:w-1/2 w-full text-center rounded-md">
+            <div className="md:w-1/2 w-full rounded-md flex">
               {post.frontmatter.featuredimage ? (
-                <div className="">
+                <div className="w-full self-center">
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: post.frontmatter.featuredimage,
@@ -32,7 +32,7 @@ class StyleRoll extends React.Component {
               <div className="mb-8">
                 <div className="text-gray-900 mb-2 leading-tight">
                   <Link
-                    className="josefin text-4xl"
+                    className="volkorn italic text-4xl"
                     to={post.fields.slug}
                   >
                     {post.frontmatter.title}

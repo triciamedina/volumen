@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 export const LibraryPostTemplate = ({
   content,
@@ -13,36 +14,53 @@ export const LibraryPostTemplate = ({
   tags,
   title,
   helmet,
+  date,
+  featuredimage,
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="lg:px-48 px-12 py-8 bg-orange-100">
+    <section className="py-12 bg-white">
       {helmet || ""}
-      <div className="">
-        <div className="">
-          <div className="">
-            <h1 className="lg:text-6xl text-4xl heaviest josefin leading-tight text-gray-900">
-              {title}
-            </h1>
-            <p className="lg:text-4xl text-2xl">
-              <span className="highlight josefin pt-1 pr-1">{description}</span>
-            </p>
-            <PostContent className="text-lg pt-4 font-serif markdown" content={content} />
-            {tags && tags.length ? (
-              <div className="flex inline-flex align-middle py-8">
-                <h4 className="text-lg">Tags:</h4>
-                <ul className="text-orange-500 font-bold ml-4 flex inline-flex">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </div>
+
+      <div className="max-w-6xl mx-auto px-8">
+        <h1 className="lg:text-6xl text-4xl italic heaviest volkorn leading-tight text-gray-900">
+          {title}
+        </h1>
+        <p className="lg:text-4xl text-2xl">
+          <span className="highlight volkorn italic pt-1 pr-1">
+            {description}
+          </span>
+        </p>
+        <p className="text-gray-600 volkorn">{date}</p>
+        <div className="w-full text-center rounded-md flex">
+          {featuredimage ? (
+            <div className="self-center w-full">
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: featuredimage,
+                  alt: `featured image thumbnail for post ${title}`,
+                }}
+              />
+            </div>
+          ) : null}
         </div>
+        <PostContent
+          className="text-lg pt-4 volkorn markdown"
+          content={content}
+        />
+        {tags && tags.length ? (
+          <div className="flex inline-flex align-middle py-8">
+            <h4 className="text-lg">Tags:</h4>
+            <ul className="text-orange-500 font-bold ml-4 flex inline-flex">
+              {tags.map((tag) => (
+                <li key={tag + `tag`}>
+                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
       </div>
     </section>
   );
@@ -65,6 +83,8 @@ const LibraryPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        featuredimage={post.frontmatter.featuredimage}
+        date={post.frontmatter.date}
         helmet={
           <Helmet titleTemplate="%s | Library">
             <title>{`${post.frontmatter.title}`}</title>
@@ -99,6 +119,13 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 600, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

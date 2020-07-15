@@ -2,9 +2,14 @@
 .markdown {
   & h1 {
     @apply text-4xl;
+    @apply italic;
+    @apply font-bold
   }
   & h2 {
     @apply text-2xl;
+    @apply italic;
+    @apply font-bold;
+
   }
   & h3 {
     @apply text-xl;
@@ -26,5 +31,27 @@
   & strong {
     @apply font-bold;
   }
+  & img {
+    @apply rounded;
+  }
+  & p {
+    @apply my-4;
+  }
+
+  @screen md{
+     & img:nth-child(odd){
+      @apply float-left;
+      @apply mr-4;
+      @apply w-1/2;
+    }
+    & img:nth-child(even){
+      @apply float-right;
+      @apply ml-4;
+      @apply w-1/2;
+    }
+  }
+  
 }
+
+
 /* purgecss end ignore */

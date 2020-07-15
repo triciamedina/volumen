@@ -6,7 +6,6 @@ import Features from "../components/Features";
 import StyleRoll from "../components/StyleRoll";
 import IconGrid from "../components/IconGrid";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-// import Img from "gatsby-image";
 
 export const IndexPageTemplate = ({
   image,
@@ -15,21 +14,24 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
 }) => (
-  <div className="">
-    <div id="COLS" className="flex md:flex-row flex-col bg-orange-100 lg:pl-40  pt-12 josefin">
+  <div className="bg-orange-100 w-full">
+    <div
+      id="COLS"
+      className="max-w-6xl mx-auto flex md:flex-row flex-col bg-orange-100 volkorn py-12 px-8"
+    >
       <div
         id="LEFTCOL"
-        className="md:w-1/2 w-full flex content-center flex-wrap justify-center px-8"
+        className="md:w-1/2 w-full flex flex-wrap md:pr-8 self-center"
       >
-        <div className="w-full">
-          <h1 className="md:text-6xl text-5xl leading-tight">{title}</h1>
-          <h3 className="md:text-2xl text-xl">{subheading}</h3>
+        <div className="w-full flex flex-col">
+          <h1 className="text-5xl leading-tight mb-8 italic font-black">
+            {title}
+          </h1>
+          <h2 className="xl:text-3xl md:text-2xl text-xl lato">{subheading}</h2>
         </div>
       </div>
-      <div id="RIGHTCOL" className="md:w-1/2 w-full flex justify-end">
-      
-
-        <div className="w-10/12">
+      <div id="RIGHTCOL" className="md:w-1/2 w-full flex self-center">
+        <div className="w-full">
           <PreviewCompatibleImage
             imageInfo={{
               image: image,
@@ -40,30 +42,37 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div id="PINK" className="flex md:flex-row flex-col bg-red-200 josefin py-8">
-      <div id="LEFTCOL" className="md:w-1/2 w-full flex justify-center">
-        <div className="w-full">
-          <PreviewCompatibleImage
-            imageInfo={{
-              image: secondImage,
-              alt: `featured image thumbnail for post`,
-            }}
-          />
+    <div
+      id="PINK"
+      className="w-full  bg-red-100 lato py-8"
+    >
+      <div id="PINKCOLS" className='mx-auto max-w-6xl flex md:flex-row flex-col'>
+        <div id="LEFTCOL" className="md:w-1/2 w-full flex justify-start">
+          <div className="w-full">
+            <PreviewCompatibleImage
+              imageInfo={{
+                image: secondImage,
+                alt: `featured image thumbnail for post`,
+              }}
+            />
+          </div>
         </div>
-      </div>
 
-      <div
-        id="RIGHTCOL"
-        className="md:w-1/2 w-full flex content-center flex-wrap justify-center"
-      >
-        <div className="w-full lg:pr-40 md:pr-12 md:px-0 px-8">
-          <h3 className="text-2xl">{mainpitch.description}</h3>
+        <div
+          id="RIGHTCOL"
+          className="md:w-1/2 w-full flex content-center flex-wrap justify-end"
+        >
+          <div className="w-full px-8">
+            <h2 className="xl:text-3xl md:text-2xl text-xl">
+              {mainpitch.description}
+            </h2>
+          </div>
         </div>
       </div>
     </div>
 
-    <section className="bg-orange-200 flex justify-center">
-      <div className="w-3/4 my-16">
+    <section className="bg-orange-100 flex justify-center">
+      <div className="px-8 w-full my-16">
         <StyleRoll />
       </div>
     </section>
@@ -72,10 +81,11 @@ export const IndexPageTemplate = ({
       <IconGrid />
     </section>
 
-    <section className="bg-orange-200 flex justify-center">
-      <div className="w-full my-16 flex">
+    <section className="bg-orange-200 w-full py-16 px-8">
+      <div className="mx-auto">
         <Features />
       </div>
+      
     </section>
 
     <section>
