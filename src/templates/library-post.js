@@ -20,19 +20,19 @@ export const LibraryPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="py-12 bg-white">
+    <section className="my-12 bg-white">
       {helmet || ""}
 
       <div className="max-w-6xl mx-auto px-8">
-        <h1 className="lg:text-6xl text-4xl italic heaviest volkorn leading-tight text-gray-900">
+        <h1 className="lg:text-6xl text-4xl italic heaviest curvy leading-tight text-gray-900">
           {title}
         </h1>
         <p className="lg:text-4xl text-2xl">
-          <span className="highlight volkorn italic pt-1 pr-1">
+          <span className="highlight curvy italic pt-1 pr-1">
             {description}
           </span>
         </p>
-        <p className="text-gray-600 volkorn">{date}</p>
+        <p className="text-gray-600 curvy">{date}</p>
         <div className="w-full text-center rounded-md flex">
           {featuredimage ? (
             <div className="self-center w-full">
@@ -46,7 +46,7 @@ export const LibraryPostTemplate = ({
           ) : null}
         </div>
         <PostContent
-          className="text-lg pt-4 volkorn markdown"
+          className="text-lg pt-4 curvy markdown"
           content={content}
         />
         {tags && tags.length ? (
@@ -55,7 +55,7 @@ export const LibraryPostTemplate = ({
             <ul className="text-orange-500 font-bold ml-4 flex inline-flex">
               {tags.map((tag) => (
                 <li key={tag + `tag`}>
-                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  <Link className='pr-4' to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                 </li>
               ))}
             </ul>

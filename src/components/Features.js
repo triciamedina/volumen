@@ -27,10 +27,10 @@ class StyleRoll extends React.Component {
                 </div>
               ) : null}
               <div class="px-6 py-4">
-                <Link className="volkorn italic text-4xl leading-9 text-gray-900" to={post.fields.slug}>
+                <Link className="curvy italic text-4xl leading-9 text-gray-900" to={post.fields.slug}>
                   {post.frontmatter.title}
                 </Link>{" "}
-                <p class="text-gray-700 text-base volkorn pt-4">
+                <p class="text-gray-700 text-base curvy pt-4">
                   {post.frontmatter.description}
                 </p>
                 <Link

@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import Img from "gatsby-image";
 
 const IconGrid = () => {
@@ -25,12 +25,12 @@ const IconGrid = () => {
 
   `);
   return (
-    <div className="grid grid-cols-2 md:gap-20 gap-10">
+    <div className="grid grid-cols-2 md:gap-20 gap-10 max-w-6xl">
       {[
-          {Title: "Finance", icon: data.money.childImageSharp.fluid, link: '/tags/finance'},
-          {Title: "Social Media", icon: data.phone.childImageSharp.fluid, link: '/tags/social-media'},
-          {Title: "E-commerce", icon: data.store.childImageSharp.fluid, link: '/tags/e-commerce'},
-          {Title: "Adaptation", icon: data.computer.childImageSharp.fluid, link: '/tags/adaptation'},
+          {Title: "Finance", icon: data.money.childImageSharp.fluid, link: '/tags/finance', description:'How to budget on less resources'},
+          {Title: "Social Media", icon: data.phone.childImageSharp.fluid, link: '/tags/social-media', description: 'how to get ahead of the game in this economy'},
+          {Title: "E-commerce", icon: data.store.childImageSharp.fluid, link: '/tags/e-commerce', description:'Shifting from retail to the digital marketplace'},
+          {Title: "Adaptation", icon: data.computer.childImageSharp.fluid, link: '/tags/adaptation', description:'Inspo to change and improve your business model'},
         ].map(
         (name) => (
           <div
@@ -38,8 +38,8 @@ const IconGrid = () => {
             key={name.Title}
           >
             <Img className='w-1/3 mx-auto' fluid={name.icon} />
-            <h1 className="md:text-4xl text-2xl josefin text-gray-900">{name.Title}</h1>
-            <p>Description of category here</p>
+            <Link className="md:text-4xl text-2xl josefin text-blue-500" to={name.link}>{name.Title}</Link>
+            <p>{name.description}</p>
           </div>
         )
       )}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Navbar from '../components/Navbar'
+import Footer from '../components/footer'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import './tailwind.css'
@@ -49,7 +50,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div className=''>{children}</div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

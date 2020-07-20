@@ -7,6 +7,7 @@ featuredimage: /img/papersGuy.png
 description: There's a hidden force at play that makes some websites more noticed than others.
 tags:
   - adaptation
+  - e-commerce
 ---
 ![Image](/img/red.jpg)
 

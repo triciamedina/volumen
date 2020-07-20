@@ -32,7 +32,7 @@ class LibraryRoll extends React.Component {
               <div className="mb-8">
                 <div className="text-gray-900 mb-2">
                   <Link
-                    className="volkorn italic text-4xl leading-tight"
+                    className="curvy italic text-4xl leading-tight"
                     to={post.fields.slug}
                     // to={`/${SlugParser(post.fields.slug)}/`}
                   >

@@ -32,7 +32,7 @@ class StyleRoll extends React.Component {
               <div className="mb-8">
                 <div className="text-gray-900 mb-2 leading-tight">
                   <Link
-                    className="volkorn italic text-4xl"
+                    className="curvy italic text-4xl"
                     to={post.fields.slug}
                   >
                     {post.frontmatter.title}

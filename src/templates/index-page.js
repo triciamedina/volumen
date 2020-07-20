@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({
   <div className="bg-orange-100 w-full">
     <div
       id="COLS"
-      className="max-w-6xl mx-auto flex md:flex-row flex-col bg-orange-100 volkorn py-12 px-8"
+      className="max-w-6xl mx-auto flex md:flex-row flex-col bg-orange-100 curvy py-12 px-8"
     >
       <div
         id="LEFTCOL"

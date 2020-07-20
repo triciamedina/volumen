@@ -7,7 +7,7 @@ export default class LibraryIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="bg-orange-100 px-8">
+        <div className="bg-orange-100 px-8 pb-8">
           <section className="max-w-6xl mx-auto">
             <h1 className="lg:text-6xl text-4xl montserrat text-gray-900">
               Latest Articles
