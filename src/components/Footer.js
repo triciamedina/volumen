@@ -26,7 +26,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="w-1/2 flex flex-col items-center">
+        {/* <div className="w-1/2 flex flex-col items-center">
           <h6 className="font-semibold text-gray-700 mb-4">Content</h6>
           <ul>
             <li>
@@ -35,20 +35,9 @@ const Footer = () => {
                 Blog
               </a>{" "}
             </li>
-            <li>
-              {" "}
-              <a href="" className="text-gray-600 py-2">
-                Privacy Policy
-              </a>{" "}
-            </li>
-            <li>
-              {" "}
-              <a href="" className="text-gray-600 py-2">
-                Terms & Conditions
-              </a>{" "}
-            </li>
+       
           </ul>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
