@@ -49,7 +49,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div className=''>{children}</div>
+      <div className='overflow-hidden'>{children}</div>
       <Footer />
     </div>
   )

@@ -24,10 +24,10 @@ export const IndexPageTemplate = ({
         className="md:w-1/2 w-full flex flex-wrap md:pr-8 self-center"
       >
         <div className="w-full flex flex-col">
-          <h1 className="text-5xl leading-tight mb-8 italic font-black">
+          <h1 className="text-4xl sm:text-5xl leading-tight mb-8 italic font-black">
             {title}
           </h1>
-          <h2 className="xl:text-3xl md:text-2xl text-xl lato">{subheading}</h2>
+          <h2 className="xl:text-3xl md:text-2xl text-xl montserrat font-medium">{subheading}</h2>
         </div>
       </div>
       <div id="RIGHTCOL" className="md:w-1/2 w-full flex self-center">
@@ -63,7 +63,7 @@ export const IndexPageTemplate = ({
           className="md:w-1/2 w-full flex content-center flex-wrap justify-end"
         >
           <div className="w-full px-8">
-            <h2 className="xl:text-3xl md:text-2xl text-xl">
+            <h2 className="xl:text-3xl md:text-2xl text-xl montserrat font-medium">
               {mainpitch.description}
             </h2>
           </div>
@@ -82,7 +82,7 @@ export const IndexPageTemplate = ({
     </section>
 
     <section className="bg-orange-200 w-full py-16 px-8">
-      <div className="mx-auto">
+      <div className="">
         <Features />
       </div>
       

@@ -13,7 +13,7 @@ class StyleRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div
-              class="max-w-md my-4 rounded overflow-hidden bg-white shadow-lg"
+              className="md:w-5/12 w-full my-4 rounded overflow-hidden bg-white shadow-lg flex flex-col mx-auto"
               key={post.id}
             >
               {post.frontmatter.featuredimage ? (
@@ -26,11 +26,11 @@ class StyleRoll extends React.Component {
                   />
                 </div>
               ) : null}
-              <div class="px-6 py-4">
+              <div className="px-6 py-4">
                 <Link className="curvy italic text-4xl leading-9 text-gray-900" to={post.fields.slug}>
                   {post.frontmatter.title}
                 </Link>{" "}
-                <p class="text-gray-700 text-base curvy pt-4">
+                <p className="text-gray-700 text-base curvy pt-4">
                   {post.frontmatter.description}
                 </p>
                 <Link
@@ -40,8 +40,8 @@ class StyleRoll extends React.Component {
                   Read More →
                 </Link>
               </div>
-              <div class="px-6 py-4">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+              <div className="px-6 py-4">
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
                   {post.frontmatter.date}
                 </span>
               </div>
