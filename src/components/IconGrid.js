@@ -24,7 +24,7 @@ const IconGrid = () => {
   `);
   return (
     <div className="flex flex-wrap max-w-6xl justify-between">
-      <h3 className="text-3xl montserrat font-semibold">
+      <h3 className="text-3xl montserrat font-semibold text-gray-900">
         Select a category below to find relevant resources.
       </h3>
       {[

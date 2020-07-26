@@ -27,11 +27,11 @@ export const LibraryPostTemplate = ({
         <h1 className="lg:text-6xl text-4xl italic heaviest curvy leading-tight text-gray-900">
           {title}
         </h1>
-        <p className="lg:text-4xl text-2xl">
+        <h2 className="lg:text-4xl text-2xl">
           <span className="highlight curvy italic pt-1 pr-1">
             {description}
           </span>
-        </p>
+        </h2>
         <p className="text-gray-600 curvy">{date}</p>
         <div className="w-full text-center rounded-md flex">
           {featuredimage ? (

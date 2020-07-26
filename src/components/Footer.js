@@ -6,21 +6,27 @@ import { Link } from "gatsby";
 
 const Footer = () => {
   return (
-    <footer className="border-t pb-32">
-      <div className="flex flex-row max-w-6xl mx-auto">
+    <footer className="bg-orange-100 pt-8 pb-16">
+      <div className="flex flex-row max-w-6xl mx-auto mt-4">
         <div className="w-1/2 flex flex-col items-center">
-          <h6 className="font-semibold text-gray-700 mb-4">Company</h6>
-          <ul>
+          <h6 className="font-bold text-gray-800 mb-4 montserrat text-lg">Company</h6>
+          <ul className='text-gray-800 montserrat font-medium'>
             <li>
               {" "}
-              <a href="https://volumen.digital/" className="text-gray-600 py-2">
+              <a href="https://volumen.digital/" className="my-2 border-b-2 border-green-500">
                 Volumen Digital
               </a>{" "}
             </li>
             <li>
               {" "}
-              <Link to="/about" className="text-gray-600 py-2">
+              <Link to="/about" className="py-2">
                 About us
+              </Link>{" "}
+            </li>
+            <li>
+              {" "}
+              <Link to="/about" className="py-2">
+                Contact
               </Link>{" "}
             </li>
           </ul>

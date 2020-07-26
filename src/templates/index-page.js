@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({
         className="md:w-1/2 w-full flex flex-wrap md:pr-8 self-center"
       >
         <div className="w-full flex flex-col">
-          <h1 className="text-4xl sm:text-5xl leading-tight mb-8 italic font-black">
+          <h1 className="text-4xl sm:text-5xl leading-tight mb-8 italic font-extrabold text-gray-900">
             {title}
           </h1>
           <h2 className="xl:text-3xl md:text-2xl text-xl montserrat font-medium">{subheading}</h2>
@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({
 
     <div
       id="PINK"
-      className="w-full  bg-red-100 lato py-8"
+      className="w-full  bg-red-200 lato py-8"
     >
       <div id="PINKCOLS" className='mx-auto max-w-6xl flex md:flex-row flex-col'>
         <div id="LEFTCOL" className="md:w-1/2 w-full flex justify-start">

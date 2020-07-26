@@ -27,9 +27,10 @@ const Navbar = () => {
       aria-label="main-navigation"
     >
       <div className="flex justify-between max-w-6xl mx-auto">
-        <div className="md:w-1/4 w-3/4 flex justify-start pt-4">
+        <div className="lg:w-1/4 md:w-1/3 w-1/2 flex justify-start pt-4">
           <Link to="/" className="w-full" title="Logo">
-            <Img fluid={data.file.childImageSharp.fluid} />
+            {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
+            <span className='montserrat text-3xl font-black text-green-600'>Amplifica!</span>
           </Link>
         </div>
         <div className='block md:hidden flex rounded-none justify-end pt-4'>
@@ -61,7 +62,7 @@ const Navbar = () => {
           </div>
         </div>
         <div
-        className={`${isActive? `true` : `false`} fixed bg-gray-800 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden z-10`}
+        className={`${isActive? `true` : `false`} fixed bg-green-900 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden z-10`}
         id='SideMenu'
       >
         <ul className='flex-col mt-16'>
