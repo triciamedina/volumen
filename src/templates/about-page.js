@@ -9,7 +9,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section className="bg-orange-100 ">
-      <div className="max-w-6xl mx-auto px-8 py-16">
+      <div className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="montserrat heaviest text-4xl text-gray-900">{title}</h2>
         <PageContent
           className="font-serif text-xl markdown "

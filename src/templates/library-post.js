@@ -23,7 +23,7 @@ export const LibraryPostTemplate = ({
     <section className="my-12 bg-white">
       {helmet || ""}
 
-      <div className="max-w-6xl mx-auto px-8">
+      <div className="max-w-6xl mx-auto px-6">
         <h1 className="lg:text-6xl text-4xl italic heaviest curvy leading-tight text-gray-900">
           {title}
         </h1>

@@ -55,12 +55,12 @@ const IconGrid = () => {
       ].map((name) => (
         <div className="w-1/2">
           <div
-            className="bg-white flex flex-col flex-no-wrap shadow-lg rounded-lg text-center py-8 px-4 m-4"
+            className="bg-white h-40 sm:h-auto sm:flex flex-col flex-no-wrap shadow-lg rounded-lg text-center py-8 sm:px-4 m-1 md:m-4"
             key={name.Title}
           >
             <Link to={name.link}>
-              <Img className="w-1/2 md:w-1/3 mx-auto" fluid={name.icon} />
-              <p className="md:text-4xl text-2xl josefin text-blue-500">
+              <Img className="w-1/3 mx-auto" fluid={name.icon} />
+              <p className="md:text-4xl text-xl josefin text-blue-500">
                 {name.Title}
               </p>
             </Link>

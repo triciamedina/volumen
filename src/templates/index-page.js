@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({
   <div className="bg-orange-100 w-full">
     <div
       id="COLS"
-      className="max-w-6xl mx-auto flex md:flex-row flex-col bg-orange-100 curvy py-12 px-8"
+      className="max-w-6xl mx-auto flex md:flex-row flex-col bg-orange-100 curvy py-12 px-6"
     >
       <div
         id="LEFTCOL"
@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({
           id="RIGHTCOL"
           className="md:w-1/2 w-full flex content-center flex-wrap justify-end"
         >
-          <div className="w-full px-8">
+          <div className="w-full px-6">
             <h2 className="xl:text-3xl md:text-2xl text-xl montserrat font-medium">
               {mainpitch.description}
             </h2>
@@ -72,16 +72,16 @@ export const IndexPageTemplate = ({
     </div>
 
     <section className="bg-orange-100 flex justify-center">
-      <div className="px-8 w-full my-16">
+      <div className="px-6 w-full my-16">
         <StyleRoll />
       </div>
     </section>
 
-    <section className="bg-red-200 py-20 lg:px-40 px-8">
+    <section className="bg-red-200 py-20 lg:px-40 px-6">
       <IconGrid />
     </section>
 
-    <section className="bg-orange-200 w-full py-16 px-8">
+    <section className="bg-orange-200 w-full py-16 px-6">
       <div className="">
         <Features />
       </div>
