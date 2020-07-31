@@ -6,7 +6,7 @@ import LibraryPostPreview from './preview-templates/LibraryPostPreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 import '../components/tailwind.css';
 
-// CMS.registerPreviewStyle('../components/tailwind.css')
+CMS.registerPreviewStyle('../components/tailwind.css')
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
 CMS.registerPreviewTemplate('index', IndexPagePreview)
