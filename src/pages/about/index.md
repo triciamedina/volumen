@@ -2,6 +2,7 @@
 templateKey: 'about-page'
 path: /about
 title: About us
+featuredImage: /img/Logo.png
 ---
 # Amplify your voice   
 

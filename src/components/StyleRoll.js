@@ -9,7 +9,7 @@ class StyleRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="">
+      <div className="max-w-5xl mx-auto">
       {posts &&
         posts.map(({ node: post }) => (
           <div
@@ -38,7 +38,7 @@ class StyleRoll extends React.Component {
                     {post.frontmatter.title}
                   </Link>
                 </div>
-                <p className="text-gray-700 text-lg">
+                <p className="lato text-gray-700 text-lg">
                   {post.frontmatter.description}
                   <br />
                   <br />

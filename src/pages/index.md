@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Amplifying growth opportunities for small businesses.
-image: /img/plantGirl.png
+image: /img/dancing.png
 secondImage: /img/bookGirl.png
 subheading: Our goal is to empower small business owners by sharing resources, opportunities, tips, and entrepreneurial content. Our content serves as motivation and inspiration that helps catalyze our growth.
 mainpitch:

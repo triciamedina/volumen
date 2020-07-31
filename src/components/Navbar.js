@@ -1,35 +1,20 @@
 import React, { useState } from 'react';
-import { Link, graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { Link } from "gatsby";
 import { HamburgerSqueeze } from 'react-animated-burgers';
 
 
 const Navbar = () => {
   const [isActive, toggleButton] = useState(false);
 
-  
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "Logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <nav
-      className="w-full bg-orange-100 px-6 py-2 shadow"
+      className="w-full bg-orange-100 py-2 shadow"
       role="navigation"
       aria-label="main-navigation"
     >
-      <div className="flex justify-between max-w-6xl mx-auto">
+      <div className="flex justify-between max-w-6xl mx-auto px-6">
         <div className="lg:w-1/4 md:w-1/3 w-1/2 flex justify-start pt-4">
           <Link to="/" className="w-full" title="Logo">
-            {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
             <span className='montserrat text-3xl font-black text-green-600'>Amplifica!</span>
           </Link>
         </div>
@@ -65,7 +50,7 @@ const Navbar = () => {
         className={`${isActive? `true` : `false`} fixed bg-green-900 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden z-10`}
         id='SideMenu'
       >
-        <ul className='flex-col mt-16'>
+        <ul className='flex-col mt-16 lato'>
           {[
             { title: 'Home', route: '/' },
             { title: 'About', route: '/about' },
@@ -77,7 +62,7 @@ const Navbar = () => {
               key={navigationItem.title + 'side'}
             >
               <Link
-              activeClassName='font-bold'
+              activeClassName='font-bold lato'
                 to={navigationItem.route}
                 onClick={() => toggleButton(!isActive)}
               >
