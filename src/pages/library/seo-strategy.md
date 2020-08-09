@@ -1,6 +1,6 @@
 ---
 templateKey: library-post
-title: What SEO is, and why your business needs an SEO strategy. 
+title: Why your business needs an SEO strategy. 
 date: 2020-07-07
 promo: true
 featuredimage: /img/papersGuy.png

@@ -5,7 +5,7 @@ date: 2020-04-24T14:04:00.000Z
 description: >-
   Testing inital markdown in netlify CMS. This is the case study on the first
   page
-featuredpost: true
+promo: true
 featuredimage: /img/yogaGirl.png
 tags:
   - finance

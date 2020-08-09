@@ -76,7 +76,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`josefin sans`, `montserrat\:400,500,600,700`, `lato`, `vollkorn\:400,500i,600i,700i,800i,900i`],
+        fonts: [`karla`, `vollkorn\:400,500i,600i,700i,800i,900i`],
         display: "swap",
       },
     },

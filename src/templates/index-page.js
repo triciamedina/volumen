@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import StyleRoll from "../components/StyleRoll";
 import IconGrid from "../components/IconGrid";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
@@ -14,10 +13,10 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
 }) => (
-  <div className="bg-orange-100 w-full">
+  <div className="bg-white w-full">
     <div
       id="COLS"
-      className="max-w-6xl mx-auto flex md:flex-row flex-col-reverse bg-orange-100 curvy py-12 px-6"
+      className="max-w-6xl mx-auto flex md:flex-row flex-col-reverse bg-white font-curvy py-12 px-6"
     >
       <div
         id="LEFTCOL"
@@ -27,7 +26,7 @@ export const IndexPageTemplate = ({
           <h1 className="text-4xl leading-tight italic font-extrabold text-gray-900">
             {title}
           </h1>
-          <h2 className="text-xl montserrat font-medium">{subheading}</h2>
+          <h2 className="text-xl font-straight font-medium">{subheading}</h2>
         </div>
       </div>
       <div id="RIGHTCOL" className="md:w-1/2 w-full flex self-center">
@@ -42,11 +41,8 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div id="PINK" className="w-full  bg-red-200 lato py-8">
-      <div
-        id="PINKCOLS"
-        className="mx-auto max-w-6xl flex md:flex-row flex-col"
-      >
+    <div className="w-full bg-gray-200 font-straight py-8">
+      <div className="mx-auto max-w-6xl flex md:flex-row flex-col">
         <div id="LEFTCOL" className="md:w-1/2 w-full flex justify-start">
           <div className="w-full">
             <PreviewCompatibleImage
@@ -63,7 +59,7 @@ export const IndexPageTemplate = ({
           className="md:w-1/2 w-full flex content-center flex-wrap justify-end"
         >
           <div className="w-full px-6">
-            <h2 className="text-xl montserrat font-medium">
+            <h2 className="text-xl font-straight font-medium">
               {mainpitch.description}
             </h2>
           </div>
@@ -71,17 +67,11 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <section className="bg-orange-100 flex justify-center">
-      <div className="px-6 w-full my-16">
-        <StyleRoll />
-      </div>
-    </section>
-
-    <section className="bg-red-200 py-20 lg:px-40 px-6">
+    <section className="bg-gray-200 py-20 lg:px-40 px-6">
       <IconGrid />
     </section>
 
-    <section className="bg-orange-200 w-full py-16 px-6">
+    <section className="bg-gray-200 w-full py-16 px-6">
       <div className="">
         <Features />
       </div>
@@ -135,14 +125,14 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         secondImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

@@ -6,6 +6,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import "../components/tailwind.css"
 
 export const LibraryPostTemplate = ({
   content,
@@ -24,15 +25,15 @@ export const LibraryPostTemplate = ({
       {helmet || ""}
 
       <div className="max-w-3xl mx-auto px-6">
-        <h1 className="lg:text-6xl text-4xl italic heaviest curvy leading-tight text-gray-900">
+        <h1 className="lg:text-6xl text-4xl italic font-curvy font-black leading-tight text-gray-900">
           {title}
         </h1>
         <h2 className="lg:text-4xl text-2xl">
-          <span className="highlight curvy italic pt-1 pr-1">
+          <span className="highlight font-curvy italic pt-1 pr-1">
             {description}
           </span>
         </h2>
-        <p className="text-gray-600 curvy">{date}</p>
+        <p className="text-gray-600 font-curvy">{date}</p>
         <div className="w-full text-center rounded-md flex">
           {featuredimage ? (
             <div className="self-center w-full">
@@ -46,7 +47,7 @@ export const LibraryPostTemplate = ({
           ) : null}
         </div>
         <PostContent
-          className="text-lg pt-4 curvy markdown"
+          className="text-lg pt-4 font-curvy markdown"
           content={content}
         />
         {tags && tags.length ? (
