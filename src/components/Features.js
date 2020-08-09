@@ -9,12 +9,15 @@ class StyleRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="flex md:flex-row flex-col justify-between max-w-6xl mx-auto">
+      <div className="flex lg:flex-row flex-col justify-between max-w-6xl mx-auto">
         {posts &&
           posts.map(({ node: post }) => (
+            <div 
+            className="lg:w-1/3 md:w-2/3 w-full p-4 overflow-hidden flex flex-col mx-auto"
+            key={post.id}
+            >
             <div
-              className="md:w-5/12 w-full my-4 rounded overflow-hidden bg-white shadow-lg flex flex-col mx-auto"
-              key={post.id}
+              className="w-full h-full rounded overflow-hidden bg-white shadow-lg flex-col flex justify-between"
             >
               {post.frontmatter.featuredimage ? (
                 <div className="w-full">
@@ -27,10 +30,10 @@ class StyleRoll extends React.Component {
                 </div>
               ) : null}
               <div className="px-6 py-4">
-                <Link className="curvy italic text-4xl leading-9 text-gray-900" to={post.fields.slug}>
+                <Link className="font-curvy italic text-4xl leading-9 text-gray-900" to={post.fields.slug}>
                   {post.frontmatter.title}
                 </Link>{" "}
-                <p className="text-gray-700 text-base lato pt-4">
+                <p className="text-gray-700 text-base font-straight pt-4">
                   {post.frontmatter.description}
                 </p>
                 <Link
@@ -45,6 +48,7 @@ class StyleRoll extends React.Component {
                   {post.frontmatter.date}
                 </span>
               </div>
+            </div>
             </div>
           ))}
       </div>
@@ -80,11 +84,10 @@ export default () => (
                 templateKey
                 description
                 date(formatString: "MMMM DD, YYYY")
-                featuredpost
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 600, quality: 100) {
-                      ...GatsbyImageSharpFluid
+                      ...GatsbyImageSharpFluid_withWebp
                     }
                   }
                 }

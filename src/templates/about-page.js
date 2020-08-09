@@ -14,7 +14,7 @@ export const AboutPageTemplate = ({
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="bg-orange-100 ">
+    <section className="bg-white ">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className='w-1/2'>
           <PreviewCompatibleImage
@@ -24,11 +24,11 @@ export const AboutPageTemplate = ({
             }}
           />
         </div>
-        <h2 className="montserrat heaviest text-4xl text-gray-900">{title}</h2>
+        <h2 className="font-straight font-black text-4xl text-gray-900">{title}</h2>
 
 
         <PageContent
-          className="font-serif text-xl markdown "
+          className="text-xl markdown "
           content={content}
         />
       </div>
@@ -73,7 +73,7 @@ export const aboutPageQuery = graphql`
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 700, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
