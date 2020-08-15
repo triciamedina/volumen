@@ -2,27 +2,29 @@ import React from "react";
 import { Link } from "@reach/router";
 
 class TreeView extends React.Component {
-    // Return tree data matching URL params
-    getRootNode(path) {
-        return data[path];
+    // Return tree data matching path params
+    getRootNode(type) {
+        if (type === "root") return data["/"];
+        if (type === "county") return data[`/${this.props.county}`];
+        if (type === "region") return data[`/${this.props.county}/${this.props.region}`];
+        if (type === "neighborhood") return data[`/${this.props.county}/${this.props.region}/${this.props.neighborhood}`];
     };
 
     // Return tree data matching children from parent node
     getChildNodes(node) {
+        if (!node.children) return [];
         return node.children.map(path => data[path]).sort(sortAsc);
     };
 
     render() {
         const { type, children } = this.props;
 
-        const rootPath = type === "root" ? "/" : `/${this.props[type]}`;
-
-        const rootNode = this.getRootNode(rootPath);
+        const rootNode = this.getRootNode(type);
         const childNodes = this.getChildNodes(rootNode);
-    
+        
         return (
             <div>
-               {childNodes &&
+               {childNodes.length &&
                     childNodes.map(node => (
                     <Link to={`/directory${node.path}`} key={node.id}>{node.name}</Link>
                    ))
@@ -67,8 +69,56 @@ const data = {
             "/los-angeles/san-gabriel-valley"
         ]
     },
-    "/los-angeles/san-gabriel-valley": {
+    "/orange": {
+        id: 2,
+        name: "Orange",
+        path: "/orange",
+        type: "county"
+    },
+    "/san-bernadino": {
+        id: 3,
+        name: "San Bernadino",
+        path: "/san-bernadino",
+        type: "county"
+    },
+    "/ventura": {
+        id: 4,
+        name: "Ventura",
+        path: "/ventura",
+        type: "county"
+    },
+    "/riverside": {
+        id: 5,
+        name: "Riverside",
+        path: "/riverside",
+        type: "county"
+    },
+    "/kern": {
+        id: 6,
+        name: "Kern",
+        path: "/kern",
+        type: "county"
+    },
+    "/los-angeles/central-los-angeles": {
         id: 7,
+        name: "Central Los Angeles",
+        path: "/los-angeles/central-los-angeles",
+        type: "region"
+    },
+    "/los-angeles/santa-monica-mountains": {
+        id: 8,
+        name: "Santa Monica Mountains",
+        path: "/los-angeles/santa-monica-mountains",
+        type: "region"
+    },
+    "/los-angeles/san-fernando-valley": {
+        id: 9,
+        name: "San Fernando Valley",
+        path: "/los-angeles/san-fernando-valley",
+        type: "region"
+    },
+    "/los-angeles/san-gabriel-valley": {
+        id: 10,
         name: "San Gabriel Valley",
         path: "/los-angeles/san-gabriel-valley",
         type: "region",
@@ -79,106 +129,29 @@ const data = {
             "/los-angeles/san-gabriel-valley/el-monte"
         ]
     },
-    "/los-angeles/central-los-angeles": {
-        id: 9,
-        name: "Central Los Angeles",
-        path: "/los-angeles/central-los-angeles",
-        type: "region",
-        children: [
-            "/los-angeles/central-los-angeles/pasadena",
-            "/los-angeles/central-los-angeles/south-pasadena",
-            "/los-angeles/central-los-angeles/san-marino",
-            "/los-angeles/central-los-angeles/el-monte"
-        ]
-    },
-    "/los-angeles/santa-monica-mountains": {
-        id: 10,
-        name: "Santa Monica Mountains",
-        path: "/los-angeles/santa-monica-mountains",
-        type: "region",
-        children: [
-            "/los-angeles/santa-monica-mountains/pasadena",
-            "/los-angeles/santa-monica-mountains/south-pasadena",
-            "/los-angeles/santa-monica-mountains/san-marino",
-            "/los-angeles/santa-monica-mountains/el-monte"
-        ]
-    },
-    "/los-angeles/san-fernando-valley": {
-        id: 11,
-        name: "San Fernando Valley",
-        path: "/los-angeles/san-fernando-valley",
-        type: "region",
-        children: [
-            "/los-angeles/san-fernando-valley/pasadena",
-            "/los-angeles/san-fernando-valley/south-pasadena",
-            "/los-angeles/san-fernando-valley/san-marino",
-            "/los-angeles/san-fernando-valley/el-monte"
-        ]
-    },
     "/los-angeles/san-gabriel-valley/el-monte": {
-        id: 8,
+        id: 11,
         name: "El Monte",
         path: "/los-angeles/san-gabriel-valley/el-monte",
-        type: "neighborhood",
-        children: [
-            "/los-angeles/san-gabriel-valley/el-monte/smb/mitchs-mobiles",
-            "/los-angeles/san-gabriel-valley/el-monte/grade-a-tools",
-        ]
+        type: "neighborhood"
     },
-    "/orange": {
-        id: 2,
-        name: "Orange",
-        path: "/orange",
-        type: "county",
-        children: [
-          "/orange/region1",
-          "/orange/region2",
-          "/orange/region3"
-        ]
+    "/los-angeles/san-gabriel-valley/pasadena": {
+        id: 12,
+        name: "Pasadena",
+        path: "/los-angeles/san-gabriel-valley/pasadena",
+        type: "neighborhood"
     },
-    "/san-bernadino": {
-        id: 3,
-        name: "San Bernadino",
-        path: "/san-bernadino",
-        type: "county",
-        children: [
-          "/san-bernadino/region1",
-          "/san-bernadino/region2",
-          "/san-bernadino/region3"
-        ]
+    "/los-angeles/san-gabriel-valley/south-pasadena": {
+        id: 13,
+        name: "South Pasadena",
+        path: "/los-angeles/san-gabriel-valley/south-pasadena",
+        type: "neighborhood"
     },
-    "/ventura": {
-        id: 4,
-        name: "Ventura",
-        path: "/ventura",
-        type: "county",
-        children: [
-          "/ventura/region1",
-          "/ventura/region2",
-          "/ventura/region3"
-        ]
-    },
-    "/riverside": {
-        id: 5,
-        name: "Riverside",
-        path: "/riverside",
-        type: "county",
-        children: [
-          "/riverside/region1",
-          "/riverside/region2",
-          "/riverside/region3"
-        ]
-    },
-    "/kern": {
-        id: 6,
-        name: "Kern",
-        path: "/kern",
-        type: "county",
-        children: [
-          "/kern/region1",
-          "/kern/region2",
-          "/kern/region3"
-        ]
+    "/los-angeles/san-gabriel-valley/san-marino": {
+        id: 14,
+        name: "San Marino",
+        path: "/los-angeles/san-gabriel-valley/san-marino",
+        type: "neighborhood"
     }
 };
 
