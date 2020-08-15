@@ -15,10 +15,10 @@ export default class LibraryIndexPage extends React.Component {
             </h1>
             <div className="">
               <Router basepath="/directory">
-                <TreeView path="/" type="county">
-                  <TreeView path=":county" type="region">
-                    <TreeView path=":region" type="neighborhood">
-                      <TreeView path=":neighborhood" ></TreeView>
+                <TreeView path="/" type="root">
+                  <TreeView path=":county" type="county">
+                    <TreeView path=":region" type="region">
+                      <TreeView path=":neighborhood" type="neighborhood"></TreeView>
                     </TreeView>
                   </TreeView>
                 </TreeView>
