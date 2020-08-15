@@ -3,21 +3,22 @@ import { Link } from "@reach/router";
 
 class TreeView extends React.Component {
     render() {
-        const { type } = this.props;
-        console.log(this.props)
-        
-        const rootNodes = data.filter(node => node.type === type);
+        const { type, children } = this.props;
+
+        // match parent node from URL?
+        const rootNode = data.filter(node => node.type === type);
+
+        // get children from parent and match to children objects from data
+        const childNodes = data.filter(node => node.type === type);
     
         return (
             <div>
-               {rootNodes &&
-                    rootNodes.map(node => (
-                        <>
+               {childNodes &&
+                    childNodes.map(node => (
                     <Link to={`/directory${node.path}`} key={node.id}>{node.name}</Link>
-                    {this.props.children}
-                       </>
                    ))
                }
+               {children}
             </div>
         );
     }
