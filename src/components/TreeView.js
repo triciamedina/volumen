@@ -26,7 +26,7 @@ class TreeView extends React.Component {
         const childNodes = this.getChildNodes(type, rootNode);
 
         return (
-            <div className="flex flex-col divide-y-4">
+            <div className="flex flex-col">
                 {childNodes.length 
                     ? childNodes.map(node => (
                         <TreeNode
