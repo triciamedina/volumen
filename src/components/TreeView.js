@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "@reach/router";
+
+import TreeNode from "../components/TreeNode";
 
 class TreeView extends React.Component {
     // Return tree data matching path params
@@ -19,26 +20,30 @@ class TreeView extends React.Component {
     };
 
     render() {
-        const { type, children } = this.props;
+        const { type } = this.props;
 
         const rootNode = this.getRootNode(type);
         const childNodes = this.getChildNodes(type, rootNode);
         
         return (
-            <div>
-               {childNodes.length &&
-                    childNodes.map(node => (
-                    <Link to={`/directory${node.path}`} key={node.id}>{node.name}</Link>
-                   ))
+            <div className="flex flex-col">
+               {childNodes.length 
+                    ? childNodes.map(node => (
+                        <TreeNode
+                            key={node.id}
+                            url={`/directory${node.path}`}
+                            name={node.name}
+                            type={type}
+                        />
+                        ))
+                    : ""
                }
-               {/* Render children in nested routes */}
-               {children}
             </div>
         );
     }
 }
 
-// Included a sort method for now, but maybe can return sorted data in query?
+// Included a sort method for now, but maybe won't need
 const sortAsc = (a, b) => {
     const nameA = a.name.toLowerCase(); 
     const nameB = b.name.toLowerCase(); 

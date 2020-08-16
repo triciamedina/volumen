@@ -13,16 +13,42 @@ export default class LibraryIndexPage extends React.Component {
             <h1 className="lg:text-5xl text-4xl font-straight font-bold text-gray-900">
               Directory
             </h1>
-            <div className="">
-              <Router basepath="/directory">
-                <TreeView path="/" type="root">
-                  <TreeView path=":county" type="county">
-                    <TreeView path=":region" type="region">
-                      <TreeView path=":neighborhood" type="neighborhood"></TreeView>
-                    </TreeView>
-                  </TreeView>
-                </TreeView>
-              </Router>
+            <div className="flex flex-row">
+              <div className="flex-1">
+                <h2 className="font-bold">
+                  Select County
+                </h2>
+                <Router basepath="/directory">
+                  <TreeView path="/" type="root" />
+                  <TreeView path="/:county" type="root" />
+                  <TreeView path="/:county/:region" type="root" />
+                  <TreeView path="/:county/:region/:neighborhood" type="root" />
+                </Router>
+              </div>
+              <div className="flex-1">
+                <h2 className={"font-bold"}>
+                  Select Region
+                </h2>
+                <Router basepath="/directory">
+                  <TreeView path="/:county" type="county" />
+                  <TreeView path="/:county/:region" type="county" />
+                  <TreeView path="/:county/:region/:neighborhood" type="county" />
+                </Router>
+              </div>
+              <div className="flex-1">
+                <h2 className="font-bold">
+                  Select Neighborhood
+                </h2>
+                <Router basepath="/directory">
+                  <TreeView path="/:county/:region" type="region" />
+                  <TreeView path="/:county/:region/:neighborhood" type="region" />
+                </Router>
+              </div>
+              <div className="flex-1">
+                <Router basepath="/directory">
+                  <TreeView path="/:county/:region/:neighborhood" type="neighborhood" />
+                </Router>
+              </div>
             </div>
           </section>
         </div>
