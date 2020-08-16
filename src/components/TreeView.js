@@ -26,7 +26,7 @@ class TreeView extends React.Component {
         const childNodes = this.getChildNodes(type, rootNode);
 
         return (
-            <div className="flex flex-col">
+            <div className="flex flex-col divide-y-4">
                 {childNodes.length 
                     ? childNodes.map(node => (
                         <TreeNode
@@ -35,6 +35,7 @@ class TreeView extends React.Component {
                             name={node.name}
                             type={type}
                             parent={type === "root" ? "/directory" : `/directory${rootNode.path}`}
+                            color={node.color}
                         />
                         ))
                     : ""
@@ -70,6 +71,7 @@ const data = {
         name: "Los Angeles",
         path: "/los-angeles",
         type: "county",
+        color: "#ede280",
         children: [
             "/los-angeles/central-los-angeles",
             "/los-angeles/santa-monica-mountains",
@@ -81,55 +83,64 @@ const data = {
         id: 2,
         name: "Orange",
         path: "/orange",
-        type: "county"
+        type: "county",
+        color: "#f09657"
     },
     "/san-bernadino": {
         id: 3,
         name: "San Bernadino",
         path: "/san-bernadino",
-        type: "county"
+        type: "county",
+        color: "#a67db5"
     },
     "/ventura": {
         id: 4,
         name: "Ventura",
         path: "/ventura",
-        type: "county"
+        type: "county",
+        color: "#e25d61"
     },
     "/riverside": {
         id: 5,
         name: "Riverside",
         path: "/riverside",
-        type: "county"
+        type: "county",
+        color: "#74a8db"
     },
     "/kern": {
         id: 6,
         name: "Kern",
         path: "/kern",
-        type: "county"
+        type: "county",
+        color: "#8fc162"
     },
     "/los-angeles/central-los-angeles": {
         id: 7,
         name: "Central Los Angeles",
         path: "/los-angeles/central-los-angeles",
-        type: "region"
+        type: "region",
+        color: "#d1ecf1"
     },
     "/los-angeles/santa-monica-mountains": {
         id: 8,
         name: "Santa Monica Mountains",
         path: "/los-angeles/santa-monica-mountains",
-        type: "region"
+        type: "region",
+        color: "#e87859"
     },
     "/los-angeles/san-fernando-valley": {
         id: 9,
         name: "San Fernando Valley",
         path: "/los-angeles/san-fernando-valley",
-        type: "region"
+        type: "region",
+        color: "#e2555a"
     },
     "/los-angeles/san-gabriel-valley": {
         id: 10,
         name: "San Gabriel Valley",
         path: "/los-angeles/san-gabriel-valley",
         type: "region",
+        color: "#a67db5",
         children: [
             "/los-angeles/san-gabriel-valley/pasadena",
             "/los-angeles/san-gabriel-valley/south-pasadena",
@@ -142,6 +153,7 @@ const data = {
         name: "El Monte",
         path: "/los-angeles/san-gabriel-valley/el-monte",
         type: "neighborhood",
+        color: "#a67db5",
         children: [
             {
                 id: 15,
@@ -158,19 +170,22 @@ const data = {
         id: 12,
         name: "Pasadena",
         path: "/los-angeles/san-gabriel-valley/pasadena",
-        type: "neighborhood"
+        type: "neighborhood",
+        color: "#a67db5"
     },
     "/los-angeles/san-gabriel-valley/south-pasadena": {
         id: 13,
         name: "South Pasadena",
         path: "/los-angeles/san-gabriel-valley/south-pasadena",
-        type: "neighborhood"
+        type: "neighborhood",
+        color: "#a67db5"
     },
     "/los-angeles/san-gabriel-valley/san-marino": {
         id: 14,
         name: "San Marino",
         path: "/los-angeles/san-gabriel-valley/san-marino",
-        type: "neighborhood"
+        type: "neighborhood",
+        color: "#a67db5"
     }
 };
 
