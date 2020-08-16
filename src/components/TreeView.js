@@ -10,9 +10,11 @@ class TreeView extends React.Component {
         if (type === "neighborhood") return data[`/${this.props.county}/${this.props.region}/${this.props.neighborhood}`];
     };
 
-    // Return tree data matching children from parent node
-    getChildNodes(node) {
+    getChildNodes(type, node) {
         if (!node.children) return [];
+        // For SMB/NP listings I have the data nested for now, so just return children
+        if (type === "neighborhood") return node.children;
+        // For everything else, return tree data matching children from parent node
         return node.children.map(path => data[path]).sort(sortAsc);
     };
 
@@ -20,7 +22,7 @@ class TreeView extends React.Component {
         const { type, children } = this.props;
 
         const rootNode = this.getRootNode(type);
-        const childNodes = this.getChildNodes(rootNode);
+        const childNodes = this.getChildNodes(type, rootNode);
         
         return (
             <div>
@@ -133,7 +135,18 @@ const data = {
         id: 11,
         name: "El Monte",
         path: "/los-angeles/san-gabriel-valley/el-monte",
-        type: "neighborhood"
+        type: "neighborhood",
+        children: [
+            {
+                id: 15,
+                name: "Mitch's Mobiles",
+                type: "SMB",
+                industry: "Industry/Field",
+                address: "Address",
+                phone: "Phone",
+                website: "Website"
+            }
+        ]
     },
     "/los-angeles/san-gabriel-valley/pasadena": {
         id: 12,
