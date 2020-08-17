@@ -1,6 +1,7 @@
 import React from "react";
 
 import TreeNode from "../components/TreeNode";
+import TreeContent from "../components/TreeContent";
 
 class TreeView extends React.Component {
     // Return tree data matching path params
@@ -11,11 +12,8 @@ class TreeView extends React.Component {
         if (type === "neighborhood") return data[`/${this.props.county}/${this.props.region}/${this.props.neighborhood}`];
     };
 
-    getChildNodes(type, node) {
+    getChildNodes(node) {
         if (!node.children) return [];
-        // For SMB/NP listings I have the data nested for now, so just return children
-        if (type === "neighborhood") return node.children;
-        // For everything else, return tree data matching children from parent node
         return node.children.map(path => data[path]).sort(sortAsc);
     };
 
@@ -23,22 +21,40 @@ class TreeView extends React.Component {
         const { type } = this.props;
 
         const rootNode = this.getRootNode(type);
-        const childNodes = this.getChildNodes(type, rootNode);
+        const childNodes = this.getChildNodes(rootNode);
+  
+        if (type === "neighborhood") {
+            return (
+                <TreeContent 
+                    neighborhood={rootNode.name}
+                    childNodes={childNodes}
+                />
+            )
+        }
 
         return (
             <div className="TreeView flex flex-col">
                 {childNodes.length 
-                    ? childNodes.map(node => (
-                        <TreeNode
-                            key={node.id}
-                            url={`/directory${node.path}`}
-                            name={node.name}
-                            type={type}
-                            parent={type === "root" ? "/directory" : `/directory${rootNode.path}`}
-                            color={node.color}
-                        />
-                        ))
-                    : ""
+                    ? childNodes.map(node => {
+                        let smbCount;
+                        let npCount;
+                        if (type === "region") {
+                            smbCount = this.getChildNodes(node).filter(node => node.type === "SMB").length;
+                            npCount = this.getChildNodes(node).filter(node => node.type === "NP").length;
+                        }
+                        console.log(smbCount)
+                        return (
+                            <TreeNode
+                                key={node.id}
+                                url={`/directory${node.path}`}
+                                type={type}
+                                parent={type === "root" ? "/directory" : `/directory${rootNode.path}`}
+                                {...node}
+                                smbCount={smbCount || null}
+                                npCount={npCount || null}
+                            />
+                        )
+                    }) : ""
                 }
             </div>
         );
@@ -155,16 +171,27 @@ const data = {
         type: "neighborhood",
         color: "#a67db5",
         children: [
-            {
-                id: 15,
-                name: "Mitch's Mobiles",
-                type: "SMB",
-                industry: "Industry/Field",
-                address: "Address",
-                phone: "Phone",
-                website: "Website"
-            }
+            "/los-angeles/san-gabriel-valley/el-monte/mitchs-mobiles",
+            "/los-angeles/san-gabriel-valley/el-monte/grade-a-tools"
         ]
+    },
+    "/los-angeles/san-gabriel-valley/el-monte/mitchs-mobiles": {
+        id: 15,
+        name: "Mitch's Mobiles",
+        type: "SMB",
+        industry: "Industry/Field",
+        address: "Address",
+        phone: "Phone",
+        website: "Website"
+    },
+    "/los-angeles/san-gabriel-valley/el-monte/grade-a-tools": {
+        id: 16,
+        name: "GradeA Tools",
+        type: "SMB",
+        industry: "Industry/Field",
+        address: "Address",
+        phone: "Phone",
+        website: "Website"
     },
     "/los-angeles/san-gabriel-valley/pasadena": {
         id: 12,

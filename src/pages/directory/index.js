@@ -34,8 +34,8 @@ export default class LibraryIndexPage extends React.Component {
                     routes: ["/:county/:region", "/:county/:region/:neighborhood/*"],
                     type: "region"
                   }
-                ].map(column => (
-                  <div className="flex-1 border-r-4 border-gray-900">
+                ].map((column, index) => (
+                  <div key={index} className="flex-1 border-r-4 border-gray-900">
                     <Match path={column.matchPath}>
                       {props => (
                           <h2 className={`font-straight font-black text-2xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
