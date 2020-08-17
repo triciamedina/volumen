@@ -14,42 +14,41 @@ export default class LibraryIndexPage extends React.Component {
               Directory
             </h1>
             <div className="flex flex-row border-4 border-gray-900">
-              <div className="flex-1 border-r-4 border-gray-900">
-                <Match path={`/directory/*`}>
-                  {props => (
-                      <h2 className={`font-straight font-black text-2xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>Select County</h2>
-                    )}
-                </Match>
-                <Router basepath="/directory">
-                  {["/", "/:county", "/:county/:region", "/:county/:region/:neighborhood"]
-                    .map((route, index) => <TreeView key={index} path={route} type="root" />)
+              {
+                [
+                  {
+                    title: "Select County",
+                    matchPath: `/directory/*`,
+                    routes: ["/", "/:county", "/:county/:region", "/:county/:region/:neighborhood"],
+                    type: "root"
+                  },
+                  {
+                    title: "Select Region",
+                    matchPath: `/directory/:county/*`,
+                    routes: ["/:county", "/:county/:region", "/:county/:region/:neighborhood"],
+                    type: "county"
+                  },
+                  {
+                    title: "Select Neighborhood",
+                    matchPath: `/directory/:county/:region/*`,
+                    routes: ["/:county/:region", "/:county/:region/:neighborhood/*"],
+                    type: "region"
                   }
-                </Router>
-              </div>
-              <div className="flex-1 border-r-4 border-gray-900">
-                <Match path={`/directory/:county/*`}>
-                  {props => (
-                    <h2 className={`font-straight font-black text-2xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>Select Region</h2>
-                  )}
-                </Match>
-                <Router basepath="/directory">
-                  {["/:county", "/:county/:region", "/:county/:region/:neighborhood"]
-                    .map((route, index) => <TreeView key={index} path={route} type="county" />)
-                  }
-                </Router>
-              </div>
-              <div className="flex-1 border-r-4 border-gray-900">
-                <Match path={`/directory/:county/:region/*`}>
-                  {props => (
-                    <h2 className={`font-straight font-black text-2xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>Select Neighborhood</h2>
-                  )}
-                </Match>
-                <Router basepath="/directory">
-                  {["/:county/:region", "/:county/:region/:neighborhood/*"]
-                    .map((route, index) => <TreeView key={index} path={route} type="region" />)
-                  }
-                </Router>
-              </div>
+                ].map(column => (
+                  <div className="flex-1 border-r-4 border-gray-900">
+                    <Match path={column.matchPath}>
+                      {props => (
+                          <h2 className={`font-straight font-black text-2xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
+                            {column.title}
+                          </h2>
+                        )}
+                    </Match>
+                    <Router basepath="/directory">
+                      {column.routes.map((route, index) => <TreeView key={index} path={route} type={column.type} />)}
+                    </Router>
+                  </div>
+                ))
+              }
               <div className="flex-1">
                 <Router basepath="/directory">
                   <TreeView path="/:county/:region/:neighborhood" type="neighborhood" />
