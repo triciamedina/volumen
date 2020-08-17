@@ -30,5 +30,24 @@
     transition: transform .5s
 
 }
+.TreeView a.inactive{
+    margin-bottom: -4px;
+    color: #1a202c4D; 
+    border-top: 4px solid #1a202c4D; 
+    border-bottom: 4px solid transparent
+}
+.TreeView a.active + a.inactive{
+    border-top: 4px solid #1a202c;
+}
+.TreeView a:last-of-type{
+    border-bottom: 4px solid #1a202c4D; 
+}
+.TreeView a.active{
+    margin-bottom: -4px;
+    color: #1a202c; 
+    border-top: 4px solid #1a202c; 
+    border-bottom: 4px solid #1a202c;
+}
+
 @import url('./markdown.scss');
 
