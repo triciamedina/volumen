@@ -30,8 +30,8 @@ const TreeNode = (props) => {
                         {name} 
                         {type === "neighborhood" && 
                             <div className="flex flex-row items-center">
-                                {smbCount} <div className={`inline-block rounded-full h-4 w-4 bg-yellow-300 border-2 border-gray-900 mx-2 ${!isActive && "opacity-25"}`}></div>
-                                {npCount} <div className={`inline-block rounded-full h-4 w-4 bg-red-300 border-2 border-gray-900 mx-2 ${!isActive && "opacity-25"}`}></div>
+                                {smbCount} <div className={`TreeNode__icon smb ${!isActive && "opacity-25"}`}></div>
+                                {npCount} <div className={`TreeNode__icon np ${!isActive && "opacity-25"}`}></div>
                             </div>
                         }
                     </Link>

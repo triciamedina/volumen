@@ -48,6 +48,21 @@
     border-top: 4px solid #1a202c; 
     border-bottom: 4px solid #1a202c;
 }
+.TreeNode__icon{
+    @apply border-gray-900;
+    display: inline-block;
+    border-width: 2px;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.5rem;
+}
+.TreeNode__icon.smb{
+    @apply bg-yellow-300;
+}
+.TreeNode__icon.np{
+    @apply bg-red-300;
+}
 
 @import url('./markdown.scss');
 

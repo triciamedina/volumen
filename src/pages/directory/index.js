@@ -46,7 +46,7 @@ export default class LibraryIndexPage extends React.Component {
                 ].map((column, index) => (
 
                   // Render column
-                  <div key={index} className="flex-1 border-r-4 border-gray-900">
+                  <div key={index} className={`flex-1 border-gray-900 ${column.type !== "neighborhood" && "border-r-4"}`}>
 
                     {/* Render title */}
                     {column.title && 
@@ -68,7 +68,7 @@ export default class LibraryIndexPage extends React.Component {
 
                 ))
               }
-              
+
             </div>
 
           </section>
