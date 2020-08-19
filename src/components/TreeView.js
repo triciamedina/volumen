@@ -36,22 +36,17 @@ class TreeView extends React.Component {
             <div className="TreeView flex flex-col">
                 {childNodes.length 
                     ? childNodes.map(node => {
-                        let smbCount;
-                        let npCount;
-                        if (type === "region") {
-                            smbCount = this.getChildNodes(node).filter(node => node.type === "SMB").length;
-                            npCount = this.getChildNodes(node).filter(node => node.type === "NP").length;
-                        }
-                        console.log(smbCount)
+
+                        const grandChildren = this.getChildNodes(node);
+
                         return (
                             <TreeNode
                                 key={node.id}
                                 url={`/directory${node.path}`}
                                 type={type}
                                 parent={type === "root" ? "/directory" : `/directory${rootNode.path}`}
+                                childNodes={grandChildren}
                                 {...node}
-                                smbCount={smbCount || null}
-                                npCount={npCount || null}
                             />
                         )
                     }) : ""

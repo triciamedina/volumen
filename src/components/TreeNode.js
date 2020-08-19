@@ -2,17 +2,19 @@ import React from "react";
 import { Link, Match } from "@reach/router";
 
 const TreeNode = (props) => {
-    const { url, name, parent, type, color, smbCount=null, npCount=null } = props;
-    console.log(smbCount)
+    const { url, name, parent, type, color, childNodes} = props;
 
     const styles = {
         "county" : "font-straight font-black text-2xl py-3 px-6",
         "region" : "font-straight font-black text-lg py-2 px-5",
-        "neighborhood" : "flex flex-row justify-between font-straight font-black text-lg py-1 px-4"
+        "neighborhood" : "flex flex-row justify-between font-straight font-black text-sm py-1 px-4"
     };
     
     const opaque = { backgroundColor: `${color}`};
     const transparent = { backgroundColor: `${color}4D`};
+
+    const smbCount = type === "neighborhood" ? childNodes.filter(node => node.type === "SMB").length : null;
+    const npCount = type === "neighborhood" ? childNodes.filter(node => node.type === "NP").length : null;
 
     return (
         <Match path={`${url}/*`}>
@@ -26,7 +28,12 @@ const TreeNode = (props) => {
                         className={`${styles[type]} ${isActive ? "active" : "inactive"}`} 
                     >
                         {name} 
-                        <div>{smbCount}</div>
+                        {type === "neighborhood" && 
+                            <div className="flex flex-row items-center">
+                                {smbCount} <div className={`inline-block rounded-full h-4 w-4 bg-yellow-300 border-2 border-gray-900 mx-2 ${!isActive && "opacity-25"}`}></div>
+                                {npCount} <div className={`inline-block rounded-full h-4 w-4 bg-red-300 border-2 border-gray-900 mx-2 ${!isActive && "opacity-25"}`}></div>
+                            </div>
+                        }
                     </Link>
                 )
             }}
