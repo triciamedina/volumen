@@ -27,11 +27,12 @@ const TreeNode = (props) => {
                         style={isActive ? opaque : transparent} 
                         className={`${styles[type]} ${isActive ? "active" : "inactive"}`} 
                     >
-                        {name} 
+                        <p>{name}</p>
+
                         {type === "neighborhood" && 
                             <div className="flex flex-row items-center">
-                                {smbCount} <div className={`TreeNode__icon smb ${!isActive && "opacity-25"}`}></div>
-                                {npCount} <div className={`TreeNode__icon np ${!isActive && "opacity-25"}`}></div>
+                                {smbCount} <div className={`listing-icon smb ${!isActive && "opacity-25"}`}></div>
+                                {npCount} <div className={`listing-icon np ${!isActive && "opacity-25"}`}></div>
                             </div>
                         }
                     </Link>

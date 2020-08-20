@@ -48,7 +48,7 @@
     border-top: 4px solid #1a202c; 
     border-bottom: 4px solid #1a202c;
 }
-.TreeNode__icon{
+.listing-icon{
     @apply border-gray-900;
     display: inline-block;
     border-width: 2px;
@@ -57,11 +57,37 @@
     width: 1rem;
     margin: 0 0.5rem;
 }
-.TreeNode__icon.smb{
+.listing-icon.smb{
     @apply bg-yellow-300;
 }
-.TreeNode__icon.np{
+.listing-icon.np{
     @apply bg-red-300;
+}
+.accordion-panel{
+    max-height: 0px;
+    overflow: hidden;
+}
+.accordion-panel.open{
+    @apply border-b-4;
+    @apply border-gray-900;
+    max-height: 100%;
+}
+.arrow-right{
+    @apply border-gray-900;
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    
+    border-left: 10px solid;
+}
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    
+    border-top: 10px solid;
 }
 
 @import url('./markdown.scss');
