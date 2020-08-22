@@ -1,7 +1,7 @@
 import React from "react";
 
 import TreeNode from "../components/TreeNode";
-import TreeContent from "../components/TreeContent";
+import Accordion from "../components/Accordion";
 
 class TreeView extends React.Component {
     // Return tree data matching path params
@@ -22,14 +22,26 @@ class TreeView extends React.Component {
 
         const rootNode = this.getRootNode(type);
         const childNodes = this.getChildNodes(rootNode);
+
+        const smbListings = childNodes.filter(node => node.type === "SMB");
+        const npListings = childNodes.filter(node => node.type === "NP");
   
         if (type === "neighborhood") {
             return (
-                <TreeContent 
-                    neighborhood={rootNode.name}
-                    childNodes={childNodes}
-                />
-            )
+                <div className="flex flex-col">
+    
+                    <h2 className="font-straight font-black text-2xl text-center py-3 text-gray-900 border-b-4 border-gray-900">
+                        {rootNode.name}, CA
+                        <div className="-mr-2">
+                            {smbListings.length} <div className={`listing-icon smb`}></div>
+                            {npListings.length} <div className={`listing-icon np`}></div>
+                        </div>
+                    </h2>
+        
+                    <Accordion listings={smbListings} title="SMB" className="smb" />
+                    <Accordion listings={npListings} title="Non-Profit" className="np" />
+                </div>
+                )
         }
 
         return (
@@ -193,7 +205,29 @@ const data = {
         name: "Pasadena",
         path: "/los-angeles/san-gabriel-valley/pasadena",
         type: "neighborhood",
-        color: "#a67db5"
+        color: "#a67db5",
+        children: [
+            "/los-angeles/san-gabriel-valley/pasadena/mitchs-mobiles",
+            "/los-angeles/san-gabriel-valley/pasadena/grade-a-tools"
+        ]
+    },
+    "/los-angeles/san-gabriel-valley/pasadena/mitchs-mobiles": {
+        id: 17,
+        name: "Mitch's Mobiles",
+        type: "NP",
+        industry: "Industry/Field",
+        address: "Address",
+        phone: "Phone",
+        website: "Website"
+    },
+    "/los-angeles/san-gabriel-valley/pasadena/grade-a-tools": {
+        id: 18,
+        name: "GradeA Tools",
+        type: "NP",
+        industry: "Industry/Field",
+        address: "Address",
+        phone: "Phone",
+        website: "Website"
     },
     "/los-angeles/san-gabriel-valley/south-pasadena": {
         id: 13,
@@ -207,8 +241,30 @@ const data = {
         name: "San Marino",
         path: "/los-angeles/san-gabriel-valley/san-marino",
         type: "neighborhood",
-        color: "#a67db5"
-    }
+        color: "#a67db5",
+        children: [
+            "/los-angeles/san-gabriel-valley/san-marino/mitchs-mobiles",
+            "/los-angeles/san-gabriel-valley/san-marino/grade-a-tools"
+        ]
+    },
+    "/los-angeles/san-gabriel-valley/san-marino/mitchs-mobiles": {
+        id: 19,
+        name: "Mitch's Mobiles",
+        type: "SMB",
+        industry: "Industry/Field",
+        address: "Address",
+        phone: "Phone",
+        website: "Website"
+    },
+    "/los-angeles/san-gabriel-valley/san-marino/grade-a-tools": {
+        id: 20,
+        name: "GradeA Tools",
+        type: "NP",
+        industry: "Industry/Field",
+        address: "Address",
+        phone: "Phone",
+        website: "Website"
+    },
 };
 
 export default TreeView;

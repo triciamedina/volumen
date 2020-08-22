@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Match } from "@reach/router";
 
 const TreeNode = (props) => {
-    const { url, name, parent, type, color, childNodes} = props;
+    const { url, name, parent, type, color, childNodes } = props;
 
     const styles = {
         "county" : "font-straight font-black text-2xl py-3 px-6",
@@ -16,6 +16,30 @@ const TreeNode = (props) => {
     const smbCount = type === "neighborhood" ? childNodes.filter(node => node.type === "SMB").length : null;
     const npCount = type === "neighborhood" ? childNodes.filter(node => node.type === "NP").length : null;
 
+    const icons = (isActive) => {
+        return (
+            <div className="grid grid-cols-2">
+                <div className="flex flex-row items-center col-start-1 col-end-2">
+                    {smbCount > 0 && 
+                        (<>
+                            {smbCount} 
+                            <div className={`listing-icon smb ${!isActive && "opacity-25"}`}></div>
+                        </>)
+                    }
+                </div>
+                
+                <div className="flex flex-row items-center col-start-2 col-end-3">
+                    {npCount > 0 &&
+                        (<>
+                            {npCount} 
+                            <div className={`listing-icon np ${!isActive && "opacity-25"}`}></div>
+                        </>)
+                    }
+                </div>
+            </div>
+        )
+    }
+
     return (
         <Match path={`${url}/*`}>
             {props => {
@@ -27,14 +51,8 @@ const TreeNode = (props) => {
                         style={isActive ? opaque : transparent} 
                         className={`${styles[type]} ${isActive ? "active" : "inactive"}`} 
                     >
-                        <p>{name}</p>
-
-                        {type === "neighborhood" && 
-                            <div className="flex flex-row items-center">
-                                {smbCount} <div className={`listing-icon smb ${!isActive && "opacity-25"}`}></div>
-                                {npCount} <div className={`listing-icon np ${!isActive && "opacity-25"}`}></div>
-                            </div>
-                        }
+                        <h3>{name}</h3>
+                        {type === "neighborhood" && icons(isActive)}
                     </Link>
                 )
             }}

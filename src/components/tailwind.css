@@ -63,6 +63,12 @@
 .listing-icon.np{
     @apply bg-red-300;
 }
+.Accordion.smb{
+    @apply bg-yellow-300;
+}
+.Accordion.np{
+    @apply bg-red-300;
+}
 .accordion-panel{
     max-height: 0px;
     overflow: hidden;
