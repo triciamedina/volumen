@@ -38,8 +38,8 @@ class TreeView extends React.Component {
                         </div>
                     </h2>
         
-                    <Accordion listings={smbListings} title="SMB" className="smb" />
-                    <Accordion listings={npListings} title="Non-Profit" className="np" />
+                    {smbListings.length ? <Accordion listings={smbListings} title="SMB" className="smb" /> : ""}
+                    {npListings.length ? <Accordion listings={npListings} title="Non-Profit" className="np" />: ""}
                 </div>
                 )
         }
