@@ -30,10 +30,10 @@
     transition: transform .5s
 
 }
-.Directory {
+.Browse {
     overflow: hidden;
 }
-.Directory .column {
+.Browse .column {
     height: 600px;
     overflow: scroll;
 }

@@ -48,16 +48,12 @@ class TreeView extends React.Component {
             <div className="TreeView flex flex-col">
                 {childNodes.length 
                     ? childNodes.map(node => {
-
-                        const grandChildren = this.getChildNodes(node);
-
                         return (
                             <TreeNode
                                 key={node.id}
                                 url={`/directory${node.path}`}
                                 type={type}
                                 parent={type === "root" ? "/directory" : `/directory${rootNode.path}`}
-                                childNodes={grandChildren}
                                 {...node}
                             />
                         )
