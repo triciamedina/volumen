@@ -5,7 +5,7 @@ const TreeNode = (props) => {
     const { url, name, parent, type, color, childNodes } = props;
 
     const styles = {
-        "area" : "font-straight font-black text-2xl py-3 px-6",
+        "area" : "font-straight font-black text-xl py-3 px-6",
         "county" : "font-straight font-black text-lg py-2 px-5",
         "region" : "flex flex-row justify-between font-straight font-black text-sm py-1 px-4"
     };

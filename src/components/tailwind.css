@@ -30,6 +30,13 @@
     transition: transform .5s
 
 }
+.Directory {
+    overflow: hidden;
+}
+.Directory .column {
+    height: 600px;
+    overflow: scroll;
+}
 .TreeView a.inactive{
     margin-bottom: -4px;
     color: #1a202c4D; 
@@ -58,16 +65,16 @@
     margin: 0 0.5rem;
 }
 .listing-icon.smb{
-    @apply bg-yellow-300;
+    background-color: #fcf8b7;
 }
 .listing-icon.np{
-    @apply bg-red-300;
+    background-color: #f5abb2;
 }
 .Accordion.smb{
-    @apply bg-yellow-300;
+    background-color: #fff5a7;
 }
 .Accordion.np{
-    @apply bg-red-300;
+    background-color: #f9bbc0;
 }
 .accordion-panel{
     max-height: 0px;

@@ -14,7 +14,7 @@ export default class LibraryIndexPage extends React.Component {
               Directory
             </h1>
 
-            <div className="flex flex-row border-4 border-gray-900">
+            <div className="Directory flex flex-row border-4 border-gray-900">
 
               {/* Define routes */}
               {
@@ -23,34 +23,34 @@ export default class LibraryIndexPage extends React.Component {
                     title: "Select Metropolitan Area",
                     matchPath: `/directory/*`,
                     matchExact: `/directory`,
-                    routes: ["/", "/:area", "/:area/:county", "/:area/:county/:region"],
+                    routes: ["/", "/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:region"],
                     type: "root"
                   },
                   {
                     title: "Select County",
-                    matchPath: `/directory/:area/*`,
-                    matchExact: `/directory/:area`,
-                    routes: ["/:area", "/:area/:county", "/:area/:county/:region"],
+                    matchPath: `/directory/browse/:area/*`,
+                    matchExact: `/directory/browse/:area`,
+                    routes: ["/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:region"],
                     type: "area"
                   },
                   {
                     title: "Select Region",
-                    matchPath: `/directory/:area/:county/*`,
-                    matchExact: `/directory/:area/:county`,
-                    routes: ["/:area/:county", "/:area/:county/:region/*"],
+                    matchPath: `/directory/browse/:area/:county/*`,
+                    matchExact: `/directory/browse/:area/:county`,
+                    routes: ["/browse/:area/:county", "/browse/:area/:county/:region/*"],
                     type: "county"
                   },
                   {
                     title: null,
-                    matchPath: `/directory/:area/:county/*`,
-                    matchExact: `/directory/:area/:county/:region`,
-                    routes: ["/:area/:county/:region"],
+                    matchPath: `/directory/browse/:area/:county/*`,
+                    matchExact: `/directory/browse/:area/:county/:region`,
+                    routes: ["/browse/:area/:county/:region"],
                     type: "region"
                   }
                 ].map((column, index) => (
                   <Match key={index} path={column.matchExact}>
                     {props => (
-                      <div className={`flex-1 border-gray-900 ${column.type !== "region" && "md:border-r-4"} ${!props.match && "hidden"} md:block`}>
+                      <div className={`column flex-1 border-gray-900 ${column.type !== "region" && "md:border-r-4"} ${!props.match && "hidden"} md:block`}>
                         {/* <Match path={column.matchPath}>
                           {props => (
                             column.title && 
@@ -59,7 +59,7 @@ export default class LibraryIndexPage extends React.Component {
                         </Match> */}
 
                         {column.title && 
-                          <h2 className={`font-straight font-black text-2xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
+                          <h2 className={`font-straight font-black text-xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
                               {column.title}
                           </h2>
                         }
