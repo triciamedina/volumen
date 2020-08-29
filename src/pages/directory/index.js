@@ -20,51 +20,52 @@ export default class LibraryIndexPage extends React.Component {
               {
                 [
                   {
-                    title: "Select County",
+                    title: "Select Metropolitan Area",
                     matchPath: `/directory/*`,
                     matchExact: `/directory`,
-                    routes: ["/", "/:county", "/:county/:region", "/:county/:region/:neighborhood"],
+                    routes: ["/", "/:area", "/:area/:county", "/:area/:county/:region"],
                     type: "root"
                   },
                   {
+                    title: "Select County",
+                    matchPath: `/directory/:area/*`,
+                    matchExact: `/directory/:area`,
+                    routes: ["/:area", "/:area/:county", "/:area/:county/:region"],
+                    type: "area"
+                  },
+                  {
                     title: "Select Region",
-                    matchPath: `/directory/:county/*`,
-                    matchExact: `/directory/:county`,
-                    routes: ["/:county", "/:county/:region", "/:county/:region/:neighborhood"],
+                    matchPath: `/directory/:area/:county/*`,
+                    matchExact: `/directory/:area/:county`,
+                    routes: ["/:area/:county", "/:area/:county/:region/*"],
                     type: "county"
                   },
                   {
-                    title: "Select Neighborhood",
-                    matchPath: `/directory/:county/:region/*`,
-                    matchExact: `/directory/:county/:region`,
-                    routes: ["/:county/:region", "/:county/:region/:neighborhood/*"],
-                    type: "region"
-                  },
-                  {
                     title: null,
-                    matchPath: `/directory/:county/:region/*`,
-                    matchExact: `/directory/:county/:region/:neighborhood`,
-                    routes: ["/:county/:region/:neighborhood"],
-                    type: "neighborhood"
+                    matchPath: `/directory/:area/:county/*`,
+                    matchExact: `/directory/:area/:county/:region`,
+                    routes: ["/:area/:county/:region"],
+                    type: "region"
                   }
                 ].map((column, index) => (
-
-                  <Match path={column.matchExact}>
+                  <Match key={index} path={column.matchExact}>
                     {props => (
-
-                      <div key={index} className={`flex-1 border-gray-900 ${column.type !== "neighborhood" && "border-r-4"} ${!props.match && "hidden"} md:block`}>
-                        <Match path={column.matchPath}>
+                      <div className={`flex-1 border-gray-900 ${column.type !== "region" && "md:border-r-4"} ${!props.match && "hidden"} md:block`}>
+                        {/* <Match path={column.matchPath}>
                           {props => (
                             column.title && 
-                            <h2 className={`font-straight font-black text-2xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
-                              {column.title}
-                            </h2>
+                            
                           )}
-                        </Match>
+                        </Match> */}
+
+                        {column.title && 
+                          <h2 className={`font-straight font-black text-2xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
+                              {column.title}
+                          </h2>
+                        }
                         <Router basepath="/directory">
                           {column.routes.map((route, index) => <TreeView key={index} path={route} type={column.type} />)}
                         </Router>
-
                       </div>
                     )}
                   </Match>

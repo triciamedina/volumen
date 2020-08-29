@@ -7,9 +7,9 @@ class TreeView extends React.Component {
     // Return tree data matching path params
     getRootNode(type) {
         if (type === "root") return data["/"];
-        if (type === "county") return data[`/${this.props.county}`];
-        if (type === "region") return data[`/${this.props.county}/${this.props.region}`];
-        if (type === "neighborhood") return data[`/${this.props.county}/${this.props.region}/${this.props.neighborhood}`];
+        if (type === "area") return data[`/${this.props.area}`];
+        if (type === "county") return data[`/${this.props.area}/${this.props.county}`];
+        if (type === "region") return data[`/${this.props.area}/${this.props.county}/${this.props.region}`];
     };
 
     getChildNodes(node) {
@@ -26,7 +26,7 @@ class TreeView extends React.Component {
         const smbListings = childNodes.filter(node => node.type === "SMB");
         const npListings = childNodes.filter(node => node.type === "NP");
   
-        if (type === "neighborhood") {
+        if (type === "region") {
             return (
                 <div className="flex flex-col">
     
@@ -87,168 +87,112 @@ const data = {
         id: 0,
         path: "/",
         type: "root",
-        children: [ "/los-angeles", "/orange", "/san-bernadino", "/ventura", "/riverside",  "/kern"]
+        children: [ "/san-francisco-bay-area", "/los-angeles-metro-area"]
     },
-    "/los-angeles": {
+    "/san-francisco-bay-area": {
         id: 1,
+        name: "San Francisco Bay Area",
+        path: "/san-francisco-bay-area",
+        type: "area",
+        color: "#ede280"
+    },
+    "/los-angeles-metro-area": {
+        id: 2,
+        name: "Los Angeles Metro Area",
+        path: "/los-angeles-metro-area",
+        type: "area",
+        color: "#ede280",
+        children: [
+            "/los-angeles-metro-area/los-angeles",
+            "/los-angeles-metro-area/orange",
+            "/los-angeles-metro-area/san-bernadino",
+            "/los-angeles-metro-area/ventura",
+            "/los-angeles-metro-area/riverside",
+            "/los-angeles-metro-area/kern"
+        ]
+    },
+    "/los-angeles-metro-area/los-angeles": {
+        id: 3,
         name: "Los Angeles",
-        path: "/los-angeles",
+        path: "/los-angeles-metro-area/los-angeles",
         type: "county",
         color: "#ede280",
         children: [
-            "/los-angeles/central-los-angeles",
-            "/los-angeles/santa-monica-mountains",
-            "/los-angeles/san-fernando-valley",
-            "/los-angeles/san-gabriel-valley"
+            "/los-angeles-metro-area/los-angeles/central-los-angeles",
+            "/los-angeles-metro-area/los-angeles/santa-monica-mountains",
+            "/los-angeles-metro-area/los-angeles/san-fernando-valley",
+            "/los-angeles-metro-area/los-angeles/san-gabriel-valley"
         ]
     },
-    "/orange": {
-        id: 2,
+    "/los-angeles-metro-area/orange": {
+        id: 4,
         name: "Orange",
-        path: "/orange",
+        path: "/los-angeles-metro-area/orange",
         type: "county",
         color: "#f09657"
     },
-    "/san-bernadino": {
-        id: 3,
+    "/los-angeles-metro-area/san-bernadino": {
+        id: 5,
         name: "San Bernadino",
-        path: "/san-bernadino",
+        path: "/los-angeles-metro-area/san-bernadino",
         type: "county",
         color: "#a67db5"
     },
-    "/ventura": {
-        id: 4,
+    "/los-angeles-metro-area/ventura": {
+        id: 6,
         name: "Ventura",
-        path: "/ventura",
+        path: "/los-angeles-metro-area/ventura",
         type: "county",
         color: "#e25d61"
     },
-    "/riverside": {
-        id: 5,
+    "/los-angeles-metro-area/riverside": {
+        id: 7,
         name: "Riverside",
-        path: "/riverside",
+        path: "/los-angeles-metro-area/riverside",
         type: "county",
         color: "#74a8db"
     },
-    "/kern": {
-        id: 6,
+    "/los-angeles-metro-area/kern": {
+        id: 8,
         name: "Kern",
         path: "/kern",
         type: "county",
         color: "#8fc162"
     },
-    "/los-angeles/central-los-angeles": {
-        id: 7,
+    "/los-angeles-metro-area/los-angeles/central-los-angeles": {
+        id: 9,
         name: "Central Los Angeles",
-        path: "/los-angeles/central-los-angeles",
+        path: "/los-angeles-metro-area/los-angeles/central-los-angeles",
         type: "region",
         color: "#d1ecf1"
     },
-    "/los-angeles/santa-monica-mountains": {
-        id: 8,
+    "/los-angeles-metro-area/los-angeles/santa-monica-mountains": {
+        id: 10,
         name: "Santa Monica Mountains",
-        path: "/los-angeles/santa-monica-mountains",
+        path: "/los-angeles-metro-area/los-angeles/santa-monica-mountains",
         type: "region",
         color: "#e87859"
     },
-    "/los-angeles/san-fernando-valley": {
-        id: 9,
+    "/los-angeles-metro-area/los-angeles/san-fernando-valley": {
+        id: 11,
         name: "San Fernando Valley",
-        path: "/los-angeles/san-fernando-valley",
+        path: "/los-angeles-metro-area/los-angeles/san-fernando-valley",
         type: "region",
         color: "#e2555a"
     },
-    "/los-angeles/san-gabriel-valley": {
-        id: 10,
+    "/los-angeles-metro-area/los-angeles/san-gabriel-valley": {
+        id: 12,
         name: "San Gabriel Valley",
-        path: "/los-angeles/san-gabriel-valley",
+        path: "/los-angeles-metro-area/los-angeles/san-gabriel-valley",
         type: "region",
         color: "#a67db5",
         children: [
-            "/los-angeles/san-gabriel-valley/pasadena",
-            "/los-angeles/san-gabriel-valley/south-pasadena",
-            "/los-angeles/san-gabriel-valley/san-marino",
-            "/los-angeles/san-gabriel-valley/el-monte"
+            "/los-angeles-metro-area/los-angeles/san-gabriel-valley/mitchs-mobiles",
+            "/los-angeles-metro-area/los-angeles/san-gabriel-valley/grade-a-tools"
         ]
     },
-    "/los-angeles/san-gabriel-valley/el-monte": {
-        id: 11,
-        name: "El Monte",
-        path: "/los-angeles/san-gabriel-valley/el-monte",
-        type: "neighborhood",
-        color: "#a67db5",
-        children: [
-            "/los-angeles/san-gabriel-valley/el-monte/mitchs-mobiles",
-            "/los-angeles/san-gabriel-valley/el-monte/grade-a-tools"
-        ]
-    },
-    "/los-angeles/san-gabriel-valley/el-monte/mitchs-mobiles": {
-        id: 15,
-        name: "Mitch's Mobiles",
-        type: "SMB",
-        industry: "Industry/Field",
-        address: "Address",
-        phone: "Phone",
-        website: "Website"
-    },
-    "/los-angeles/san-gabriel-valley/el-monte/grade-a-tools": {
-        id: 16,
-        name: "GradeA Tools",
-        type: "SMB",
-        industry: "Industry/Field",
-        address: "Address",
-        phone: "Phone",
-        website: "Website"
-    },
-    "/los-angeles/san-gabriel-valley/pasadena": {
-        id: 12,
-        name: "Pasadena",
-        path: "/los-angeles/san-gabriel-valley/pasadena",
-        type: "neighborhood",
-        color: "#a67db5",
-        children: [
-            "/los-angeles/san-gabriel-valley/pasadena/mitchs-mobiles",
-            "/los-angeles/san-gabriel-valley/pasadena/grade-a-tools"
-        ]
-    },
-    "/los-angeles/san-gabriel-valley/pasadena/mitchs-mobiles": {
-        id: 17,
-        name: "Mitch's Mobiles",
-        type: "NP",
-        industry: "Industry/Field",
-        address: "Address",
-        phone: "Phone",
-        website: "Website"
-    },
-    "/los-angeles/san-gabriel-valley/pasadena/grade-a-tools": {
-        id: 18,
-        name: "GradeA Tools",
-        type: "NP",
-        industry: "Industry/Field",
-        address: "Address",
-        phone: "Phone",
-        website: "Website"
-    },
-    "/los-angeles/san-gabriel-valley/south-pasadena": {
+    "/los-angeles-metro-area/los-angeles/san-gabriel-valley/mitchs-mobiles": {
         id: 13,
-        name: "South Pasadena",
-        path: "/los-angeles/san-gabriel-valley/south-pasadena",
-        type: "neighborhood",
-        color: "#a67db5"
-    },
-    "/los-angeles/san-gabriel-valley/san-marino": {
-        id: 14,
-        name: "San Marino",
-        path: "/los-angeles/san-gabriel-valley/san-marino",
-        type: "neighborhood",
-        color: "#a67db5",
-        children: [
-            "/los-angeles/san-gabriel-valley/san-marino/mitchs-mobiles",
-            "/los-angeles/san-gabriel-valley/san-marino/grade-a-tools"
-        ]
-    },
-    "/los-angeles/san-gabriel-valley/san-marino/mitchs-mobiles": {
-        id: 19,
         name: "Mitch's Mobiles",
         type: "SMB",
         industry: "Industry/Field",
@@ -256,10 +200,10 @@ const data = {
         phone: "Phone",
         website: "Website"
     },
-    "/los-angeles/san-gabriel-valley/san-marino/grade-a-tools": {
-        id: 20,
+    "/los-angeles-metro-area/los-angeles/san-gabriel-valley/grade-a-tools": {
+        id: 14,
         name: "GradeA Tools",
-        type: "NP",
+        type: "SMB",
         industry: "Industry/Field",
         address: "Address",
         phone: "Phone",

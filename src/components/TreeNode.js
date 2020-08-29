@@ -5,16 +5,16 @@ const TreeNode = (props) => {
     const { url, name, parent, type, color, childNodes } = props;
 
     const styles = {
-        "county" : "font-straight font-black text-2xl py-3 px-6",
-        "region" : "font-straight font-black text-lg py-2 px-5",
-        "neighborhood" : "flex flex-row justify-between font-straight font-black text-sm py-1 px-4"
+        "area" : "font-straight font-black text-2xl py-3 px-6",
+        "county" : "font-straight font-black text-lg py-2 px-5",
+        "region" : "flex flex-row justify-between font-straight font-black text-sm py-1 px-4"
     };
     
     const opaque = { backgroundColor: `${color}`};
     const transparent = { backgroundColor: `${color}4D`};
 
-    const smbCount = type === "neighborhood" ? childNodes.filter(node => node.type === "SMB").length : null;
-    const npCount = type === "neighborhood" ? childNodes.filter(node => node.type === "NP").length : null;
+    const smbCount = type === "region" ? childNodes.filter(node => node.type === "SMB").length : null;
+    const npCount = type === "region" ? childNodes.filter(node => node.type === "NP").length : null;
 
     const icons = (isActive) => {
         return (
@@ -52,7 +52,7 @@ const TreeNode = (props) => {
                         className={`${styles[type]} ${isActive ? "active" : "inactive"}`} 
                     >
                         <h3>{name}</h3>
-                        {type === "neighborhood" && icons(isActive)}
+                        {type === "region" && icons(isActive)}
                     </Link>
                 )
             }}
