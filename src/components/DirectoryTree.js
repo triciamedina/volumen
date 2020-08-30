@@ -4,6 +4,7 @@ import DirectoryTreeNode from "./DirectoryTreeNode";
 import DirectoryTreeAccordion from "./DirectoryTreeAccordion";
 
 class DirectoryTree extends React.Component {
+    
     // Return tree data matching path params
     getRootNode(type) {
         if (type === "root") return data["/"];
@@ -18,7 +19,7 @@ class DirectoryTree extends React.Component {
     };
 
     render() {
-        const { type } = this.props;
+        const { type, location } = this.props;
 
         const rootNode = this.getRootNode(type);
         const childNodes = this.getChildNodes(rootNode);
@@ -38,8 +39,8 @@ class DirectoryTree extends React.Component {
                         </div>
                     </h2>
         
-                    {smbListings.length ? <DirectoryTreeAccordion listings={smbListings} title="SMB" className="smb" /> : ""}
-                    {npListings.length ? <DirectoryTreeAccordion listings={npListings} title="Non-Profit" className="np" />: ""}
+                    {smbListings.length ? <DirectoryTreeAccordion state={location.state} listings={smbListings} title="SMB" className="smb" /> : ""}
+                    {npListings.length ? <DirectoryTreeAccordion state={location.state} listings={npListings} title="Non-Profit" className="np" />: ""}
                 </div>
                 )
         }
@@ -214,6 +215,7 @@ const data = {
         id: 13,
         name: "Mitch's Mobiles",
         path: "/mitchs-mobiles",
+        browsePath: "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley/mitchs-mobiles",
         type: "SMB",
         industry: "Industry/Field",
         address: "Address",
@@ -223,7 +225,7 @@ const data = {
     "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley/grade-a-tools": {
         id: 14,
         name: "GradeA Tools",
-        path: "/mitchs-mobiles",
+        path: "/grade-a-tools",
         browsePath: "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley/grade-a-tools",
         type: "SMB",
         industry: "Industry/Field",

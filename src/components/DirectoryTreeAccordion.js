@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link } from "@reach/router";
 
 const DirectoryTreeAccordion = (props) => {
-    const { listings, title, className } = props;
+    const { listings, title, className, state } = props;
 
-    const [isOpen, toggleIsOpen] = useState(false);
+    const [isOpen, toggleIsOpen] = useState((state.isOpen && state.isOpen === title) ? true : false);
 
     // Reload state on props change
     useEffect(() => {
-        toggleIsOpen(false);
-    }, [props]);
+        toggleIsOpen((state.isOpen && state.isOpen === title) ? true : false);
+    }, [props, state.isOpen, title]);
 
     return (
         <div className={`DirectoryTreeAccordion ${className} flex flex-col`}>
