@@ -5,6 +5,12 @@ import DirectoryTree from "./DirectoryTree";
 
 const Directory = () => {
     return (
+        <>
+        <div className="flex flex-row justify-end my-6 md:mt-0">
+            <a href="#" className="text-xl font-straight bg-green-600 hover:bg-green-900 text-white font-bold py-1 px-4 rounded w-full md:w-1/4 text-center">
+            Add a Listing
+            </a>
+        </div>
         <div className="Directory flex flex-row border-4 border-gray-900 bg-white">
             {
                 [
@@ -50,6 +56,7 @@ const Directory = () => {
                 ))
             }
         </div>
+        </>
     )
 }
 

@@ -3,6 +3,7 @@ import { Link } from "@reach/router";
 
 const ListingPage = (props) => {
     const { name, browsePath, breadcrumb, shortDesc, type } = props;
+    console.log(browsePath.replace(/\//g, " > "))
 
     return (
         <section className="flex flex-row">

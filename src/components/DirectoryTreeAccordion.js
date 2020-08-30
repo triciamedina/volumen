@@ -20,7 +20,7 @@ const DirectoryTreeAccordion = (props) => {
             >
                 <div className="flex flex-row items-center">
                     <div className={`listing-icon ${className}`}></div> 
-                    <h3 className="font-straight font-black text-xl text-gray-900 py-2">
+                    <h3 className="font-straight font-black text-2xl text-gray-900 py-4">
                         {listings.length} {title}
                     </h3>
                 </div>

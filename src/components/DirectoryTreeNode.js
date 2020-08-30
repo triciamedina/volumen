@@ -5,9 +5,9 @@ const DirectoryTreeNode = (props) => {
     const { url, name, parent, type, color } = props;
 
     const styles = {
-        "area" : "font-straight font-black text-xl py-3 px-6",
-        "county" : "font-straight font-black text-lg py-2 px-5",
-        "region" : "flex flex-row justify-between font-straight font-black text-sm py-1 px-4"
+        "area" : "font-straight font-black text-xl py-2 px-6",
+        "county" : "font-straight font-black text-xl py-3 px-6",
+        "region" : "font-straight font-black text-base py-2 px-5"
     };
     
     const opaque = { backgroundColor: `${color}`};
