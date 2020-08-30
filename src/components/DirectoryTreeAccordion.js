@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "@reach/router";
 
-const Accordion = (props) => {
+const DirectoryTreeAccordion = (props) => {
     const { listings, title, className } = props;
 
     const [isOpen, toggleIsOpen] = useState(false);
@@ -11,7 +12,7 @@ const Accordion = (props) => {
     }, [props]);
 
     return (
-        <div className={`Accordion ${className} flex flex-col`}>
+        <div className={`DirectoryTreeAccordion ${className} flex flex-col`}>
             <button 
                 className={`flex flex-row items-center justify-between border-b-4 border-gray-900 pr-4`}
                 onClick={() => toggleIsOpen(!isOpen)}
@@ -29,9 +30,9 @@ const Accordion = (props) => {
                 {listings.length ? 
                     listings.map(listing => (
                         <div className="py-3 px-5" key={listing.id}>
-                            <p className="font-straight font-black text-xl text-gray-900 ">
+                            <Link to={`/directory${listing.path}`} className="font-straight font-black text-xl text-gray-900">
                                 {listing.name}
-                            </p>
+                            </Link>
                             <p className="text-sm">
                                 {listing.industry}<br />
                                 {listing.address}<br />
@@ -46,4 +47,4 @@ const Accordion = (props) => {
     )
 }
 
-export default Accordion;
+export default DirectoryTreeAccordion;

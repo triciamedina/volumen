@@ -30,26 +30,26 @@
     transition: transform .5s
 
 }
-.Browse {
+.Directory {
     overflow: hidden;
 }
-.Browse .column {
+.Directory .column {
     height: 600px;
     overflow: scroll;
 }
-.TreeView a.inactive{
+.DirectoryTree a.inactive{
     margin-bottom: -4px;
     color: #1a202c4D; 
     border-top: 4px solid #1a202c4D; 
     border-bottom: 4px solid transparent
 }
-.TreeView a.active + a.inactive{
+.DirectoryTree a.active + a.inactive{
     border-top: 4px solid #1a202c;
 }
-.TreeView a:last-of-type{
+.DirectoryTree a:last-of-type{
     border-bottom: 4px solid #1a202c4D; 
 }
-.TreeView a.active{
+.DirectoryTree a.active{
     margin-bottom: -4px;
     color: #1a202c; 
     border-top: 4px solid #1a202c; 
@@ -70,10 +70,10 @@
 .listing-icon.np{
     background-color: #f5abb2;
 }
-.Accordion.smb{
+.DirectoryTreeAccordion.smb{
     background-color: #fff5a7;
 }
-.Accordion.np{
+.DirectoryTreeAccordion.np{
     background-color: #f9bbc0;
 }
 .accordion-panel{

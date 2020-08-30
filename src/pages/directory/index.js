@@ -1,7 +1,12 @@
 import React from "react";
+import { Router } from "@reach/router";
 
 import Layout from "../../components/Layout";
-import Browse from "../../components/Browse";
+import Directory from "../../components/Directory";
+
+const Test = () => {
+  return (<div>Test</div>)
+}
 
 export default class LibraryIndexPage extends React.Component {
   render() {
@@ -12,7 +17,11 @@ export default class LibraryIndexPage extends React.Component {
             <h1 className="lg:text-5xl text-4xl font-straight font-bold text-gray-900">
               Directory
             </h1>
-            <Browse />
+            <Router basepath="/directory">
+              <Directory path="/" />
+              <Directory path="/browse/*" />
+              <Test path="/mitchs-mobiles" />
+            </Router>
           </section>
         </div>
       </Layout>

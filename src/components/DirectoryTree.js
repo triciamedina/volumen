@@ -1,9 +1,9 @@
 import React from "react";
 
-import TreeNode from "../components/TreeNode";
-import Accordion from "../components/Accordion";
+import DirectoryTreeNode from "./DirectoryTreeNode";
+import DirectoryTreeAccordion from "./DirectoryTreeAccordion";
 
-class TreeView extends React.Component {
+class DirectoryTree extends React.Component {
     // Return tree data matching path params
     getRootNode(type) {
         if (type === "root") return data["/"];
@@ -38,18 +38,18 @@ class TreeView extends React.Component {
                         </div>
                     </h2>
         
-                    {smbListings.length ? <Accordion listings={smbListings} title="SMB" className="smb" /> : ""}
-                    {npListings.length ? <Accordion listings={npListings} title="Non-Profit" className="np" />: ""}
+                    {smbListings.length ? <DirectoryTreeAccordion listings={smbListings} title="SMB" className="smb" /> : ""}
+                    {npListings.length ? <DirectoryTreeAccordion listings={npListings} title="Non-Profit" className="np" />: ""}
                 </div>
                 )
         }
 
         return (
-            <div className="TreeView flex flex-col">
+            <div className="DirectoryTree flex flex-col">
                 {childNodes.length 
                     ? childNodes.map(node => {
                         return (
-                            <TreeNode
+                            <DirectoryTreeNode
                                 key={node.id}
                                 url={`/directory${node.path}`}
                                 type={type}
@@ -63,6 +63,8 @@ class TreeView extends React.Component {
         );
     }
 }
+
+export default DirectoryTree;
 
 // Included a sort method for now, but maybe won't need
 const sortAsc = (a, b) => {
@@ -211,6 +213,7 @@ const data = {
     "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley/mitchs-mobiles": {
         id: 13,
         name: "Mitch's Mobiles",
+        path: "/mitchs-mobiles",
         type: "SMB",
         industry: "Industry/Field",
         address: "Address",
@@ -220,6 +223,8 @@ const data = {
     "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley/grade-a-tools": {
         id: 14,
         name: "GradeA Tools",
+        path: "/mitchs-mobiles",
+        browsePath: "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley/grade-a-tools",
         type: "SMB",
         industry: "Industry/Field",
         address: "Address",
@@ -227,5 +232,3 @@ const data = {
         website: "Website"
     },
 };
-
-export default TreeView;

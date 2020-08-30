@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Match } from "@reach/router";
 
-const TreeNode = (props) => {
+const DirectoryTreeNode = (props) => {
     const { url, name, parent, type, color } = props;
 
     const styles = {
@@ -60,4 +60,4 @@ const TreeNode = (props) => {
     );
 }
 
-export default TreeNode;
+export default DirectoryTreeNode;
