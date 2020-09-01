@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "@reach/router";
 
 import DirectoryTreeNode from "./DirectoryTreeNode";
 import DirectoryTreeAccordion from "./DirectoryTreeAccordion";
@@ -18,12 +19,18 @@ class DirectoryTree extends React.Component {
         return node.children.map(path => data[path]).sort(sortAsc);
     };
 
+    getParentPath(type) {
+        if (type === "root") return `/directory`;
+        if (type === "area") return `/directory`;
+        if (type === "county") return `/directory/browse/${this.props.area}`;
+        if (type === "region") return `/directory/browse/${this.props.area}/${this.props.county}`;
+    };
+
     render() {
-        const { type, location, parent } = this.props;
+        const { type, location } = this.props;
 
         const rootNode = this.getRootNode(type);
         const childNodes = this.getChildNodes(rootNode);
-        console.log(parent)
 
         const smbListings = childNodes.filter(node => node.type === "SMB");
         const npListings = childNodes.filter(node => node.type === "NP");
@@ -31,7 +38,12 @@ class DirectoryTree extends React.Component {
         if (type === "region") {
             return (
                 <div className="flex flex-col">
-    
+                    <Link 
+                        to={this.getParentPath(type)}
+                        className="md:hidden inline-block my-4 text-gray-800 font-straight font-medium"
+                    >
+                        Back
+                    </Link>
                     <h2 className="font-straight font-black text-xl text-center py-3 text-gray-900 border-b-4 border-gray-900">
                         {rootNode.name}, CA
                         <div className="-mr-2">
@@ -48,6 +60,12 @@ class DirectoryTree extends React.Component {
 
         return (
             <div className="DirectoryTree flex flex-col">
+                <Link 
+                    to={this.getParentPath(type)}
+                    className="md:hidden inline-block my-4 text-gray-800 font-straight font-medium"
+                >
+                    Back
+                </Link>
                 {childNodes.length 
                     ? childNodes.map(node => {
                         return (

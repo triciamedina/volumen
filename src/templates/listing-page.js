@@ -33,9 +33,15 @@ const ListingPage = (props) => {
                 >
                     Back
                 </Link>
-                <h2 className="font-straight font-black text-2xl text-gray-900">{name}</h2>
-                <p className="text-base mb-12">{getBreadcrumb(browsePath)}</p>
-                <p className="text-base mb-10">{shortDesc}</p>
+                <h2 className="font-straight font-black text-2xl text-gray-900">
+                    {name}
+                </h2>
+                <p className="text-base mb-12">
+                    {getBreadcrumb(browsePath)}
+                </p>
+                <p className="text-base mb-10">
+                    {shortDesc}
+                </p>
             </div>
             <div className="flex-1 bg-gray-200"></div>
         </section>

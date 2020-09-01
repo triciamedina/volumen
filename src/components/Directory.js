@@ -24,22 +24,19 @@ const Directory = () => {
                         title: "Select County",
                         matchExact: `/directory/browse/:area`,
                         routes: ["/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:region"],
-                        type: "area",
-                        parent: "/directory"
+                        type: "area"
                     },
                     {
                         title: "Select Region",
                         matchExact: `/directory/browse/:area/:county`,
                         routes: ["/browse/:area/:county", "/browse/:area/:county/:region/*"],
-                        type: "county",
-                        parent: "/directory/browse/:area"
+                        type: "county"
                     },
                     {
                         title: null,
                         matchExact: `/directory/browse/:area/:county/:region`,
                         routes: ["/browse/:area/:county/:region"],
-                        type: "region",
-                        parent: "/directory/browse/:area/:county"
+                        type: "region"
                     }
                 ].map((column, index) => (
                     <Match key={index} path={column.matchExact}>
@@ -51,7 +48,7 @@ const Directory = () => {
                                     </h2>
                                 }
                                 <Router basepath="/directory">
-                                    {column.routes.map((route, index) => <DirectoryTree key={index} path={route} type={column.type} parent={column.parent}/>)}
+                                    {column.routes.map((route, index) => <DirectoryTree key={index} path={route} type={column.type} />)}
                                 </Router>
                             </div>
                         )}
