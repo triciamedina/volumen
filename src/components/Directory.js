@@ -7,36 +7,39 @@ const Directory = () => {
     return (
         <>
         <div className="flex flex-row justify-end my-6 md:mt-0">
-            <a href="#" className="text-xl font-straight bg-green-600 hover:bg-green-900 text-white font-bold py-1 px-4 rounded w-full md:w-1/4 text-center">
-            Add a Listing
+            <a href="https://www.google.com" className="text-xl font-straight bg-green-600 hover:bg-green-900 text-white font-bold py-1 px-4 rounded w-full md:w-1/4 text-center">
+                Add a Listing
             </a>
         </div>
         <div className="Directory flex flex-row border-4 border-gray-900 bg-white">
             {
                 [
                     {
-                    title: "Select Metropolitan Area",
-                    matchExact: `/directory`,
-                    routes: ["/", "/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:region"],
-                    type: "root"
+                        title: "Select Metropolitan Area",
+                        matchExact: `/directory`,
+                        routes: ["/", "/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:region"],
+                        type: "root"
                     },
                     {
-                    title: "Select County",
-                    matchExact: `/directory/browse/:area`,
-                    routes: ["/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:region"],
-                    type: "area"
+                        title: "Select County",
+                        matchExact: `/directory/browse/:area`,
+                        routes: ["/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:region"],
+                        type: "area",
+                        parent: "/directory"
                     },
                     {
-                    title: "Select Region",
-                    matchExact: `/directory/browse/:area/:county`,
-                    routes: ["/browse/:area/:county", "/browse/:area/:county/:region/*"],
-                    type: "county"
+                        title: "Select Region",
+                        matchExact: `/directory/browse/:area/:county`,
+                        routes: ["/browse/:area/:county", "/browse/:area/:county/:region/*"],
+                        type: "county",
+                        parent: "/directory/browse/:area"
                     },
                     {
-                    title: null,
-                    matchExact: `/directory/browse/:area/:county/:region`,
-                    routes: ["/browse/:area/:county/:region"],
-                    type: "region"
+                        title: null,
+                        matchExact: `/directory/browse/:area/:county/:region`,
+                        routes: ["/browse/:area/:county/:region"],
+                        type: "region",
+                        parent: "/directory/browse/:area/:county"
                     }
                 ].map((column, index) => (
                     <Match key={index} path={column.matchExact}>
@@ -48,7 +51,7 @@ const Directory = () => {
                                     </h2>
                                 }
                                 <Router basepath="/directory">
-                                    {column.routes.map((route, index) => <DirectoryTree key={index} path={route} type={column.type} />)}
+                                    {column.routes.map((route, index) => <DirectoryTree key={index} path={route} type={column.type} parent={column.parent}/>)}
                                 </Router>
                             </div>
                         )}

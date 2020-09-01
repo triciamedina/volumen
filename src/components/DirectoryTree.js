@@ -19,10 +19,11 @@ class DirectoryTree extends React.Component {
     };
 
     render() {
-        const { type, location } = this.props;
+        const { type, location, parent } = this.props;
 
         const rootNode = this.getRootNode(type);
         const childNodes = this.getChildNodes(rootNode);
+        console.log(parent)
 
         const smbListings = childNodes.filter(node => node.type === "SMB");
         const npListings = childNodes.filter(node => node.type === "NP");
@@ -215,22 +216,14 @@ const data = {
         id: 13,
         name: "Mitch's Mobiles",
         path: "/mitchs-mobiles",
-        browsePath: "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley/mitchs-mobiles",
         type: "SMB",
-        industry: "Industry/Field",
-        address: "Address",
-        phone: "Phone",
-        website: "Website"
+        industry: "Industry/Field"
     },
     "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley/grade-a-tools": {
         id: 14,
         name: "GradeA Tools",
         path: "/grade-a-tools",
-        browsePath: "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley/grade-a-tools",
         type: "SMB",
-        industry: "Industry/Field",
-        address: "Address",
-        phone: "Phone",
-        website: "Website"
+        industry: "Industry/Field"
     },
 };

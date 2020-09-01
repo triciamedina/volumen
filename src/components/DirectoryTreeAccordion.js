@@ -34,10 +34,7 @@ const DirectoryTreeAccordion = (props) => {
                                 {listing.name}
                             </Link>
                             <p className="text-sm">
-                                {listing.industry}<br />
-                                {listing.address}<br />
-                                {listing.phone}<br />
-                                {listing.website}<br />
+                                {listing.industry}
                             </p>
                         </div>
                     )) : ""
