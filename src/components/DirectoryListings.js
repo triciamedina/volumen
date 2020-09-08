@@ -1,7 +1,8 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
+import { Link } from "@reach/router";
 
-import DirectoryAccordion from "./DirectoryAccordion";
+import Accordion from "./Accordion";
 
 const DirectoryListings = (props) => {
     const { title, region, data, state } = props;
@@ -11,6 +12,7 @@ const DirectoryListings = (props) => {
 
     const smbListings = listingsByRegion.filter(listing => listing.node.frontmatter.type === "SMB");
     const npListings = listingsByRegion.filter(listing => listing.node.frontmatter.type === "NP");
+    
 
     return (
         <>
@@ -22,8 +24,26 @@ const DirectoryListings = (props) => {
                 </div>
             </h2>
 
-            {smbListings.length ? <DirectoryAccordion state={state} listings={smbListings} title="SMB" className="smb" /> : ""}
-            {npListings.length ? <DirectoryAccordion state={state} listings={npListings} title="Non-Profit" className="np" />: ""}
+            {smbListings.length ? 
+                <Accordion state={state} listingsCount={smbListings.length} title="SMB" className="smb" >
+                    {listings.map(listing => {
+                            const { id, fields: { slug }, frontmatter } = listing.node;
+
+                            return (
+                                <div className="py-3 px-5" key={id}>
+                                    <Link to={slug} className="font-straight font-black text-xl text-gray-900">
+                                        {frontmatter.title}
+                                    </Link>
+                                    <p className="text-sm">
+                                        {frontmatter.industry}
+                                    </p>
+                                </div>
+                            )
+                    })}
+                </Accordion> 
+                : ""
+            }
+            {/* {npListings.length ? <DirectoryAccordion state={state} listings={npListings} title="Non-Profit" className="np" />: ""} */}
         </>
     )
 }
