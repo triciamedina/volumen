@@ -4,8 +4,10 @@ title: Mitch’s Mobiles
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor massa id neque aliquam. Eget arcu dictum varius duis at.
 browsePath: /browse/los-angeles-metro-area/los-angeles/san-gabriel-valley
-location:
+region:
   - san-gabriel-valley
+industry:
+  - Automotive
 type: SMB
 ---
 

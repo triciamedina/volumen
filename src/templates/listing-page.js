@@ -13,7 +13,7 @@ export const ListingPageTemplate = ({
         title,
         description,
         browsePath,
-        location,
+        region,
         type,
         helmet
     }) => {
@@ -76,7 +76,7 @@ const Listing = ({ data }) => {
     <Layout>
       <ListingPageTemplate
         helmet={
-          <Helmet titleTemplate="%s | Library">
+          <Helmet titleTemplate="%s | Directory">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -89,7 +89,7 @@ const Listing = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         browsePath={post.frontmatter.browsePath}
-        location={post.frontmatter.location}
+        region={post.frontmatter.region}
         type={post.frontmatter.type}
       />
     </Layout>
@@ -107,7 +107,7 @@ export const pageQuery = graphql`
         title
         description
         browsePath
-        location
+        region
         type
       }
     }

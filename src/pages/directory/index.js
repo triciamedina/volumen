@@ -3,7 +3,6 @@ import { Router } from "@reach/router";
 
 import Layout from "../../components/Layout";
 import Directory from "../../components/Directory";
-import ListingPage from "../../templates/listing-page";
 
 export default class LibraryIndexPage extends React.Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "@reach/router";
 
-const DirectoryTreeAccordion = (props) => {
+const DirectoryAccordion = (props) => {
     const { listings, title, className, state } = props;
 
     const [isOpen, toggleIsOpen] = useState((state.isOpen && state.isOpen === title) ? true : false);
@@ -28,20 +28,24 @@ const DirectoryTreeAccordion = (props) => {
             </button>
             <div className={`accordion-panel ${isOpen && "open"}`}>
                 {listings.length ? 
-                    listings.map(listing => (
-                        <div className="py-3 px-5" key={listing.id}>
-                            <Link to={`/directory${listing.path}`} className="font-straight font-black text-xl text-gray-900">
-                                {listing.name}
-                            </Link>
-                            <p className="text-sm">
-                                {listing.industry}
-                            </p>
-                        </div>
-                    )) : ""
+                    listings.map(listing => {
+                        const { id, fields: { slug }, frontmatter } = listing.node;
+
+                        return (
+                            <div className="py-3 px-5" key={id}>
+                                <Link to={slug} className="font-straight font-black text-xl text-gray-900">
+                                    {frontmatter.title}
+                                </Link>
+                                <p className="text-sm">
+                                    {frontmatter.industry}
+                                </p>
+                            </div>
+                        )
+                    }) : ""
                 }
             </div>
         </div>
     )
 }
 
-export default DirectoryTreeAccordion;
+export default DirectoryAccordion;
