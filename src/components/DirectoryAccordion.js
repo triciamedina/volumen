@@ -16,7 +16,6 @@ const DirectoryAccordion = (props) => {
             <button 
                 className={`flex flex-row items-center justify-between border-b-4 border-gray-900 pr-4`}
                 onClick={() => toggleIsOpen(!isOpen)}
-                disabled={!listings.length}
             >
                 <div className="flex flex-row items-center">
                     <div className={`listing-icon ${className}`}></div> 
