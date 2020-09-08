@@ -11,8 +11,22 @@ const DirectoryListings = (props) => {
     const listingsByRegion = listings.filter(listing => listing.node.frontmatter.region.includes(region));
 
     const smbListings = listingsByRegion.filter(listing => listing.node.frontmatter.type === "SMB");
-    const npListings = listingsByRegion.filter(listing => listing.node.frontmatter.type === "NP");
+    const npListings = listingsByRegion.filter(listing => listing.node.frontmatter.type === "Non-Profit");
     
+    const accordionContent = (list) => list.map(item => {
+        const { id, fields: { slug }, frontmatter } = item.node;
+
+        return (
+            <div className="py-3 px-5" key={id}>
+                <Link to={slug} className="font-straight font-black text-xl text-gray-900">
+                    {frontmatter.title}
+                </Link>
+                <p className="text-sm">
+                    {frontmatter.industry}
+                </p>
+            </div>
+        )
+    });
 
     return (
         <>
@@ -26,24 +40,16 @@ const DirectoryListings = (props) => {
 
             {smbListings.length ? 
                 <Accordion state={state} listingsCount={smbListings.length} title="SMB" className="smb" >
-                    {listings.map(listing => {
-                            const { id, fields: { slug }, frontmatter } = listing.node;
-
-                            return (
-                                <div className="py-3 px-5" key={id}>
-                                    <Link to={slug} className="font-straight font-black text-xl text-gray-900">
-                                        {frontmatter.title}
-                                    </Link>
-                                    <p className="text-sm">
-                                        {frontmatter.industry}
-                                    </p>
-                                </div>
-                            )
-                    })}
+                    {accordionContent(smbListings)}
                 </Accordion> 
                 : ""
             }
-            {/* {npListings.length ? <DirectoryAccordion state={state} listings={npListings} title="Non-Profit" className="np" />: ""} */}
+            {npListings.length ? 
+                <Accordion state={state} listingsCount={npListings.length} title="Non-Profit" className="np" >
+                    {accordionContent(npListings)}
+                </Accordion>
+                : ""
+            }
         </>
     )
 }
