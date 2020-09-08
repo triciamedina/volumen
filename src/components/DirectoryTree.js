@@ -5,8 +5,6 @@ import DirectoryTreeNode from "./DirectoryTreeNode";
 import DirectoryTreeAccordion from "./DirectoryTreeAccordion";
 
 class DirectoryTree extends React.Component {
-    
-    // Return tree data matching path params
     getRootNode(type) {
         if (type === "root") return data["/"];
         if (type === "area") return data[`/browse/${this.props.area}`];
