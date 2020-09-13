@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet"; // handles html head information in react
 import { graphql } from "gatsby"; // inmort graphql for queries and Link for linking
 import { Link } from "@reach/router";
+import { startCase } from 'lodash';
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
@@ -12,30 +13,12 @@ export const ListingPageTemplate = ({
         contentComponent,
         title,
         description,
-        browsePath,
+        metroArea,
+        county,
         region,
         type,
         helmet
     }) => {
-
-    const getBreadcrumb = (path) => {
-        const str = path.slice(8);
-        let breadCrumb = "";
-
-        for (let i = 0; i < str.length; i++) {
-            if (i === 0 || str[i - 1] === "/" || str[i - 1] === "-") { 
-                breadCrumb += str[i].toUpperCase();
-                continue;
-            }
-
-            breadCrumb += (({
-                "/": " > ",
-                "-": " "
-            })[str[i]] || str[i] );
-        }
-
-        return breadCrumb;
-    };
 
     const PostContent = contentComponent || Content;
 
@@ -44,7 +27,7 @@ export const ListingPageTemplate = ({
             {helmet || ""}
             <div className="flex-1 pr-10">
                 <Link 
-                    to={`/directory${browsePath}`}
+                    to={`/directory/browse/${metroArea}/${county}/${region}`}
                     className="inline-block my-4 border-b-2 border-green-500 text-gray-800 font-straight font-medium"
                     state={{ isOpen: type }}
                 >
@@ -54,7 +37,7 @@ export const ListingPageTemplate = ({
                     {title}
                 </h2>
                 <p className="text-base mb-12">
-                    {getBreadcrumb(browsePath)}
+                    {`${startCase(metroArea[0])} > ${startCase(county[0])} > ${startCase(region[0])}`} 
                 </p>
                 <p className="text-base mb-10">
                     {description}
@@ -88,7 +71,8 @@ const Listing = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        browsePath={post.frontmatter.browsePath}
+        metroArea={post.frontmatter.metroArea}
+        county={post.frontmatter.county}
         region={post.frontmatter.region}
         type={post.frontmatter.type}
       />
@@ -106,7 +90,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        browsePath
+        metroArea
+        county
         region
         type
       }

@@ -3,7 +3,10 @@ templateKey: listing-page
 title: GradeA Tools
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor massa id neque aliquam. Eget arcu dictum varius duis at.
-browsePath: /browse/los-angeles-metro-area/los-angeles/san-gabriel-valley
+metroArea:
+  - los-angeles-metro-area
+county:
+  - los-angeles
 region:
   - san-gabriel-valley
 industry:
