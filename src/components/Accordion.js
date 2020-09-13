@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 const Accordion = (props) => {
-    const { listingsCount, title, className, state, children } = props;
+    const { listingsCount, type, className, state, children } = props;
 
-    const [isOpen, toggleIsOpen] = useState((state.isOpen && state.isOpen === title) ? true : false);
+    const [isOpen, toggleIsOpen] = useState((state.isOpen && state.isOpen === type) ? true : false);
 
     // Reload state on props change
     useEffect(() => {
-        toggleIsOpen((state.isOpen && state.isOpen === title) ? true : false);
-    }, [props, state.isOpen, title]);
+        toggleIsOpen((state.isOpen && state.isOpen === type) ? true : false);
+    }, [props, state.isOpen, type]);
 
     return (
         <div className={`Accordion ${className} flex flex-col`}>
@@ -19,7 +19,7 @@ const Accordion = (props) => {
                 <div className="flex flex-row items-center">
                     <div className={`listing-icon ${className}`}></div> 
                     <h3 className="font-straight font-black text-2xl text-gray-900 py-4">
-                        {listingsCount} {title}
+                        {listingsCount} {type}
                     </h3>
                 </div>
                 <div className={isOpen ? "arrow-down" : "arrow-right"} ></div>

@@ -39,7 +39,11 @@ export default class DirectoryTree extends React.Component {
                     >
                         Back
                     </Link>
-                    <DirectoryListings state={location.state} region={this.props.region} title={rootNode.name} />
+                    <DirectoryListings 
+                        state={location.state} 
+                        region={this.props.region} 
+                        title={rootNode.name} 
+                    />
                 </div>
             )
         }
