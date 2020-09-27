@@ -102,6 +102,15 @@
     
     border-top: 10px solid;
 }
+.ListingPage {
+    @apply flex;
+    @apply flex-row;
+    @apply box-border;
+    max-height: 700px;
+}
+.ListingPage .image-carousel {
+    max-height: 700px;
+}
 
 @import url('./markdown.scss');
 

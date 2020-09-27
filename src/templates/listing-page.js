@@ -1,6 +1,6 @@
 import React from "react";
-import Helmet from "react-helmet"; // handles html head information in react
-import { graphql } from "gatsby"; // inmort graphql for queries and Link for linking
+import Helmet from "react-helmet";
+import { graphql } from "gatsby"; 
 import { Link } from "@reach/router";
 import { startCase } from 'lodash';
 
@@ -17,15 +17,24 @@ export const ListingPageTemplate = ({
         county,
         region,
         type,
-        helmet
+        helmet,
+        industry,
+        streetAddress,
+        city,
+        state,
+        zip,
+        addressLink,
+        tel,
+        website
     }) => {
 
     const PostContent = contentComponent || Content;
+    const mapLink = addressLink || `https://www.google.com/maps/search/?api=1&query=${encodeURI(`${streetAddress} ${city} ${state} ${zip}`)}`;
 
     return (
-        <section className="flex flex-row">
+        <section className="ListingPage max-w-6xl mx-auto">
             {helmet || ""}
-            <div className="flex-1 pr-10">
+            <div className="flex-1 p-6 overflow-scroll">
                 <Link 
                     to={`/directory/browse/${metroArea}/${county}/${region}`}
                     className="inline-block my-4 border-b-2 border-green-500 text-gray-800 font-straight font-medium"
@@ -33,21 +42,41 @@ export const ListingPageTemplate = ({
                 >
                     Back
                 </Link>
-                <h2 className="font-straight font-black text-2xl text-gray-900">
+                <h2 className="font-straight font-black text-4xl text-gray-900">
                     {title}
                 </h2>
-                <p className="text-base mb-12">
+                <p className="text-lg mb-12">
                     {`${startCase(metroArea[0])} > ${startCase(county[0])} > ${startCase(region[0])}`} 
                 </p>
-                <p className="text-base mb-10">
+                <p className="text-lg mb-10 leading-relaxed">
                     {description}
                 </p>
+                <ul className="text-lg mb-12 px-5 list-disc markdown">
+                  <li className="mb-6">
+                    <h3>Industry</h3>
+                    <ul>
+                      {industry.map((category, index) => <li key={index}>{category}</li>)}
+                    </ul>
+                  </li>
+                  <li className="mb-6">
+                    <h3>Address</h3>
+                    <a href={mapLink} target="_blank" rel="noopener noreferrer">{streetAddress}</a>
+                  </li>
+                  <li className="mb-6">
+                    <h3>Phone</h3>
+                    <a href={`tel:${tel}`}>{tel}</a>
+                  </li>
+                  <li className="mb-6">
+                    <h3>Website</h3>
+                    <a href={website} target="_blank" rel="noopener noreferrer">{website}</a>
+                  </li>
+                </ul>
                 <PostContent
-                    className="text-lg pt-4 font-curvy markdown"
+                    className="text-lg leading-relaxed"
                     content={content}
                 />
             </div>
-            <div className="flex-1 bg-gray-200"></div>
+            <div className="image-carousel flex-1 bg-gray-200"></div>
         </section>
     )
 };
@@ -75,6 +104,14 @@ const Listing = ({ data }) => {
         county={post.frontmatter.county}
         region={post.frontmatter.region}
         type={post.frontmatter.type}
+        industry={post.frontmatter.industry}
+        streetAddress={post.frontmatter.streetAddress}
+        city={post.frontmatter.city}
+        state={post.frontmatter.state}
+        zip={post.frontmatter.zip}
+        addressLink={post.frontmatter.addressLink}
+        tel={post.frontmatter.tel}
+        website={post.frontmatter.website}
       />
     </Layout>
   );
@@ -94,6 +131,14 @@ export const pageQuery = graphql`
         county
         region
         type
+        industry
+        streetAddress
+        addressLink
+        city
+        state
+        zip
+        tel
+        website
       }
     }
   }
