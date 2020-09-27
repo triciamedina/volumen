@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, Match } from "@reach/router";
+import arrow from "../../static/img/arrow.svg";
 
 const DirectoryTreeNode = (props) => {
     const { url, name, parent, type, color } = props;
 
     const styles = {
-        "area" : "font-straight font-black text-xl py-2 px-6",
+        "area" : "font-straight font-black text-xl py-2 px-4",
         "county" : "font-straight font-black text-xl py-3 px-6",
         "region" : "font-straight font-black text-base py-2 px-5"
     };
@@ -22,9 +23,10 @@ const DirectoryTreeNode = (props) => {
                     <Link 
                         to={url}
                         style={isActive ? opaque : transparent} 
-                        className={`${styles[type]} ${isActive ? "active" : "inactive"}`} 
+                        className={`${styles[type]} ${isActive ? "active" : "inactive"} flex justify-between`} 
                     >
                         <h3>{name}</h3>
+                        <img src={arrow} className="w-2"></img>
                     </Link>
                 )
             }}
