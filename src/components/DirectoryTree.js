@@ -3,6 +3,7 @@ import { Link } from "@reach/router";
 
 import DirectoryTreeNode from "./DirectoryTreeNode";
 import DirectoryListings from "./DirectoryListings";
+import arrow from "../../static/img/arrow.svg";
 
 export default class DirectoryTree extends React.Component {
     getRootNode(type) {
@@ -35,9 +36,9 @@ export default class DirectoryTree extends React.Component {
                 <div className="flex flex-col">
                     <Link 
                         to={this.getParentPath(type)}
-                        className="md:hidden inline-block my-4 text-gray-800 font-straight font-medium"
+                        className="md:hidden inline-block p-5 text-gray-800 font-straight font-medium transform rotate-180 absolute left-0 top-0"
                     >
-                        Back
+                        <img src={arrow} className="w-2" />
                     </Link>
                     <DirectoryListings 
                         state={location.state} 
@@ -50,12 +51,14 @@ export default class DirectoryTree extends React.Component {
 
         return (
             <div className="DirectoryTree flex flex-col">
-                <Link 
-                    to={this.getParentPath(type)}
-                    className="md:hidden inline-block my-4 text-gray-800 font-straight font-medium"
-                >
-                    Back
-                </Link>
+                {(type !== "root") && (
+                    <Link 
+                        to={this.getParentPath(type)}
+                        className="md:hidden inline-block p-5 text-gray-800 font-straight font-medium transform rotate-180 absolute left-0 top-0"
+                    >
+                        <img src={arrow} className="w-2" />
+                    </Link>
+                )}
                 {childNodes.length 
                     ? childNodes.map((node, index) => {
                         return (

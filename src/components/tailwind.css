@@ -37,25 +37,29 @@
     height: 600px;
     overflow: scroll;
 }
-.DirectoryTree a.inactive{
+.DirectoryCta {
+    display: flex;
+    justify-content: space-between;
+}
+.DirectoryCta.inactive{
     margin-bottom: -4px;
     color: #1a202c4D; 
     border-top: 4px solid #1a202c4D; 
     border-bottom: 4px solid transparent
 }
-.DirectoryTree a.active + a.inactive{
+.DirectoryCta.active + a.inactive{
     border-top: 4px solid #1a202c;
 }
-.DirectoryTree a:last-of-type{
+.DirectoryCta:last-of-type{
     border-bottom: 4px solid #1a202c4D; 
 }
-.DirectoryTree a.active{
+.DirectoryCta.active{
     margin-bottom: -4px;
     color: #1a202c; 
     border-top: 4px solid #1a202c; 
     border-bottom: 4px solid #1a202c;
 }
-.DirectoryTree a.inactive img {
+.DirectoryCta.inactive img {
     opacity: 40%;
 }
 .listing-icon{

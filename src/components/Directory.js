@@ -81,7 +81,7 @@ const Directory = (props) => {
                             ].map((column, index) => (
                                 <Match key={index} path={column.matchExact}>
                                     {props => (
-                                        <div className={`column flex-1 border-gray-900 ${column.type !== "region" && "md:border-r-4"} ${!props.match && "hidden"} md:block`}>
+                                        <div className={`column flex-1 border-gray-900 ${column.type !== "region" && "md:border-r-4"} ${!props.match && "hidden"} md:block relative`}>
                                             {column.title && 
                                                 <h2 className={`font-straight font-black text-xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
                                                     {column.title}
