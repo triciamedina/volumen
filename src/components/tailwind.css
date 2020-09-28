@@ -55,6 +55,9 @@
     border-top: 4px solid #1a202c; 
     border-bottom: 4px solid #1a202c;
 }
+.DirectoryTree a.inactive img {
+    opacity: 40%;
+}
 .listing-icon{
     @apply border-gray-900;
     display: inline-block;
