@@ -33,7 +33,10 @@
 .Directory {
     overflow: hidden;
 }
-.Directory .column {
+.Directory__column-title{
+    border-bottom: 4px solid #1a202c; 
+}
+.DirectoryTree {
     height: 600px;
     overflow: scroll;
 }
@@ -45,7 +48,7 @@
     margin-bottom: -4px;
     color: #1a202c4D; 
     border-top: 4px solid #1a202c4D; 
-    border-bottom: 4px solid transparent
+    border-bottom: 4px solid transparent;
 }
 .DirectoryCta.active + a.inactive{
     border-top: 4px solid #1a202c;
@@ -58,6 +61,9 @@
     color: #1a202c; 
     border-top: 4px solid #1a202c; 
     border-bottom: 4px solid #1a202c;
+}
+.DirectoryTree a:first-child {
+    border-top: none !important; 
 }
 .DirectoryCta.inactive img {
     opacity: 40%;

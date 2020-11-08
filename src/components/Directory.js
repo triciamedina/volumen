@@ -83,7 +83,7 @@ const Directory = (props) => {
                                     {props => (
                                         <div className={`column flex-1 border-gray-900 ${column.type !== "city" && "md:border-r-4"} ${!props.match && "hidden"} md:block relative`}>
                                             {column.title && 
-                                                <h2 className={`font-straight font-black text-xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
+                                                <h2 className={`Directory__column-title font-straight font-black text-xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
                                                     {column.title}
                                                 </h2>
                                             }

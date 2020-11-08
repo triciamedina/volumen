@@ -32,26 +32,8 @@ export default class DirectoryTree extends React.Component {
         const rootNode = this.getRootNode(type);
         const childNodes = this.getChildNodes(rootNode);
   
-        if (type === "city") {
-            return (
-                <div className="flex flex-col">
-                    <Link 
-                        to={this.getParentPath(type)}
-                        className="md:hidden inline-block p-5 text-gray-800 font-straight font-medium transform rotate-180 absolute left-0 top-0"
-                    >
-                        <img src={arrow} className="w-2" />
-                    </Link>
-                    <DirectoryListings 
-                        state={location.state} 
-                        city={this.props.city} 
-                        title={rootNode.name} 
-                    />
-                </div>
-            )
-        }
-
         return (
-            <div className="DirectoryTree flex flex-col">
+            <>
                 {(type !== "root") && (
                     <Link 
                         to={this.getParentPath(type)}
@@ -60,20 +42,28 @@ export default class DirectoryTree extends React.Component {
                         <img src={arrow} className="w-2" />
                     </Link>
                 )}
-                {childNodes.length 
-                    ? childNodes.map((node, index) => {
-                        return (
-                            <DirectoryTreeNode
-                                key={index}
-                                url={`/directory${node.path}`}
-                                type={type}
-                                parent={type === "root" ? "/directory" : `/directory${rootNode.path}`}
-                                {...node}
-                            />
-                        )
-                    }) : ""
-                }
-            </div>
+                <div className="DirectoryTree flex flex-col">
+                    {type === "city"
+                        ? <DirectoryListings 
+                            state={location.state} 
+                            city={this.props.city} 
+                            title={rootNode.name} 
+                        />
+                        : childNodes.length 
+                            ? childNodes.map((node, index) => {
+                                return (
+                                    <DirectoryTreeNode
+                                        key={index}
+                                        url={`/directory${node.path}`}
+                                        type={type}
+                                        parent={type === "root" ? "/directory" : `/directory${rootNode.path}`}
+                                        {...node}
+                                    />
+                                )
+                            }) : ""
+                    }
+                </div>
+            </>
         );
     }
 };
