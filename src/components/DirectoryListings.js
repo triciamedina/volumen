@@ -25,6 +25,7 @@ class DirectoryListings extends React.Component {
 
     render() {
         const { title, city, data, state, context } = this.props;
+        console.log(this.props);
         const { edges: listings } = data.allMarkdownRemark;
     
         const listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(city));

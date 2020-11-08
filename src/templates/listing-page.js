@@ -15,12 +15,11 @@ export const ListingPageTemplate = ({
         description,
         metroArea,
         county,
-        region,
+        city,
         type,
         helmet,
         industry,
         streetAddress,
-        city,
         state,
         zip,
         addressLink,
@@ -36,7 +35,7 @@ export const ListingPageTemplate = ({
             {helmet || ""}
             <div className="flex-1 p-6 overflow-scroll">
                 <Link 
-                    to={`/directory/browse/${metroArea}/${county}/${region}`}
+                    to={`/directory/browse/${metroArea}/${county}/${city}`}
                     className="inline-block my-4 border-b-2 border-green-500 text-gray-800 font-straight font-medium"
                     state={{ isOpen: type }}
                 >
@@ -46,7 +45,7 @@ export const ListingPageTemplate = ({
                     {title}
                 </h2>
                 <p className="text-lg mb-12">
-                    {`${startCase(metroArea[0])} > ${startCase(county[0])} > ${startCase(region[0])}`} 
+                    {`${startCase(metroArea[0])} > ${startCase(county[0])} > ${startCase(city[0])}`} 
                 </p>
                 <p className="text-lg mb-10 leading-relaxed">
                     {description}
@@ -102,11 +101,10 @@ const Listing = ({ data }) => {
         description={post.frontmatter.description}
         metroArea={post.frontmatter.metroArea}
         county={post.frontmatter.county}
-        region={post.frontmatter.region}
+        city={post.frontmatter.city}
         type={post.frontmatter.type}
         industry={post.frontmatter.industry}
         streetAddress={post.frontmatter.streetAddress}
-        city={post.frontmatter.city}
         state={post.frontmatter.state}
         zip={post.frontmatter.zip}
         addressLink={post.frontmatter.addressLink}
@@ -129,12 +127,11 @@ export const pageQuery = graphql`
         description
         metroArea
         county
-        region
+        city
         type
         industry
         streetAddress
         addressLink
-        city
         state
         zip
         tel

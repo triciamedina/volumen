@@ -7,13 +7,12 @@ metroArea:
   - los-angeles-metro-area
 county:
   - los-angeles
-region:
+city:
   - san-gabriel-valley
 industry:
   - Retail
 type: SMB
 streetAddress: 900 E Las Tunas Dr
-city: San Gabriel
 state: CA
 zip: 91776
 tel: 1-234-567-8900

@@ -7,13 +7,12 @@ metroArea:
   - los-angeles-metro-area
 county:
   - los-angeles
-region:
+city:
   - san-gabriel-valley
 industry:
   - Automotive
 type: SMB
 streetAddress: 900 E Las Tunas Dr
-city: San Gabriel
 state: CA
 zip: 91776
 addressLink: https://goo.gl/maps/td6Xv52V5fKpCTKU8
