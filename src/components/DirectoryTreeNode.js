@@ -6,9 +6,9 @@ const DirectoryTreeNode = (props) => {
     const { url, name, parent, type, color } = props;
 
     const styles = {
-        "area" : "font-straight font-black text-xl py-4 px-4",
-        "county" : "font-straight font-black text-xl py-3 px-6",
-        "region" : "font-straight font-black text-base py-2 px-5"
+        "area" : "font-straight font-black text-xl py-4 px-4 pr-6",
+        "county" : "font-straight font-black text-xl py-3 px-6 pr-8",
+        "region" : "font-straight font-black text-base py-2 px-5 pr-6"
     };
     
     const opaque = { backgroundColor: `${color}`};
@@ -25,8 +25,8 @@ const DirectoryTreeNode = (props) => {
                         style={isActive ? opaque : transparent} 
                         className={`DirectoryCta ${styles[type]} ${isActive ? "active" : "inactive"}`} 
                     >
-                        <h3>{name}</h3>
-                        <img src={arrow} className="w-2" />
+                        <h3 className="inline-block">{name}</h3>
+                        <img src={arrow} />
                     </Link>
                 )
             }}

@@ -38,8 +38,8 @@
     overflow: scroll;
 }
 .DirectoryCta {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    position: relative;
 }
 .DirectoryCta.inactive{
     margin-bottom: -4px;
@@ -61,6 +61,12 @@
 }
 .DirectoryCta.inactive img {
     opacity: 40%;
+}
+.DirectoryCta img {
+    position: absolute;
+    top: 50%; right: 15px;
+    transform: translate(0, -50%);
+    @apply w-2;
 }
 .listing-icon{
     @apply border-gray-900;
