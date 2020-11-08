@@ -57,31 +57,31 @@ const Directory = (props) => {
                                 {
                                     title: "Select Metropolitan Area",
                                     matchExact: `/directory`,
-                                    routes: ["/", "/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:region"],
+                                    routes: ["/", "/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:city"],
                                     type: "root"
                                 },
                                 {
                                     title: "Select County",
                                     matchExact: `/directory/browse/:area`,
-                                    routes: ["/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:region"],
+                                    routes: ["/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:city"],
                                     type: "area"
                                 },
                                 {
-                                    title: "Select Region",
+                                    title: "Select City",
                                     matchExact: `/directory/browse/:area/:county`,
-                                    routes: ["/browse/:area/:county", "/browse/:area/:county/:region/*"],
+                                    routes: ["/browse/:area/:county", "/browse/:area/:county/:city/*"],
                                     type: "county"
                                 },
                                 {
                                     title: null,
-                                    matchExact: `/directory/browse/:area/:county/:region`,
-                                    routes: ["/browse/:area/:county/:region"],
-                                    type: "region"
+                                    matchExact: `/directory/browse/:area/:county/:city`,
+                                    routes: ["/browse/:area/:county/:city"],
+                                    type: "city"
                                 }
                             ].map((column, index) => (
                                 <Match key={index} path={column.matchExact}>
                                     {props => (
-                                        <div className={`column flex-1 border-gray-900 ${column.type !== "region" && "md:border-r-4"} ${!props.match && "hidden"} md:block relative`}>
+                                        <div className={`column flex-1 border-gray-900 ${column.type !== "city" && "md:border-r-4"} ${!props.match && "hidden"} md:block relative`}>
                                             {column.title && 
                                                 <h2 className={`font-straight font-black text-xl text-center py-3 ${props.match ? "text-gray-900": "text-gray-400"}`}>
                                                     {column.title}

@@ -24,11 +24,11 @@ class DirectoryListings extends React.Component {
     }
 
     render() {
-        const { title, region, data, state, context } = this.props;
+        const { title, city, data, state, context } = this.props;
         const { edges: listings } = data.allMarkdownRemark;
     
-        const listingsByRegion = listings.filter(listing => listing.node.frontmatter.region.includes(region));
-        const listingsByIndustry = (context.industry && !!context.industry.length) ? listingsByRegion.filter(listing => listing.node.frontmatter.industry.includes(context.industry)) : listingsByRegion;
+        const listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(city));
+        const listingsByIndustry = (context.industry && !!context.industry.length) ? listingsByCity.filter(listing => listing.node.frontmatter.industry.includes(context.industry)) : listingsByCity;
     
         const smbListings = listingsByIndustry.filter(listing => listing.node.frontmatter.type === "SMB");
         const npListings = listingsByIndustry.filter(listing => listing.node.frontmatter.type === "Non-Profit");
@@ -98,7 +98,7 @@ export default (props) => {
                                 description
                                 title
                                 templateKey
-                                region
+                                city
                                 type
                                 industry
                             }

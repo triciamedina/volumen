@@ -8,7 +8,7 @@ const DirectoryTreeNode = (props) => {
     const styles = {
         "area" : "font-straight font-black text-xl py-4 px-4 pr-6",
         "county" : "font-straight font-black text-xl py-3 px-6 pr-8",
-        "region" : "font-straight font-black text-base py-2 px-5 pr-6"
+        "city" : "font-straight font-black text-base py-2 px-5 pr-6"
     };
     
     const opaque = { backgroundColor: `${color}`};

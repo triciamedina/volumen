@@ -10,7 +10,7 @@ export default class DirectoryTree extends React.Component {
         if (type === "root") return treeData["/"];
         if (type === "area") return treeData[`/browse/${this.props.area}`];
         if (type === "county") return treeData[`/browse/${this.props.area}/${this.props.county}`];
-        if (type === "region") return treeData[`/browse/${this.props.area}/${this.props.county}/${this.props.region}`];
+        if (type === "city") return treeData[`/browse/${this.props.area}/${this.props.county}/${this.props.city}`];
     };
 
     getChildNodes(node) {
@@ -22,7 +22,7 @@ export default class DirectoryTree extends React.Component {
         if (type === "root") return `/directory`;
         if (type === "area") return `/directory`;
         if (type === "county") return `/directory/browse/${this.props.area}`;
-        if (type === "region") return `/directory/browse/${this.props.area}/${this.props.county}`;
+        if (type === "city") return `/directory/browse/${this.props.area}/${this.props.county}`;
     };
 
     render() {
@@ -31,7 +31,7 @@ export default class DirectoryTree extends React.Component {
         const rootNode = this.getRootNode(type);
         const childNodes = this.getChildNodes(rootNode);
   
-        if (type === "region") {
+        if (type === "city") {
             return (
                 <div className="flex flex-col">
                     <Link 
@@ -42,7 +42,7 @@ export default class DirectoryTree extends React.Component {
                     </Link>
                     <DirectoryListings 
                         state={location.state} 
-                        region={this.props.region} 
+                        city={this.props.city} 
                         title={rootNode.name} 
                     />
                 </div>
@@ -180,25 +180,25 @@ const treeData = {
     "/browse/los-angeles-metro-area/los-angeles/central-los-angeles": {
         name: "Central Los Angeles",
         path: "/browse/los-angeles-metro-area/los-angeles/central-los-angeles",
-        type: "region",
+        type: "city",
         color: "#d1ecf1"
     },
     "/browse/los-angeles-metro-area/los-angeles/santa-monica-mountains": {
         name: "Santa Monica Mountains",
         path: "/browse/los-angeles-metro-area/los-angeles/santa-monica-mountains",
-        type: "region",
+        type: "city",
         color: "#e87859"
     },
     "/browse/los-angeles-metro-area/los-angeles/san-fernando-valley": {
         name: "San Fernando Valley",
         path: "/browse/los-angeles-metro-area/los-angeles/san-fernando-valley",
-        type: "region",
+        type: "city",
         color: "#e2555a"
     },
     "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley": {
         name: "San Gabriel Valley",
         path: "/browse/los-angeles-metro-area/los-angeles/san-gabriel-valley",
-        type: "region",
+        type: "city",
         color: "#a67db5"
     }
 };
