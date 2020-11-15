@@ -3,12 +3,12 @@ templateKey: listing-page
 title: Mitch’s Mobiles
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor massa id neque aliquam. Eget arcu dictum varius duis at.
-metroArea:
+region:
   - los-angeles-metro-area
 county:
   - los-angeles
 city:
-  - san-gabriel-valley
+  - san-gabriel
 industry:
   - Automotive
 type: SMB

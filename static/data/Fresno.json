@@ -1,0 +1,115 @@
+{
+    "/browse/san-joaquin-valley/fresno": {
+        "name": "Fresno",
+        "path": "/browse/san-joaquin-valley/fresno",
+        "type": "county",
+        "color": "#ede280",
+        "children": [
+            "/browse/san-joaquin-valley/fresno/clovis",
+            "/browse/san-joaquin-valley/fresno/coalinga",
+            "/browse/san-joaquin-valley/fresno/firebaugh",
+            "/browse/san-joaquin-valley/fresno/fowler",
+            "/browse/san-joaquin-valley/fresno/fresno",
+            "/browse/san-joaquin-valley/fresno/huron",
+            "/browse/san-joaquin-valley/fresno/kerman",
+            "/browse/san-joaquin-valley/fresno/kingsburg",
+            "/browse/san-joaquin-valley/fresno/mendota",
+            "/browse/san-joaquin-valley/fresno/orange-cove",
+            "/browse/san-joaquin-valley/fresno/parlier",
+            "/browse/san-joaquin-valley/fresno/reedley",
+            "/browse/san-joaquin-valley/fresno/sanger",
+            "/browse/san-joaquin-valley/fresno/san-joaquin",
+            "/browse/san-joaquin-valley/fresno/selma"
+        ]
+    },
+    "/browse/san-joaquin-valley/fresno/clovis": {
+        "name": "Clovis",
+        "path": "/browse/san-joaquin-valley/fresno/clovis",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/coalinga": {
+        "name": "Coalinga",
+        "path": "/browse/san-joaquin-valley/fresno/coalinga",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/firebaugh": {
+        "name": "Firebaugh",
+        "path": "/browse/san-joaquin-valley/fresno/firebaugh",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/fowler": {
+        "name": "Fowler",
+        "path": "/browse/san-joaquin-valley/fresno/fowler",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/fresno": {
+        "name": "Fresno",
+        "path": "/browse/san-joaquin-valley/fresno/fresno",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/huron": {
+        "name": "Huron",
+        "path": "/browse/san-joaquin-valley/fresno/huron",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/kerman": {
+        "name": "Kerman",
+        "path": "/browse/san-joaquin-valley/fresno/kerman",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/kingsburg": {
+        "name": "Kingsburg",
+        "path": "/browse/san-joaquin-valley/fresno/kingsburg",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/mendota": {
+        "name": "Mendota",
+        "path": "/browse/san-joaquin-valley/fresno/mendota",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/orange-cove": {
+        "name": "Orange Cove",
+        "path": "/browse/san-joaquin-valley/fresno/orange-cove",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/parlier": {
+        "name": "Parlier",
+        "path": "/browse/san-joaquin-valley/fresno/parlier",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/reedley": {
+        "name": "Reedley",
+        "path": "/browse/san-joaquin-valley/fresno/reedley",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/sanger": {
+        "name": "Sanger",
+        "path": "/browse/san-joaquin-valley/fresno/sanger",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/san-joaquin": {
+        "name": "San Joaquin",
+        "path": "/browse/san-joaquin-valley/fresno/san-joaquin",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/san-joaquin-valley/fresno/selma": {
+        "name": "Selma",
+        "path": "/browse/san-joaquin-valley/fresno/selma",
+        "type": "city",
+        "color": "#ede280"
+    }
+}

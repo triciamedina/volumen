@@ -1,0 +1,59 @@
+{
+    "/browse/central-coast/santa-barbara": {
+        "name": "Santa Barbara",
+        "path": "/browse/central-coast/santa-barbara",
+        "type": "county",
+        "color": "#74a8db",
+        "children": [
+            "/browse/central-coast/santa-barbara/santa-maria",
+            "/browse/central-coast/santa-barbara/lompoc",
+            "/browse/central-coast/santa-barbara/goleta",
+            "/browse/central-coast/santa-barbara/carpinteria",
+            "/browse/central-coast/santa-barbara/guadalupe",
+            "/browse/central-coast/santa-barbara/solvang",
+            "/browse/central-coast/santa-barbara/buellton"
+        ]
+    },
+    "/browse/central-coast/santa-barbara/santa-maria": {
+        "name": "Santa Maria",
+        "path": "/browse/central-coast/santa-barbara/santa-maria",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/central-coast/santa-barbara/lompoc": {
+        "name": "Lompoc",
+        "path": "/browse/central-coast/santa-barbara/lompoc",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/central-coast/santa-barbara/goleta": {
+        "name": "Goleta",
+        "path": "/browse/central-coast/santa-barbara/goleta",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/central-coast/santa-barbara/carpinteria": {
+        "name": "Carpinteria",
+        "path": "/browse/central-coast/santa-barbara/carpinteria",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/central-coast/santa-barbara/guadalupe": {
+        "name": "Guadalupe",
+        "path": "/browse/central-coast/santa-barbara/guadalupe",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/central-coast/santa-barbara/solvang": {
+        "name": "Solvang",
+        "path": "/browse/central-coast/santa-barbara/solvang",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/central-coast/santa-barbara/buellton": {
+        "name": "Buellton",
+        "path": "/browse/central-coast/santa-barbara/buellton",
+        "type": "city",
+        "color": "#74a8db"
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "/browse/san-joaquin-valley/tulare": {
+        "name": "Tulare",
+        "path": "/browse/san-joaquin-valley/tulare",
+        "type": "county",
+        "color": "#a67db5",
+        "children": [
+            "/browse/san-joaquin-valley/tulare/dinuba",
+            "/browse/san-joaquin-valley/tulare/exeter",
+            "/browse/san-joaquin-valley/tulare/farmersville",
+            "/browse/san-joaquin-valley/tulare/lindsay",
+            "/browse/san-joaquin-valley/tulare/porterville",
+            "/browse/san-joaquin-valley/tulare/tulare",
+            "/browse/san-joaquin-valley/tulare/visalia",
+            "/browse/san-joaquin-valley/tulare/woodlake"
+        ]
+    },
+    "/browse/san-joaquin-valley/tulare/dinuba": {
+        "name": "Dinuba",
+        "path": "/browse/san-joaquin-valley/tulare/dinuba",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/san-joaquin-valley/tulare/exeter": {
+        "name": "Exeter",
+        "path": "/browse/san-joaquin-valley/tulare/exeter",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/san-joaquin-valley/tulare/farmersville": {
+        "name": "Farmersville",
+        "path": "/browse/san-joaquin-valley/tulare/farmersville",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/san-joaquin-valley/tulare/lindsay": {
+        "name": "Lindsay",
+        "path": "/browse/san-joaquin-valley/tulare/lindsay",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/san-joaquin-valley/tulare/porterville": {
+        "name": "Porterville",
+        "path": "/browse/san-joaquin-valley/tulare/porterville",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/san-joaquin-valley/tulare/tulare": {
+        "name": "Tulare",
+        "path": "/browse/san-joaquin-valley/tulare/tulare",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/san-joaquin-valley/tulare/visalia": {
+        "name": "Visalia",
+        "path": "/browse/san-joaquin-valley/tulare/visalia",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/san-joaquin-valley/tulare/woodlake": {
+        "name": "Woodlake",
+        "path": "/browse/san-joaquin-valley/tulare/woodlake",
+        "type": "city",
+        "color": "#a67db5"
+    }
+}

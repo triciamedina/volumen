@@ -1,0 +1,24 @@
+{
+    "/browse/central-coast/san-benito": {
+        "name": "San Benito",
+        "path": "/browse/central-coast/san-benito",
+        "type": "county",
+        "color": "#f09657",
+        "children": [
+            "/browse/central-coast/san-benito/hollister",
+            "/browse/central-coast/san-benito/san-juan-bautista"
+        ]
+    },
+    "/browse/central-coast/san-benito/hollister": {
+        "name": "Hollister",
+        "path": "/browse/central-coast/san-benito/hollister",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/central-coast/san-benito/san-juan-bautista": {
+        "name": "San Juan Bautista",
+        "path": "/browse/central-coast/san-benito/san-juan-bautista",
+        "type": "city",
+        "color": "#f09657"
+    }
+}

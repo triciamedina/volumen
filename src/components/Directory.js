@@ -55,27 +55,27 @@ const Directory = (props) => {
                         {
                             [
                                 {
-                                    title: "Select Metropolitan Area",
+                                    title: "Select Region",
                                     matchExact: `/directory`,
-                                    routes: ["/", "/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:city"],
+                                    routes: ["/", "/browse/:region", "/browse/:region/:county", "/browse/:region/:county/:city"],
                                     type: "root"
                                 },
                                 {
                                     title: "Select County",
-                                    matchExact: `/directory/browse/:area`,
-                                    routes: ["/browse/:area", "/browse/:area/:county", "/browse/:area/:county/:city"],
-                                    type: "area"
+                                    matchExact: `/directory/browse/:region`,
+                                    routes: ["/browse/:region", "/browse/:region/:county", "/browse/:region/:county/:city"],
+                                    type: "region"
                                 },
                                 {
                                     title: "Select City",
-                                    matchExact: `/directory/browse/:area/:county`,
-                                    routes: ["/browse/:area/:county", "/browse/:area/:county/:city/*"],
+                                    matchExact: `/directory/browse/:region/:county`,
+                                    routes: ["/browse/:region/:county", "/browse/:region/:county/:city/*"],
                                     type: "county"
                                 },
                                 {
                                     title: null,
-                                    matchExact: `/directory/browse/:area/:county/:city`,
-                                    routes: ["/browse/:area/:county/:city"],
+                                    matchExact: `/directory/browse/:region/:county/:city`,
+                                    routes: ["/browse/:region/:county/:city"],
                                     type: "city"
                                 }
                             ].map((column, index) => (

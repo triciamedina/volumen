@@ -1,0 +1,52 @@
+{
+    "/browse/san-joaquin-valley/merced": {
+        "name": "Merced",
+        "path": "/browse/san-joaquin-valley/merced",
+        "type": "county",
+        "color": "#8fc162",
+        "children": [
+            "/browse/san-joaquin-valley/merced/atwater",
+            "/browse/san-joaquin-valley/merced/dos-palos",
+            "/browse/san-joaquin-valley/merced/gustine",
+            "/browse/san-joaquin-valley/merced/livingston",
+            "/browse/san-joaquin-valley/merced/los-banos",
+            "/browse/san-joaquin-valley/merced/merced"
+        ]
+    },
+    "/browse/san-joaquin-valley/merced/atwater": {
+        "name": "Atwater",
+        "path": "/browse/san-joaquin-valley/merced/atwater",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/san-joaquin-valley/merced/dos-palos": {
+        "name": "Dos Palos",
+        "path": "/browse/san-joaquin-valley/merced/dos-palos",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/san-joaquin-valley/merced/gustine": {
+        "name": "Gustine",
+        "path": "/browse/san-joaquin-valley/merced/gustine",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/san-joaquin-valley/merced/livingston": {
+        "name": "Livingston",
+        "path": "/browse/san-joaquin-valley/merced/livingston",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/san-joaquin-valley/merced/los-banos": {
+        "name": "Los Banos",
+        "path": "/browse/san-joaquin-valley/merced/los-banos",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/san-joaquin-valley/merced/merced": {
+        "name": "Merced",
+        "path": "/browse/san-joaquin-valley/merced/merced",
+        "type": "city",
+        "color": "#8fc162"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "/browse/central-coast/san-luis-obispo": {
+        "name": "San Luis Obispo",
+        "path": "/browse/central-coast/san-luis-obispo",
+        "type": "county",
+        "color": "#e25d61",
+        "children": [
+            "/browse/central-coast/san-luis-obispo/san-luis-obispo",
+            "/browse/central-coast/san-luis-obispo/paso-robles",
+            "/browse/central-coast/san-luis-obispo/atascadero",
+            "/browse/central-coast/san-luis-obispo/arroyo-grande",
+            "/browse/central-coast/san-luis-obispo/grover-beach",
+            "/browse/central-coast/san-luis-obispo/morro-bay",
+            "/browse/central-coast/san-luis-obispo/pismo-beach"
+        ]
+    },
+    "/browse/central-coast/san-luis-obispo/san-luis-obispo": {
+        "name": "San Luis Obispo",
+        "path": "/browse/central-coast/san-luis-obispo/san-luis-obispo",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/central-coast/san-luis-obispo/paso-robles": {
+        "name": "Paso Robles",
+        "path": "/browse/central-coast/san-luis-obispo/paso-robles",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/central-coast/san-luis-obispo/atascadero": {
+        "name": "Atascadero",
+        "path": "/browse/central-coast/san-luis-obispo/atascadero",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/central-coast/san-luis-obispo/arroyo-grande": {
+        "name": "Arroyo Grande",
+        "path": "/browse/central-coast/san-luis-obispo/arroyo-grande",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/central-coast/san-luis-obispo/grover-beach": {
+        "name": "Grover Beach",
+        "path": "/browse/central-coast/san-luis-obispo/grover-beach",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/central-coast/san-luis-obispo/morro-bay": {
+        "name": "Morro Bay",
+        "path": "/browse/central-coast/san-luis-obispo/morro-bay",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/central-coast/san-luis-obispo/pismo-beach": {
+        "name": "Pismo Beach",
+        "path": "/browse/central-coast/san-luis-obispo/pismo-beach",
+        "type": "city",
+        "color": "#e25d61"
+    }
+}

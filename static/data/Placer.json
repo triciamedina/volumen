@@ -1,0 +1,52 @@
+{
+    "/browse/sacramento-valley/placer": {
+        "name": "Placer",
+        "path": "/browse/sacramento-valley/placer",
+        "type": "county",
+        "color": "#74a8db",
+        "children": [
+            "/browse/sacramento-valley/placer/auburn",
+            "/browse/sacramento-valley/placer/colfax",
+            "/browse/sacramento-valley/placer/lincoln",
+            "/browse/sacramento-valley/placer/loomis",
+            "/browse/sacramento-valley/placer/rocklin",
+            "/browse/sacramento-valley/placer/roseville"
+        ]
+    },
+    "/browse/sacramento-valley/placer/auburn": {
+        "name": "Auburn",
+        "path": "/browse/sacramento-valley/placer/auburn",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/sacramento-valley/placer/colfax": {
+        "name": "Colfax",
+        "path": "/browse/sacramento-valley/placer/colfax",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/sacramento-valley/placer/lincoln": {
+        "name": "Lincoln",
+        "path": "/browse/sacramento-valley/placer/lincoln",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/sacramento-valley/placer/loomis": {
+        "name": "Loomis",
+        "path": "/browse/sacramento-valley/placer/loomis",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/sacramento-valley/placer/rocklin": {
+        "name": "Rocklin",
+        "path": "/browse/sacramento-valley/placer/rocklin",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/sacramento-valley/placer/roseville": {
+        "name": "Roseville",
+        "path": "/browse/sacramento-valley/placer/roseville",
+        "type": "city",
+        "color": "#74a8db"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "/browse/sacramento-valley/solano": {
+        "name": "Solano",
+        "path": "/browse/sacramento-valley/solano",
+        "type": "county",
+        "color": "#e87859",
+        "children": [
+            "/browse/sacramento-valley/solano/benicia",
+            "/browse/sacramento-valley/solano/dixon",
+            "/browse/sacramento-valley/solano/fairfield",
+            "/browse/sacramento-valley/solano/rio-vista",
+            "/browse/sacramento-valley/solano/suisun-city",
+            "/browse/sacramento-valley/solano/vacaville",
+            "/browse/sacramento-valley/solano/vallejo"
+        ]
+    },
+    "/browse/sacramento-valley/solano/benicia": {
+        "name": "Benicia",
+        "path": "/browse/sacramento-valley/solano/benicia",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/sacramento-valley/solano/dixon": {
+        "name": "Dixon",
+        "path": "/browse/sacramento-valley/solano/dixon",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/sacramento-valley/solano/fairfield": {
+        "name": "Fairfield",
+        "path": "/browse/sacramento-valley/solano/fairfield",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/sacramento-valley/solano/rio-vista": {
+        "name": "Rio Vista",
+        "path": "/browse/sacramento-valley/solano/rio-vista",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/sacramento-valley/solano/suisun-city": {
+        "name": "Suisun City",
+        "path": "/browse/sacramento-valley/solano/suisun-city",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/sacramento-valley/solano/vacaville": {
+        "name": "Vacaville",
+        "path": "/browse/sacramento-valley/solano/vacaville",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/sacramento-valley/solano/vallejo": {
+        "name": "Vallejo",
+        "path": "/browse/sacramento-valley/solano/vallejo",
+        "type": "city",
+        "color": "#e87859"
+    }
+}

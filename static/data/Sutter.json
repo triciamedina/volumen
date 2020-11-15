@@ -1,0 +1,24 @@
+{
+    "/browse/sacramento-valley/sutter": {
+        "name": "Sutter",
+        "path": "/browse/sacramento-valley/sutter",
+        "type": "county",
+        "color": "#a67db5",
+        "children": [
+            "/browse/sacramento-valley/sutter/live-oak",
+            "/browse/sacramento-valley/sutter/yuba-city"
+        ]
+    },
+    "/browse/sacramento-valley/sutter/live-oak": {
+        "name": "Live Oak",
+        "path": "/browse/sacramento-valley/sutter/live-oak",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/sacramento-valley/sutter/yuba-city": {
+        "name": "Yuba City",
+        "path": "/browse/sacramento-valley/sutter/yuba-city",
+        "type": "city",
+        "color": "#a67db5"
+    }
+}

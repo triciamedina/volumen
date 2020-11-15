@@ -1,0 +1,24 @@
+{
+    "/browse/sacramento-valley/glenn": {
+        "name": "Glenn",
+        "path": "/browse/sacramento-valley/glenn",
+        "type": "county",
+        "color": "#e25d61",
+        "children": [
+            "/browse/sacramento-valley/glenn/orland",
+            "/browse/sacramento-valley/glenn/willows"
+        ]
+    },
+    "/browse/sacramento-valley/glenn/orland": {
+        "name": "Orland",
+        "path": "/browse/sacramento-valley/glenn/orland",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/sacramento-valley/glenn/willows": {
+        "name": "Willows",
+        "path": "/browse/sacramento-valley/glenn/willows",
+        "type": "city",
+        "color": "#e25d61"
+    }
+}

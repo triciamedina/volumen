@@ -1,0 +1,38 @@
+{
+    "/browse/central-coast/santa-cruz": {
+        "name": "Santa Cruz",
+        "path": "/browse/central-coast/santa-cruz",
+        "type": "county",
+        "color": "#8fc162",
+        "children": [
+            "/browse/central-coast/santa-cruz/capitola",
+            "/browse/central-coast/santa-cruz/santa-cruz",
+            "/browse/central-coast/santa-cruz/scotts-valley",
+            "/browse/central-coast/santa-cruz/watsonville"
+        ]
+    },
+    "/browse/central-coast/santa-cruz/capitola": {
+        "name": "Capitola",
+        "path": "/browse/central-coast/santa-cruz/capitola",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/central-coast/santa-cruz/santa-cruz": {
+        "name": "Santa Cruz",
+        "path": "/browse/central-coast/santa-cruz/santa-cruz",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/central-coast/santa-cruz/scotts-valley": {
+        "name": "Scotts Valley",
+        "path": "/browse/central-coast/santa-cruz/scotts-valley",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/central-coast/santa-cruz/watsonville": {
+        "name": "Watsonville",
+        "path": "/browse/central-coast/santa-cruz/watsonville",
+        "type": "city",
+        "color": "#8fc162"
+    }
+}

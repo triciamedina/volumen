@@ -1,0 +1,38 @@
+{
+    "/browse/sacramento-valley/yolo": {
+        "name": "Yolo",
+        "path": "/browse/sacramento-valley/yolo",
+        "type": "county",
+        "color": "#f09657",
+        "children": [
+            "/browse/sacramento-valley/yolo/davis",
+            "/browse/sacramento-valley/yolo/west-sacramento",
+            "/browse/sacramento-valley/yolo/winters",
+            "/browse/sacramento-valley/yolo/woodland"
+        ]
+    },
+    "/browse/sacramento-valley/yolo/davis": {
+        "name": "Davis",
+        "path": "/browse/sacramento-valley/yolo/davis",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/sacramento-valley/yolo/west-sacramento": {
+        "name": "West Sacramento",
+        "path": "/browse/sacramento-valley/yolo/west-sacramento",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/sacramento-valley/yolo/winters": {
+        "name": "Winters",
+        "path": "/browse/sacramento-valley/yolo/winters",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/sacramento-valley/yolo/woodland": {
+        "name": "Woodland",
+        "path": "/browse/sacramento-valley/yolo/woodland",
+        "type": "city",
+        "color": "#f09657"
+    }
+}

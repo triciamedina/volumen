@@ -1,0 +1,136 @@
+{
+    "/browse/southern-california/san-diego": {
+        "name": "San Diego",
+        "path": "/browse/southern-california/san-diego",
+        "type": "county",
+        "color": "#d1ecf1",
+        "children": [
+            "/browse/southern-california/san-diego/carlsbad",
+            "/browse/southern-california/san-diego/chula-vista",
+            "/browse/southern-california/san-diego/coronado",
+            "/browse/southern-california/san-diego/del-mar",
+            "/browse/southern-california/san-diego/el-cajon",
+            "/browse/southern-california/san-diego/encinitas",
+            "/browse/southern-california/san-diego/escondido",
+            "/browse/southern-california/san-diego/imperial-beach",
+            "/browse/southern-california/san-diego/la-mesa",
+            "/browse/southern-california/san-diego/lemon-grove",
+            "/browse/southern-california/san-diego/national-city",
+            "/browse/southern-california/san-diego/oceanside",
+            "/browse/southern-california/san-diego/poway",
+            "/browse/southern-california/san-diego/san-diego",
+            "/browse/southern-california/san-diego/san-marcos",
+            "/browse/southern-california/san-diego/santee",
+            "/browse/southern-california/san-diego/solana-beach",
+            "/browse/southern-california/san-diego/vista"
+        ]
+    },
+    "/browse/southern-california/san-diego/carlsbad": {
+        "name": "Carlsbad",
+        "path": "/browse/southern-california/san-diego/carlsbad",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/chula-vista": {
+        "name": "Chula Vista",
+        "path": "/browse/southern-california/san-diego/chula-vista",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/coronado": {
+        "name": "Coronado",
+        "path": "/browse/southern-california/san-diego/coronado",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/del-mar": {
+        "name": "Del Mar",
+        "path": "/browse/southern-california/san-diego/del-mar",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/el-cajon": {
+        "name": "El Cajon",
+        "path": "/browse/southern-california/san-diego/el-cajon",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/encinitas": {
+        "name": "Encinitas",
+        "path": "/browse/southern-california/san-diego/encinitas",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/escondido": {
+        "name": "Escondido",
+        "path": "/browse/southern-california/san-diego/escondido",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/imperial-beach": {
+        "name": "Imperial Beach",
+        "path": "/browse/southern-california/san-diego/imperial-beach",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/la-mesa": {
+        "name": "La Mesa",
+        "path": "/browse/southern-california/san-diego/la-mesa",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/lemon-grove": {
+        "name": "Lemon Grove",
+        "path": "/browse/southern-california/san-diego/lemon-grove",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/national-city": {
+        "name": "National City",
+        "path": "/browse/southern-california/san-diego/national-city",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/oceanside": {
+        "name": "Oceanside",
+        "path": "/browse/southern-california/san-diego/oceanside",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/poway": {
+        "name": "Poway",
+        "path": "/browse/southern-california/san-diego/poway",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/san-diego": {
+        "name": "San Diego",
+        "path": "/browse/southern-california/san-diego/san-diego",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/san-marcos": {
+        "name": "San Marcos",
+        "path": "/browse/southern-california/san-diego/san-marcos",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/santee": {
+        "name": "Santee",
+        "path": "/browse/southern-california/san-diego/santee",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/solana-beach": {
+        "name": "Solana Beach",
+        "path": "/browse/southern-california/san-diego/solana-beach",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/southern-california/san-diego/vista": {
+        "name": "Vista",
+        "path": "/browse/southern-california/san-diego/vista",
+        "type": "city",
+        "color": "#d1ecf1"
+    }
+}

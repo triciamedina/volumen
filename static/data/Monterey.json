@@ -1,0 +1,94 @@
+{
+    "/browse/central-coast/monterey": {
+        "name": "Monterey",
+        "path": "/browse/central-coast/monterey",
+        "type": "county",
+        "color": "#ede280",
+        "children": [
+            "/browse/central-coast/monterey/salinas",
+            "/browse/central-coast/monterey/seaside",
+            "/browse/central-coast/monterey/monterey",
+            "/browse/central-coast/monterey/soledad",
+            "/browse/central-coast/monterey/marina",
+            "/browse/central-coast/monterey/greenfield",
+            "/browse/central-coast/monterey/pacific-grove",
+            "/browse/central-coast/monterey/king-city",
+            "/browse/central-coast/monterey/gonzales",
+            "/browse/central-coast/monterey/carmel-by-the-sea",
+            "/browse/central-coast/monterey/del-rey-oaks",
+            "/browse/central-coast/monterey/sand-city"
+        ]
+    },
+    "/browse/central-coast/monterey/salinas": {
+        "name": "Salinas",
+        "path": "/browse/central-coast/monterey/salinas",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/seaside": {
+        "name": "Seaside",
+        "path": "/browse/central-coast/monterey/seaside",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/monterey": {
+        "name": "Monterey",
+        "path": "/browse/central-coast/monterey/monterey",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/soledad": {
+        "name": "Soledad",
+        "path": "/browse/central-coast/monterey/soledad",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/marina": {
+        "name": "marina",
+        "path": "/browse/central-coast/monterey/marina",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/greenfield": {
+        "name": "Greenfield",
+        "path": "/browse/central-coast/monterey/greenfield",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/pacific-grove": {
+        "name": "Pacific Grove",
+        "path": "/browse/central-coast/monterey/pacific-grove",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/king-city": {
+        "name": "King City",
+        "path": "/browse/central-coast/monterey/king-city",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/gonzales": {
+        "name": "Gonzales",
+        "path": "/browse/central-coast/monterey/gonzales",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/carmel-by-the-sea": {
+        "name": "Carmel-by-the-Sea",
+        "path": "/browse/central-coast/monterey/carmel-by-the-sea",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/del-rey-oaks": {
+        "name": "Del Rey Oaks",
+        "path": "/browse/central-coast/monterey/del-rey-oaks",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/central-coast/monterey/sand-city": {
+        "name": "Sand City",
+        "path": "/browse/central-coast/monterey/sand-city",
+        "type": "city",
+        "color": "#ede280"
+    }
+}

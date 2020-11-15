@@ -1,0 +1,150 @@
+{
+    "/browse/bay-area/san-mateo": {
+        "name": "San Mateo",
+        "path": "/browse/bay-area/san-mateo",
+        "type": "county",
+        "color": "#d1ecf1",
+        "children": [
+            "/browse/bay-area/san-mateo/atherton",
+            "/browse/bay-area/san-mateo/belmont",
+            "/browse/bay-area/san-mateo/brisbane",
+            "/browse/bay-area/san-mateo/burlingame",
+            "/browse/bay-area/san-mateo/colima",
+            "/browse/bay-area/san-mateo/daly-city",
+            "/browse/bay-area/san-mateo/east-palo-alto",
+            "/browse/bay-area/san-mateo/foster-city",
+            "/browse/bay-area/san-mateo/half-moon-bay",
+            "/browse/bay-area/san-mateo/hillsborough",
+            "/browse/bay-area/san-mateo/menlo-park",
+            "/browse/bay-area/san-mateo/millbrae",
+            "/browse/bay-area/san-mateo/pacifica",
+            "/browse/bay-area/san-mateo/portola-valley",
+            "/browse/bay-area/san-mateo/redwood-city",
+            "/browse/bay-area/san-mateo/san-bruno",
+            "/browse/bay-area/san-mateo/san-carlos",
+            "/browse/bay-area/san-mateo/san-mateo",
+            "/browse/bay-area/san-mateo/south-san-francisco",
+            "/browse/bay-area/san-mateo/woodside"
+        ]
+    },
+    "/browse/bay-area/san-mateo/atherton": {
+        "name": "Atherton",
+        "path": "/browse/bay-area/san-mateo/atherton",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/belmont": {
+        "name": "Belmont",
+        "path": "/browse/bay-area/san-mateo/belmont",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/brisbane": {
+        "name": "Brisbane",
+        "path": "/browse/bay-area/san-mateo/brisbane",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/burlingame": {
+        "name": "Burlingame",
+        "path": "/browse/bay-area/san-mateo/burlingame",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/colima": {
+        "name": "Colima",
+        "path": "/browse/bay-area/san-mateo/colima",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/daly-city": {
+        "name": "Daly City",
+        "path": "/browse/bay-area/san-mateo/daly-city",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/east-palo-alto": {
+        "name": "East Palo Alto",
+        "path": "/browse/bay-area/san-mateo/east-palo-alto",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/foster-city": {
+        "name": "Foster City",
+        "path": "/browse/bay-area/san-mateo/foster-city",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/half-moon-bay": {
+        "name": "Half Moon Bay",
+        "path": "/browse/bay-area/san-mateo/half-moon-bay",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/hillsborough": {
+        "name": "Hillsborough",
+        "path": "/browse/bay-area/san-mateo/hillsborough",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/menlo-park": {
+        "name": "Menlo Park",
+        "path": "/browse/bay-area/san-mateo/menlo-park",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/millbrae": {
+        "name": "Millbrae",
+        "path": "/browse/bay-area/san-mateo/millbrae",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/pacifica": {
+        "name": "Pacifica",
+        "path": "/browse/bay-area/san-mateo/pacifica",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/portola-valley": {
+        "name": "Portola Valley",
+        "path": "/browse/bay-area/san-mateo/portola-valley",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/redwood-city": {
+        "name": "Redwood City",
+        "path": "/browse/bay-area/san-mateo/redwood-city",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/san-bruno": {
+        "name": "San Bruno",
+        "path": "/browse/bay-area/san-mateo/san-bruno",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/san-carlos": {
+        "name": "San Carlos",
+        "path": "/browse/bay-area/san-mateo/san-carlos",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/san-mateo": {
+        "name": "San Mateo",
+        "path": "/browse/bay-area/san-mateo/san-mateo",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/south-san-francisco": {
+        "name": "South San Francisco",
+        "path": "/browse/bay-area/san-mateo/south-san-francisco",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/bay-area/san-mateo/woodside": {
+        "name": "Woodside",
+        "path": "/browse/bay-area/san-mateo/woodside",
+        "type": "city",
+        "color": "#d1ecf1"
+    }
+}

@@ -1,0 +1,206 @@
+{
+    "/browse/southern-california/riverside": {
+        "name": "Riverside",
+        "path": "/browse/southern-california/riverside",
+        "type": "county",
+        "color": "#74a8db",
+        "children": [
+            "/browse/southern-california/riverside/banning",
+            "/browse/southern-california/riverside/beaumont",
+            "/browse/southern-california/riverside/blythe",
+            "/browse/southern-california/riverside/calimesa",
+            "/browse/southern-california/riverside/canyon-lake",
+            "/browse/southern-california/riverside/cathedral-city",
+            "/browse/southern-california/riverside/coachella",
+            "/browse/southern-california/riverside/corona",
+            "/browse/southern-california/riverside/desert-hot-springs",
+            "/browse/southern-california/riverside/eastvale",
+            "/browse/southern-california/riverside/hemet",
+            "/browse/southern-california/riverside/indian-wells",
+            "/browse/southern-california/riverside/indio",
+            "/browse/southern-california/riverside/jurupa-valley",
+            "/browse/southern-california/riverside/lake-elsinore",
+            "/browse/southern-california/riverside/la-quinta",
+            "/browse/southern-california/riverside/menifee",
+            "/browse/southern-california/riverside/moreno-valley",
+            "/browse/southern-california/riverside/murrieta",
+            "/browse/southern-california/riverside/norco",
+            "/browse/southern-california/riverside/palm-desert",
+            "/browse/southern-california/riverside/palm-springs",
+            "/browse/southern-california/riverside/perris",
+            "/browse/southern-california/riverside/rancho-mirage",
+            "/browse/southern-california/riverside/riverside",
+            "/browse/southern-california/riverside/san-jacinto",
+            "/browse/southern-california/riverside/temecula",
+            "/browse/southern-california/riverside/wildomar"
+        ]
+    },
+    "/browse/southern-california/riverside/banning": {
+        "name": "Banning",
+        "path": "/browse/southern-california/riverside/banning",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/beaumont": {
+        "name": "Beaumont",
+        "path": "/browse/southern-california/riverside/beaumont",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/blythe": {
+        "name": "Blythe",
+        "path": "/browse/southern-california/riverside/blythe",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/calimesa": {
+        "name": "Calimesa",
+        "path": "/browse/southern-california/riverside/calimesa",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/canyon-lake": {
+        "name": "Canyon Lake",
+        "path": "/browse/southern-california/riverside/canyon-lake",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/cathedral-city": {
+        "name": "Cathedral City",
+        "path": "/browse/southern-california/riverside/cathedral-city",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/coachella": {
+        "name": "Coachella",
+        "path": "/browse/southern-california/riverside/coachella",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/corona": {
+        "name": "Corona",
+        "path": "/browse/southern-california/riverside/corona",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/desert-hot-springs": {
+        "name": "Desert Hot Springs",
+        "path": "/browse/southern-california/riverside/desert-hot-springs",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/eastvale": {
+        "name": "Eastvale",
+        "path": "/browse/southern-california/riverside/eastvale",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/hemet": {
+        "name": "Hemet",
+        "path": "/browse/southern-california/riverside/hemet",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/indian-wells": {
+        "name": "Indian Wells",
+        "path": "/browse/southern-california/riverside/indian-wells",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/indio": {
+        "name": "Indio",
+        "path": "/browse/southern-california/riverside/indio",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/jurupa-valley": {
+        "name": "Jurupa Valley",
+        "path": "/browse/southern-california/riverside/jurupa-valley",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/lake-elsinore": {
+        "name": "Lake Elsinore",
+        "path": "/browse/southern-california/riverside/lake-elsinore",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/la-quinta": {
+        "name": "La Quinta",
+        "path": "/browse/southern-california/riverside/la-quinta",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/menifee": {
+        "name": "Menifee",
+        "path": "/browse/southern-california/riverside/menifee",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/moreno-valley": {
+        "name": "Moreno Valley",
+        "path": "/browse/southern-california/riverside/moreno-valley",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/murrieta": {
+        "name": "Murrieta",
+        "path": "/browse/southern-california/riverside/murrieta",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/norco": {
+        "name": "Norco",
+        "path": "/browse/southern-california/riverside/norco",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/palm-desert": {
+        "name": "Palm Desert",
+        "path": "/browse/southern-california/riverside/palm-desert",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/palm-springs": {
+        "name": "Palm Springs",
+        "path": "/browse/southern-california/riverside/palm-springs",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/perris": {
+        "name": "Perris",
+        "path": "/browse/southern-california/riverside/perris",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/rancho-mirage": {
+        "name": "Rancho Mirage",
+        "path": "/browse/southern-california/riverside/rancho-mirage",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/riverside": {
+        "name": "Riverside",
+        "path": "/browse/southern-california/riverside/riverside",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/san-jacinto": {
+        "name": "San Jacinto",
+        "path": "/browse/southern-california/riverside/san-jacinto",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/temecula": {
+        "name": "Temecula",
+        "path": "/browse/southern-california/riverside/temecula",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/riverside/wildomar": {
+        "name": "Wildomar",
+        "path": "/browse/southern-california/riverside/wildomar",
+        "type": "city",
+        "color": "#74a8db"
+    }
+}

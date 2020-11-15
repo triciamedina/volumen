@@ -1,0 +1,59 @@
+{
+    "/browse/sacramento-valley/sacramento": {
+        "name": "Sacramento",
+        "path": "/browse/sacramento-valley/sacramento",
+        "type": "county",
+        "color": "#8fc162",
+        "children": [
+            "/browse/sacramento-valley/sacramento/citrus-heights",
+            "/browse/sacramento-valley/sacramento/elk-grove",
+            "/browse/sacramento-valley/sacramento/folsom",
+            "/browse/sacramento-valley/sacramento/galt",
+            "/browse/sacramento-valley/sacramento/isleton",
+            "/browse/sacramento-valley/sacramento/rancho-cordova",
+            "/browse/sacramento-valley/sacramento/sacramento-city"
+        ]
+    },
+    "/browse/sacramento-valley/sacramento/citrus-heights": {
+        "name": "Citrus Heights",
+        "path": "/browse/sacramento-valley/sacramento/citrus-heights",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/sacramento-valley/sacramento/elk-grove": {
+        "name": "Elk Grove",
+        "path": "/browse/sacramento-valley/sacramento/elk-grove",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/sacramento-valley/sacramento/folsom": {
+        "name": "Folsom",
+        "path": "/browse/sacramento-valley/sacramento/folsom",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/sacramento-valley/sacramento/galt": {
+        "name": "Galt",
+        "path": "/browse/sacramento-valley/sacramento/galt",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/sacramento-valley/sacramento/isleton": {
+        "name": "Isleton",
+        "path": "/browse/sacramento-valley/sacramento/isleton",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/sacramento-valley/sacramento/rancho-cordova": {
+        "name": "Rancho Cordova",
+        "path": "/browse/sacramento-valley/sacramento/rancho-cordova",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/sacramento-valley/sacramento/sacramento-city": {
+        "name": "Sacramento City",
+        "path": "/browse/sacramento-valley/sacramento/sacramento-city",
+        "type": "city",
+        "color": "#8fc162"
+    }
+}

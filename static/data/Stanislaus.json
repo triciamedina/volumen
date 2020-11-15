@@ -1,0 +1,73 @@
+{
+    "/browse/san-joaquin-valley/stanislaus": {
+        "name": "Stanislaus",
+        "path": "/browse/san-joaquin-valley/stanislaus",
+        "type": "county",
+        "color": "#e87859",
+        "children": [
+            "/browse/san-joaquin-valley/ceres",
+            "/browse/san-joaquin-valley/hughson",
+            "/browse/san-joaquin-valley/modesto",
+            "/browse/san-joaquin-valley/newman",
+            "/browse/san-joaquin-valley/oakdale",
+            "/browse/san-joaquin-valley/patterson",
+            "/browse/san-joaquin-valley/riverbank",
+            "/browse/san-joaquin-valley/turlock",
+            "/browse/san-joaquin-valley/waterford"
+        ]
+    },
+    "/browse/san-joaquin-valley/ceres": {
+        "name": "Ceres",
+        "path": "/browse/san-joaquin-valley/ceres",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/san-joaquin-valley/hughson": {
+        "name": "Hughson",
+        "path": "/browse/san-joaquin-valley/hughson",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/san-joaquin-valley/modesto": {
+        "name": "Modesto",
+        "path": "/browse/san-joaquin-valley/modesto",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/san-joaquin-valley/newman": {
+        "name": "Newman",
+        "path": "/browse/san-joaquin-valley/newman",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/san-joaquin-valley/oakdale": {
+        "name": "Oakdale",
+        "path": "/browse/san-joaquin-valley/oakdale",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/san-joaquin-valley/patterson": {
+        "name": "Patterson",
+        "path": "/browse/san-joaquin-valley/patterson",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/san-joaquin-valley/riverbank": {
+        "name": "Riverbank",
+        "path": "/browse/san-joaquin-valley/riverbank",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/san-joaquin-valley/turlock": {
+        "name": "Turlock",
+        "path": "/browse/san-joaquin-valley/turlock",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/san-joaquin-valley/waterford": {
+        "name": "Waterford",
+        "path": "/browse/san-joaquin-valley/waterford",
+        "type": "city",
+        "color": "#e87859"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "/browse/san-joaquin-valley/san-joaquin": {
+        "name": "San Joaquin",
+        "path": "/browse/san-joaquin-valley/san-joaquin",
+        "type": "county",
+        "color": "#d1ecf1",
+        "children": [
+            "/browse/san-joaquin-valley/san-joaquin/escalon",
+            "/browse/san-joaquin-valley/san-joaquin/lathrop",
+            "/browse/san-joaquin-valley/san-joaquin/lodi",
+            "/browse/san-joaquin-valley/san-joaquin/manteca",
+            "/browse/san-joaquin-valley/san-joaquin/ripon",
+            "/browse/san-joaquin-valley/san-joaquin/stockton",
+            "/browse/san-joaquin-valley/san-joaquin/tracy"
+        ]
+    },
+    "/browse/san-joaquin-valley/san-joaquin/escalon": {
+        "name": "Escalon",
+        "path": "/browse/san-joaquin-valley/san-joaquin/escalon",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/san-joaquin-valley/san-joaquin/lathrop": {
+        "name": "Lathrop",
+        "path": "/browse/san-joaquin-valley/san-joaquin/lathrop",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/san-joaquin-valley/san-joaquin/lodi": {
+        "name": "Lodi",
+        "path": "/browse/san-joaquin-valley/san-joaquin/lodi",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/san-joaquin-valley/san-joaquin/manteca": {
+        "name": "Manteca",
+        "path": "/browse/san-joaquin-valley/san-joaquin/manteca",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/san-joaquin-valley/san-joaquin/ripon": {
+        "name": "Ripon",
+        "path": "/browse/san-joaquin-valley/san-joaquin/ripon",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/san-joaquin-valley/san-joaquin/stockton": {
+        "name": "Stockton",
+        "path": "/browse/san-joaquin-valley/san-joaquin/stockton",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/san-joaquin-valley/san-joaquin/tracy": {
+        "name": "Tracy",
+        "path": "/browse/san-joaquin-valley/san-joaquin/tracy",
+        "type": "city",
+        "color": "#d1ecf1"
+    }
+}

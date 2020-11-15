@@ -1,0 +1,31 @@
+{
+    "/browse/sacramento-valley/shasta": {
+        "name": "Shasta",
+        "path": "/browse/sacramento-valley/shasta",
+        "type": "county",
+        "color": "#d1ecf1",
+        "children": [
+            "/browse/sacramento-valley/shasta/anderson",
+            "/browse/sacramento-valley/shasta/redding",
+            "/browse/sacramento-valley/shasta/shasta-lake"
+        ]
+    },
+    "/browse/sacramento-valley/shasta/anderson": {
+        "name": "Anderson",
+        "path": "/browse/sacramento-valley/shasta/anderson",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/sacramento-valley/shasta/redding": {
+        "name": "Redding",
+        "path": "/browse/sacramento-valley/shasta/redding",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/sacramento-valley/shasta/shasta-lake": {
+        "name": "Shasta Lake",
+        "path": "/browse/sacramento-valley/shasta/shasta-lake",
+        "type": "city",
+        "color": "#d1ecf1"
+    }
+}

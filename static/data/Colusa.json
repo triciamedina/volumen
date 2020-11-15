@@ -1,0 +1,31 @@
+{
+    "/browse/sacramento-valley/colusa": {
+        "name": "Colusa",
+        "path": "/browse/sacramento-valley/colusa",
+        "type": "county",
+        "color": "#f09657",
+        "children": [
+            "/browse/sacramento-valley/colusa/arbuckle",
+            "/browse/sacramento-valley/colusa/colusa",
+            "/browse/sacramento-valley/colusa/williams"
+        ]
+    },
+    "/browse/sacramento-valley/colusa/arbuckle": {
+        "name": "Arbuckle",
+        "path": "/browse/sacramento-valley/colusa/arbuckle",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/sacramento-valley/colusa/colusa": {
+        "name": "Colusa",
+        "path": "/browse/sacramento-valley/colusa/colusa",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/sacramento-valley/colusa/williams": {
+        "name": "Williams",
+        "path": "/browse/sacramento-valley/colusa/williams",
+        "type": "city",
+        "color": "#f09657"
+    }
+}

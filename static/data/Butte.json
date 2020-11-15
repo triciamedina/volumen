@@ -1,0 +1,45 @@
+{
+    "/browse/sacramento-valley/butte": {
+        "name": "Butte",
+        "path": "/browse/sacramento-valley/butte",
+        "type": "county",
+        "color": "#ede280",
+        "children": [
+            "/browse/sacramento-valley/butte/biggs",
+            "/browse/sacramento-valley/butte/chico",
+            "/browse/sacramento-valley/butte/gridley",
+            "/browse/sacramento-valley/butte/oroville",
+            "/browse/sacramento-valley/butte/paradise"
+        ]
+    },
+    "/browse/sacramento-valley/butte/biggs": {
+        "name": "Biggs",
+        "path": "/browse/sacramento-valley/butte/biggs",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/sacramento-valley/butte/chico": {
+        "name": "Chico",
+        "path": "/browse/sacramento-valley/butte/chico",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/sacramento-valley/butte/gridley": {
+        "name": "Gridley",
+        "path": "/browse/sacramento-valley/butte/gridley",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/sacramento-valley/butte/oroville": {
+        "name": "Oroville",
+        "path": "/browse/sacramento-valley/butte/oroville",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/sacramento-valley/butte/paradise": {
+        "name": "Paradise",
+        "path": "/browse/sacramento-valley/butte/paradise",
+        "type": "city",
+        "color": "#ede280"
+    }
+}

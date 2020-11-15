@@ -1,0 +1,143 @@
+{
+    "/browse/bay-area/contra-costa": {
+        "name": "Contra Costa",
+        "path": "/browse/bay-area/contra-costa",
+        "type": "county",
+        "color": "#f09657",
+        "children": [
+            "/browse/bay-area/contra-costa/antioch",
+            "/browse/bay-area/contra-costa/brentwood",
+            "/browse/bay-area/contra-costa/clayton",
+            "/browse/bay-area/contra-costa/concord",
+            "/browse/bay-area/contra-costa/danville",
+            "/browse/bay-area/contra-costa/el-cerrito",
+            "/browse/bay-area/contra-costa/hercules",
+            "/browse/bay-area/contra-costa/lafayette",
+            "/browse/bay-area/contra-costa/martinez",
+            "/browse/bay-area/contra-costa/moraga",
+            "/browse/bay-area/contra-costa/oakley",
+            "/browse/bay-area/contra-costa/orinda",
+            "/browse/bay-area/contra-costa/pinole",
+            "/browse/bay-area/contra-costa/pittsburg",
+            "/browse/bay-area/contra-costa/pleasant-hill",
+            "/browse/bay-area/contra-costa/richmond",
+            "/browse/bay-area/contra-costa/san-pablo",
+            "/browse/bay-area/contra-costa/san-ramon",
+            "/browse/bay-area/contra-costa/walnut-creek"
+        ]
+    },
+    "/browse/bay-area/contra-costa/antioch": {
+        "name": "Antioch",
+        "path": "/browse/bay-area/contra-costa/antioch",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/brentwood": {
+        "name": "Brentwood",
+        "path": "/browse/bay-area/contra-costa/brentwood",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/clayton": {
+        "name": "Clayton",
+        "path": "/browse/bay-area/contra-costa/clayton",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/concord": {
+        "name": "Concord",
+        "path": "/browse/bay-area/contra-costa/concord",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/danville": {
+        "name": "Danville",
+        "path": "/browse/bay-area/contra-costa/danville",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/el-cerrito": {
+        "name": "El Cerrito",
+        "path": "/browse/bay-area/contra-costa/el-cerrito",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/hercules": {
+        "name": "Hercules",
+        "path": "/browse/bay-area/contra-costa/hercules",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/lafayette": {
+        "name": "Lafayette",
+        "path": "/browse/bay-area/contra-costa/lafayette",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/martinez": {
+        "name": "Martinez",
+        "path": "/browse/bay-area/contra-costa/martinez",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/moraga": {
+        "name": "Moraga",
+        "path": "/browse/bay-area/contra-costa/moraga",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/oakley": {
+        "name": "Oakley",
+        "path": "/browse/bay-area/contra-costa/oakley",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/orinda": {
+        "name": "Orinda",
+        "path": "/browse/bay-area/contra-costa/orinda",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/pinole": {
+        "name": "Pinole",
+        "path": "/browse/bay-area/contra-costa/pinole",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/pittsburg": {
+        "name": "Pittsburg",
+        "path": "/browse/bay-area/contra-costa/pittsburg",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/pleasant-hill": {
+        "name": "Pleasant Hill",
+        "path": "/browse/bay-area/contra-costa/pleasant-hill",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/richmond": {
+        "name": "Richmond",
+        "path": "/browse/bay-area/contra-costa/richmond",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/san-pablo": {
+        "name": "San Pablo",
+        "path": "/browse/bay-area/contra-costa/san-pablo",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/san-ramon": {
+        "name": "San Ramon",
+        "path": "/browse/bay-area/contra-costa/san-ramon",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/bay-area/contra-costa/walnut-creek": {
+        "name": "Walnut Creek",
+        "path": "/browse/bay-area/contra-costa/walnut-creek",
+        "type": "city",
+        "color": "#f09657"
+    }
+}

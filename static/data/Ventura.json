@@ -1,0 +1,80 @@
+{
+    "/browse/central-coast/ventura": {
+        "name": "Ventura",
+        "path": "/browse/central-coast/ventura",
+        "type": "county",
+        "color": "#d1ecf1",
+        "children": [
+            "/browse/central-coast/ventura/camarillo",
+            "/browse/central-coast/ventura/fillmore",
+            "/browse/central-coast/ventura/moorpark",
+            "/browse/central-coast/ventura/ojai",
+            "/browse/central-coast/ventura/oxnard",
+            "/browse/central-coast/ventura/port-hueneme",
+            "/browse/central-coast/ventura/santa-paula",
+            "/browse/central-coast/ventura/simi-valley",
+            "/browse/central-coast/ventura/thousand-oaks",
+            "/browse/central-coast/ventura/ventura"
+        ]
+    },
+    "/browse/central-coast/ventura/camarillo": {
+        "name": "Camarillo",
+        "path": "/browse/central-coast/ventura/camarillo",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/central-coast/ventura/fillmore": {
+        "name": "Fillmore",
+        "path": "/browse/central-coast/ventura/fillmore",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/central-coast/ventura/moorpark": {
+        "name": "Moorpark",
+        "path": "/browse/central-coast/ventura/moorpark",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/central-coast/ventura/ojai": {
+        "name": "Ojai",
+        "path": "/browse/central-coast/ventura/ojai",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/central-coast/ventura/oxnard": {
+        "name": "Oxnard",
+        "path": "/browse/central-coast/ventura/oxnard",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/central-coast/ventura/port-hueneme": {
+        "name": "Port Hueneme",
+        "path": "/browse/central-coast/ventura/port-hueneme",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/central-coast/ventura/santa-paula": {
+        "name": "Santa Paula",
+        "path": "/browse/central-coast/ventura/santa-paula",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/central-coast/ventura/simi-valley": {
+        "name": "Simi Valley",
+        "path": "/browse/central-coast/ventura/simi-valley",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/central-coast/ventura/thousand-oaks": {
+        "name": "Thousand Oaks",
+        "path": "/browse/central-coast/ventura/thousand-oaks",
+        "type": "city",
+        "color": "#d1ecf1"
+    },
+    "/browse/central-coast/ventura/ventura": {
+        "name": "Ventura",
+        "path": "/browse/central-coast/ventura/ventura",
+        "type": "city",
+        "color": "#d1ecf1"
+    }
+}

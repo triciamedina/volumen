@@ -1,0 +1,59 @@
+{
+    "/browse/southern-california/imperial": {
+        "name": "Imperial",
+        "path": "/browse/southern-california/imperial",
+        "type": "county",
+        "color": "#ede280",
+        "children": [
+            "/browse/southern-california/imperial/el-centro",
+            "/browse/southern-california/imperial/calexico",
+            "/browse/southern-california/imperial/brawley",
+            "/browse/southern-california/imperial/imperial",
+            "/browse/southern-california/imperial/calipatria",
+            "/browse/southern-california/imperial/holtville",
+            "/browse/southern-california/imperial/westmorland"
+        ]
+    },
+    "/browse/southern-california/imperial/el-centro": {
+        "name": "El Centro",
+        "path": "/browse/southern-california/imperial/el-centro",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/southern-california/imperial/calexico": {
+        "name": "Calexico",
+        "path": "/browse/southern-california/imperial/calexico",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/southern-california/imperial/brawley": {
+        "name": "Brawley",
+        "path": "/browse/southern-california/imperial/brawley",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/southern-california/imperial/imperial": {
+        "name": "Imperial",
+        "path": "/browse/southern-california/imperial/imperial",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/southern-california/imperial/calipatria": {
+        "name": "Calipatria",
+        "path": "/browse/southern-california/imperial/calipatria",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/southern-california/imperial/holtville": {
+        "name": "Holtville",
+        "path": "/browse/southern-california/imperial/holtville",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/southern-california/imperial/westmorland": {
+        "name": "Westmorland",
+        "path": "/browse/southern-california/imperial/westmorland",
+        "type": "city",
+        "color": "#ede280"
+    }
+}

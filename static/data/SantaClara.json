@@ -1,0 +1,101 @@
+{
+    "/browse/bay-area/santa-clara": {
+        "name": "Santa Clara",
+        "path": "/browse/bay-area/santa-clara",
+        "type": "county",
+        "color": "#e87859",
+        "children": [
+            "/browse/bay-area/santa-clara/campbell",
+            "/browse/bay-area/santa-clara/cupertino",
+            "/browse/bay-area/santa-clara/gilroy",
+            "/browse/bay-area/santa-clara/los-altos",
+            "/browse/bay-area/santa-clara/milpitas",
+            "/browse/bay-area/santa-clara/monte-serrano",
+            "/browse/bay-area/santa-clara/morgan-hill",
+            "/browse/bay-area/santa-clara/mountain-view",
+            "/browse/bay-area/santa-clara/palo-alto",
+            "/browse/bay-area/santa-clara/san-jose",
+            "/browse/bay-area/santa-clara/santa-clara",
+            "/browse/bay-area/santa-clara/saratoga",
+            "/browse/bay-area/santa-clara/sunnyvale"
+        ]
+    },
+    "/browse/bay-area/santa-clara/campbell": {
+        "name": "Campbell",
+        "path": "/browse/bay-area/santa-clara/campbell",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/cupertino": {
+        "name": "Cupertino",
+        "path": "/browse/bay-area/santa-clara/cupertino",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/gilroy": {
+        "name": "Gilroy",
+        "path": "/browse/bay-area/santa-clara/gilroy",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/los-altos": {
+        "name": "Los Altos",
+        "path": "/browse/bay-area/santa-clara/los-altos",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/milpitas": {
+        "name": "Milpitas",
+        "path": "/browse/bay-area/santa-clara/milpitas",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/monte-serrano": {
+        "name": "Monte Serrano",
+        "path": "/browse/bay-area/santa-clara/monte-serrano",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/morgan-hill": {
+        "name": "Morgan Hill",
+        "path": "/browse/bay-area/santa-clara/morgan-hill",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/mountain-view": {
+        "name": "Mountain View",
+        "path": "/browse/bay-area/santa-clara/mountain-view",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/palo-alto": {
+        "name": "Palo Alto",
+        "path": "/browse/bay-area/santa-clara/palo-alto",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/san-jose": {
+        "name": "San Jose",
+        "path": "/browse/bay-area/santa-clara/san-jose",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/santa-clara": {
+        "name": "Santa Clara",
+        "path": "/browse/bay-area/santa-clara/santa-clara",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/saratoga": {
+        "name": "Saratoga",
+        "path": "/browse/bay-area/santa-clara/saratoga",
+        "type": "city",
+        "color": "#e87859"
+    },
+    "/browse/bay-area/santa-clara/sunnyvale": {
+        "name": "Sunnyvale",
+        "path": "/browse/bay-area/santa-clara/sunnyvale",
+        "type": "city",
+        "color": "#e87859"
+    }
+}

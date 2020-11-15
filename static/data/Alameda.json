@@ -1,0 +1,108 @@
+{
+    "/browse/bay-area/alameda": {
+        "name": "Alameda",
+        "path": "/browse/bay-area/alameda",
+        "type": "county",
+        "color": "#ede280",
+        "children": [
+            "/browse/bay-area/alameda/alameda",
+            "/browse/bay-area/alameda/albany",
+            "/browse/bay-area/alameda/berkeley",
+            "/browse/bay-area/alameda/dublin",
+            "/browse/bay-area/alameda/emeryville",
+            "/browse/bay-area/alameda/fremont",
+            "/browse/bay-area/alameda/hayward",
+            "/browse/bay-area/alameda/livermore",
+            "/browse/bay-area/alameda/newark",
+            "/browse/bay-area/alameda/oakland",
+            "/browse/bay-area/alameda/piedmont",
+            "/browse/bay-area/alameda/pleasanton",
+            "/browse/bay-area/alameda/san-leandro",
+            "/browse/bay-area/alameda/union-city"
+        ]
+    },
+    "/browse/bay-area/alameda/alameda": {
+        "name": "Alameda",
+        "path": "/browse/bay-area/alameda/alameda",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/albany": {
+        "name": "Albany",
+        "path": "/browse/bay-area/alameda/albany",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/berkeley": {
+        "name": "Berkeley",
+        "path": "/browse/bay-area/alameda/berkeley",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/dublin": {
+        "name": "Dublin",
+        "path": "/browse/bay-area/alameda/dublin",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/emeryville": {
+        "name": "Emeryville",
+        "path": "/browse/bay-area/alameda/emeryville",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/fremont": {
+        "name": "Fremont",
+        "path": "/browse/bay-area/alameda/fremont",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/hayward": {
+        "name": "Hayward",
+        "path": "/browse/bay-area/alameda/hayward",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/livermore": {
+        "name": "Livermore",
+        "path": "/browse/bay-area/alameda/livermore",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/newark": {
+        "name": "Newark",
+        "path": "/browse/bay-area/alameda/newark",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/oakland": {
+        "name": "Oakland",
+        "path": "/browse/bay-area/alameda/oakland",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/piedmont": {
+        "name": "Piedmont",
+        "path": "/browse/bay-area/alameda/piedmont",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/pleasanton": {
+        "name": "Pleasanton",
+        "path": "/browse/bay-area/alameda/pleasanton",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/san-leandro": {
+        "name": "San Leandro",
+        "path": "/browse/bay-area/alameda/san-leandro",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/bay-area/alameda/union-city": {
+        "name": "Union City",
+        "path": "/browse/bay-area/alameda/union-city",
+        "type": "city",
+        "color": "#ede280"
+    }
+}

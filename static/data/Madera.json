@@ -1,0 +1,24 @@
+{
+    "/browse/san-joaquin-valley/madera": {
+        "name": "Madera",
+        "path": "/browse/san-joaquin-valley/madera",
+        "type": "county",
+        "color": "#74a8db",
+        "children": [
+            "/browse/san-joaquin-valley/madera/chowchilla",
+            "/browse/san-joaquin-valley/madera/madera"
+        ]
+    },
+    "/browse/san-joaquin-valley/madera/chowchilla": {
+        "name": "Chowchilla",
+        "path": "/browse/san-joaquin-valley/madera/chowchilla",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/san-joaquin-valley/madera/madera": {
+        "name": "Madera",
+        "path": "/browse/san-joaquin-valley/madera/madera",
+        "type": "city",
+        "color": "#74a8db"
+    }
+}

@@ -1,0 +1,178 @@
+{
+    "/browse/southern-california/san-bernardino": {
+        "name": "San Bernardino",
+        "path": "/browse/southern-california/san-bernardino",
+        "type": "county",
+        "color": "#8fc162",
+        "children": [
+            "/browse/southern-california/san-bernardino/adelanto",
+            "/browse/southern-california/san-bernardino/apple-valley",
+            "/browse/southern-california/san-bernardino/barstow",
+            "/browse/southern-california/san-bernardino/big-bear-lake",
+            "/browse/southern-california/san-bernardino/chino",
+            "/browse/southern-california/san-bernardino/chino-hills",
+            "/browse/southern-california/san-bernardino/colton",
+            "/browse/southern-california/san-bernardino/fontana",
+            "/browse/southern-california/san-bernardino/grand-terrace",
+            "/browse/southern-california/san-bernardino/hesperia",
+            "/browse/southern-california/san-bernardino/highland",
+            "/browse/southern-california/san-bernardino/loma-linda",
+            "/browse/southern-california/san-bernardino/montclair",
+            "/browse/southern-california/san-bernardino/needles",
+            "/browse/southern-california/san-bernardino/ontario",
+            "/browse/southern-california/san-bernardino/rancho-cucamonga",
+            "/browse/southern-california/san-bernardino/redlands",
+            "/browse/southern-california/san-bernardino/rialto",
+            "/browse/southern-california/san-bernardino/san-bernardino",
+            "/browse/southern-california/san-bernardino/twentynine-palms",
+            "/browse/southern-california/san-bernardino/upland",
+            "/browse/southern-california/san-bernardino/victorville",
+            "/browse/southern-california/san-bernardino/yucaipa",
+            "/browse/southern-california/san-bernardino/yucca-valley"
+        ]
+    },
+    "/browse/southern-california/san-bernardino/adelanto": {
+        "name": "Adelanto",
+        "path": "/browse/southern-california/san-bernardino/adelanto",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/apple-valley": {
+        "name": "Apple Valley",
+        "path": "/browse/southern-california/san-bernardino/apple-valley",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/barstow": {
+        "name": "Barstow",
+        "path": "/browse/southern-california/san-bernardino/barstow",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/big-bear-lake": {
+        "name": "Big Bear Lake",
+        "path": "/browse/southern-california/san-bernardino/big-bear-lake",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/chino": {
+        "name": "Chino",
+        "path": "/browse/southern-california/san-bernardino/chino",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/chino-hills": {
+        "name": "Chino Hills",
+        "path": "/browse/southern-california/san-bernardino/chino-hills",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/colton": {
+        "name": "Colton",
+        "path": "/browse/southern-california/san-bernardino/colton",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/fontana": {
+        "name": "Fontana",
+        "path": "/browse/southern-california/san-bernardino/fontana",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/grand-terrace": {
+        "name": "Grand Terrace",
+        "path": "/browse/southern-california/san-bernardino/grand-terrace",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/hesperia": {
+        "name": "Hesperia",
+        "path": "/browse/southern-california/san-bernardino/hesperia",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/highland": {
+        "name": "Highland",
+        "path": "/browse/southern-california/san-bernardino/highland",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/loma-linda": {
+        "name": "Loma Linda",
+        "path": "/browse/southern-california/san-bernardino/loma-linda",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/montclair": {
+        "name": "Montclair",
+        "path": "/browse/southern-california/san-bernardino/montclair",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/needles": {
+        "name": "Needles",
+        "path": "/browse/southern-california/san-bernardino/needles",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/ontario": {
+        "name": "Ontario",
+        "path": "/browse/southern-california/san-bernardino/ontario",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/rancho-cucamonga": {
+        "name": "Rancho Cucamonga",
+        "path": "/browse/southern-california/san-bernardino/rancho-cucamonga",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/redlands": {
+        "name": "Redlands",
+        "path": "/browse/southern-california/san-bernardino/redlands",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/rialto": {
+        "name": "Rialto",
+        "path": "/browse/southern-california/san-bernardino/rialto",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/san-bernardino": {
+        "name": "San Bernardino",
+        "path": "/browse/southern-california/san-bernardino/san-bernardino",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/twentynine-palms": {
+        "name": "Twentynine Palms",
+        "path": "/browse/southern-california/san-bernardino/twentynine-palms",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/upland": {
+        "name": "Upland",
+        "path": "/browse/southern-california/san-bernardino/upland",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/victorville": {
+        "name": "Victorville",
+        "path": "/browse/southern-california/san-bernardino/victorville",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/yucaipa": {
+        "name": "Yucaipa",
+        "path": "/browse/southern-california/san-bernardino/yucaipa",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/san-bernardino/yucca-valley": {
+        "name": "Yucca Valley",
+        "path": "/browse/southern-california/san-bernardino/yucca-valley",
+        "type": "city",
+        "color": "#8fc162"
+    }
+}

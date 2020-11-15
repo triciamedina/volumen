@@ -1,0 +1,17 @@
+{
+    "/browse/bay-area/san-francisco": {
+        "name": "San Francisco",
+        "path": "/browse/bay-area/san-francisco",
+        "type": "county",
+        "color": "#8fc162",
+        "children": [
+            "/browse/bay-area/san-francisco/san-francisco"
+        ]
+    },
+    "/browse/bay-area/san-francisco/san-francisco": {
+        "name": "San Francisco",
+        "path": "/browse/bay-area/san-francisco/san-francisco",
+        "type": "city",
+        "color": "#8fc162"
+    }
+}

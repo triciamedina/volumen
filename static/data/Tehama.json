@@ -1,0 +1,32 @@
+
+{
+    "/browse/sacramento-valley/tehama": {
+        "name": "Tehama",
+        "path": "/browse/sacramento-valley/tehama",
+        "type": "county",
+        "color": "#ede280",
+        "children": [
+            "/browse/sacramento-valley/tehama/corning",
+            "/browse/sacramento-valley/tehama/red-bluff",
+            "/browse/sacramento-valley/tehama/tehama"
+        ]
+    },
+    "/browse/sacramento-valley/tehama/corning": {
+        "name": "Corning",
+        "path": "/browse/sacramento-valley/tehama/corning",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/sacramento-valley/tehama/red-bluff": {
+        "name": "Red Bluff",
+        "path": "/browse/sacramento-valley/tehama/red-bluff",
+        "type": "city",
+        "color": "#ede280"
+    },
+    "/browse/sacramento-valley/tehama/tehama": {
+        "name": "Tehama",
+        "path": "/browse/sacramento-valley/tehama/tehama",
+        "type": "city",
+        "color": "#ede280"
+    }
+}

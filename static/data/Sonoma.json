@@ -1,0 +1,73 @@
+{
+    "/browse/bay-area/sonoma": {
+        "name": "Sonoma",
+        "path": "/browse/bay-area/sonoma",
+        "type": "county",
+        "color": "#a67db5",
+        "children": [
+            "/browse/bay-area/sonoma/cloverdale",
+            "/browse/bay-area/sonoma/cotati",
+            "/browse/bay-area/sonoma/healdsburg",
+            "/browse/bay-area/sonoma/petaluma",
+            "/browse/bay-area/sonoma/rohnert-park",
+            "/browse/bay-area/sonoma/santa-rosa",
+            "/browse/bay-area/sonoma/sebastopol",
+            "/browse/bay-area/sonoma/sonoma",
+            "/browse/bay-area/sonoma/windsor"
+        ]
+    },
+    "/browse/bay-area/sonoma/cloverdale": {
+        "name": "Cloverdale",
+        "path": "/browse/bay-area/sonoma/cloverdale",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/bay-area/sonoma/cotati": {
+        "name": "Cotati",
+        "path": "/browse/bay-area/sonoma/cotati",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/bay-area/sonoma/healdsburg": {
+        "name": "Healdsburg",
+        "path": "/browse/bay-area/sonoma/healdsburg",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/bay-area/sonoma/petaluma": {
+        "name": "Petaluma",
+        "path": "/browse/bay-area/sonoma/petaluma",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/bay-area/sonoma/rohnert-park": {
+        "name": "Rohnert Park",
+        "path": "/browse/bay-area/sonoma/rohnert-park",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/bay-area/sonoma/santa-rosa": {
+        "name": "Santa Rosa",
+        "path": "/browse/bay-area/sonoma/santa-rosa",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/bay-area/sonoma/sebastopol": {
+        "name": "Sebastopol",
+        "path": "/browse/bay-area/sonoma/sebastopol",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/bay-area/sonoma/sonoma": {
+        "name": "Sonoma",
+        "path": "/browse/bay-area/sonoma/sonoma",
+        "type": "city",
+        "color": "#a67db5"
+    },
+    "/browse/bay-area/sonoma/windsor": {
+        "name": "Windsor",
+        "path": "/browse/bay-area/sonoma/windsor",
+        "type": "city",
+        "color": "#a67db5"
+    }
+}

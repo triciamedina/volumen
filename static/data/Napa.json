@@ -1,0 +1,45 @@
+{
+    "/browse/bay-area/napa": {
+        "name": "Napa",
+        "path": "/browse/bay-area/napa",
+        "type": "county",
+        "color": "#74a8db",
+        "children": [
+            "/browse/bay-area/napa/american-canyon",
+            "/browse/bay-area/napa/calistoga",
+            "/browse/bay-area/napa/napa",
+            "/browse/bay-area/napa/st-helena",
+            "/browse/bay-area/napa/yountville"
+        ]
+    },
+    "/browse/bay-area/napa/american-canyon": {
+        "name": "American Canyon",
+        "path": "/browse/bay-area/napa/american-canyon",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/bay-area/napa/calistoga": {
+        "name": "Calistoga",
+        "path": "/browse/bay-area/napa/calistoga",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/bay-area/napa/napa": {
+        "name": "Napa",
+        "path": "/browse/bay-area/napa/napa",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/bay-area/napa/st-helena": {
+        "name": "St. Helena",
+        "path": "/browse/bay-area/napa/st-helena",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/bay-area/napa/yountville": {
+        "name": "Yountville",
+        "path": "/browse/bay-area/napa/yountville",
+        "type": "city",
+        "color": "#74a8db"
+    }
+}

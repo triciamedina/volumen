@@ -1,0 +1,87 @@
+{
+    "/browse/san-joaquin-valley/kern": {
+        "name": "Kern",
+        "path": "/browse/san-joaquin-valley/kern",
+        "type": "county",
+        "color": "#f09657",
+        "children": [
+            "/browse/san-joaquin-valley/kern/arvin",
+            "/browse/san-joaquin-valley/kern/bakersfield",
+            "/browse/san-joaquin-valley/kern/california-city",
+            "/browse/san-joaquin-valley/kern/delano",
+            "/browse/san-joaquin-valley/kern/maricopa",
+            "/browse/san-joaquin-valley/kern/mcfarland",
+            "/browse/san-joaquin-valley/kern/ridgecrest",
+            "/browse/san-joaquin-valley/kern/shafter",
+            "/browse/san-joaquin-valley/kern/taft",
+            "/browse/san-joaquin-valley/kern/tehachapi",
+            "/browse/san-joaquin-valley/kern/wasco"
+        ]
+    },
+    "/browse/san-joaquin-valley/kern/arvin": {
+        "name": "Arvin",
+        "path": "/browse/san-joaquin-valley/kern/arvin",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/bakersfield": {
+        "name": "Bakersfield",
+        "path": "/browse/san-joaquin-valley/kern/bakersfield",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/california-city": {
+        "name": "California City",
+        "path": "/browse/san-joaquin-valley/kern/california-city",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/delano": {
+        "name": "Delano",
+        "path": "/browse/san-joaquin-valley/kern/delano",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/maricopa": {
+        "name": "Maricopa",
+        "path": "/browse/san-joaquin-valley/kern/maricopa",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/mcfarland": {
+        "name": "Mcfarland",
+        "path": "/browse/san-joaquin-valley/kern/mcfarland",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/ridgecrest": {
+        "name": "Ridgecrest",
+        "path": "/browse/san-joaquin-valley/kern/ridgecrest",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/shafter": {
+        "name": "Shafter",
+        "path": "/browse/san-joaquin-valley/kern/shafter",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/taft": {
+        "name": "Taft",
+        "path": "/browse/san-joaquin-valley/kern/taft",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/tehachapi": {
+        "name": "Tehachapi",
+        "path": "/browse/san-joaquin-valley/kern/tehachapi",
+        "type": "city",
+        "color": "#f09657"
+    },
+    "/browse/san-joaquin-valley/kern/wasco": {
+        "name": "Wasco",
+        "path": "/browse/san-joaquin-valley/kern/wasco",
+        "type": "city",
+        "color": "#f09657"
+    }
+}

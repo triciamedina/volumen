@@ -1,0 +1,24 @@
+{
+    "/browse/sacramento-valley/yuba": {
+        "name": "Yuba",
+        "path": "/browse/sacramento-valley/yuba",
+        "type": "county",
+        "color": "#e2555a",
+        "children": [
+            "/browse/sacramento-valley/yuba/marysville",
+            "/browse/sacramento-valley/yuba/wheatland"
+        ]
+    },
+    "/browse/sacramento-valley/yuba/marysville": {
+        "name": "Marysville",
+        "path": "/browse/sacramento-valley/yuba/marysville",
+        "type": "city",
+        "color": "#e2555a"
+    },
+    "/browse/sacramento-valley/yuba/wheatland": {
+        "name": "Wheatland",
+        "path": "/browse/sacramento-valley/yuba/wheatland",
+        "type": "city",
+        "color": "#e2555a"
+    }
+}

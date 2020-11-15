@@ -1,0 +1,38 @@
+{
+    "/browse/san-joaquin-valley/kings": {
+        "name": "Kings",
+        "path": "/browse/san-joaquin-valley/kings",
+        "type": "county",
+        "color": "#e25d61",
+        "children": [
+            "/browse/san-joaquin-valley/kings/avenal",
+            "/browse/san-joaquin-valley/kings/corcoran",
+            "/browse/san-joaquin-valley/kings/hanford",
+            "/browse/san-joaquin-valley/kings/lemoore"
+        ]
+    },
+    "/browse/san-joaquin-valley/kings/avenal": {
+        "name": "Avenal",
+        "path": "/browse/san-joaquin-valley/kings/avenal",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/san-joaquin-valley/kings/corcoran": {
+        "name": "Corcoran",
+        "path": "/browse/san-joaquin-valley/kings/corcoran",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/san-joaquin-valley/kings/hanford": {
+        "name": "Hanford",
+        "path": "/browse/san-joaquin-valley/kings/hanford",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/san-joaquin-valley/kings/lemoore": {
+        "name": "Lemoore",
+        "path": "/browse/san-joaquin-valley/kings/lemoore",
+        "type": "city",
+        "color": "#e25d61"
+    }
+}

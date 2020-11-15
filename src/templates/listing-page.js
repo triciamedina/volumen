@@ -13,7 +13,7 @@ export const ListingPageTemplate = ({
         contentComponent,
         title,
         description,
-        metroArea,
+        region,
         county,
         city,
         type,
@@ -35,7 +35,7 @@ export const ListingPageTemplate = ({
             {helmet || ""}
             <div className="flex-1 p-6 overflow-scroll">
                 <Link 
-                    to={`/directory/browse/${metroArea}/${county}/${city}`}
+                    to={`/directory/browse/${region}/${county}/${city}`}
                     className="inline-block my-4 border-b-2 border-green-500 text-gray-800 font-straight font-medium"
                     state={{ isOpen: type }}
                 >
@@ -45,7 +45,7 @@ export const ListingPageTemplate = ({
                     {title}
                 </h2>
                 <p className="text-lg mb-12">
-                    {`${startCase(metroArea[0])} > ${startCase(county[0])} > ${startCase(city[0])}`} 
+                    {`${startCase(region[0])} > ${startCase(county[0])} > ${startCase(city[0])}`} 
                 </p>
                 <p className="text-lg mb-10 leading-relaxed">
                     {description}
@@ -99,7 +99,7 @@ const Listing = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        metroArea={post.frontmatter.metroArea}
+        region={post.frontmatter.region}
         county={post.frontmatter.county}
         city={post.frontmatter.city}
         type={post.frontmatter.type}
@@ -125,7 +125,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        metroArea
+        region
         county
         city
         type

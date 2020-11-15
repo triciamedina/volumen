@@ -1,0 +1,87 @@
+{
+    "/browse/bay-area/marin": {
+        "name": "Marin",
+        "path": "/browse/bay-area/marin",
+        "type": "county",
+        "color": "#e25d61",
+        "children": [
+            "/browse/bay-area/marin/belvedere",
+            "/browse/bay-area/marin/corte-madera",
+            "/browse/bay-area/marin/fairfax",
+            "/browse/bay-area/marin/larkspur",
+            "/browse/bay-area/marin/mill-valley",
+            "/browse/bay-area/marin/novato",
+            "/browse/bay-area/marin/ross",
+            "/browse/bay-area/marin/san-anselmo",
+            "/browse/bay-area/marin/san-rafael",
+            "/browse/bay-area/marin/sausalito",
+            "/browse/bay-area/marin/tiburon"
+        ]
+    },
+    "/browse/bay-area/marin/belvedere": {
+        "name": "Belvedere",
+        "path": "/browse/bay-area/marin/belvedere",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/corte-madera": {
+        "name": "Corte Madera",
+        "path": "/browse/bay-area/marin/corte-madera",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/fairfax": {
+        "name": "Fairfax",
+        "path": "/browse/bay-area/marin/fairfax",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/larkspur": {
+        "name": "Larkspur",
+        "path": "/browse/bay-area/marin/larkspur",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/mill-valley": {
+        "name": "Mill Valley",
+        "path": "/browse/bay-area/marin/mill-valley",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/novato": {
+        "name": "Novato",
+        "path": "/browse/bay-area/marin/novato",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/ross": {
+        "name": "Ross",
+        "path": "/browse/bay-area/marin/ross",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/san-anselmo": {
+        "name": "San Anselmo",
+        "path": "/browse/bay-area/marin/san-anselmo",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/san-rafael": {
+        "name": "San Rafael",
+        "path": "/browse/bay-area/marin/san-rafael",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/sausalito": {
+        "name": "Sausalito",
+        "path": "/browse/bay-area/marin/sausalito",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/bay-area/marin/tiburon": {
+        "name": "Tiburon",
+        "path": "/browse/bay-area/marin/tiburon",
+        "type": "city",
+        "color": "#e25d61"
+    }
+}

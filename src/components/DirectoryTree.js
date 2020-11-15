@@ -4,26 +4,26 @@ import { Link } from "@reach/router";
 import DirectoryTreeNode from "./DirectoryTreeNode";
 import DirectoryListings from "./DirectoryListings";
 import arrow from "../../static/img/arrow.svg";
-import treeData from '../../static/DirectoryTreeData.json';
+import DATA from '../../static/data/DATA';
 
 export default class DirectoryTree extends React.Component {
     getRootNode(type) {
-        if (type === "root") return treeData["/"];
-        if (type === "area") return treeData[`/browse/${this.props.area}`];
-        if (type === "county") return treeData[`/browse/${this.props.area}/${this.props.county}`];
-        if (type === "city") return treeData[`/browse/${this.props.area}/${this.props.county}/${this.props.city}`];
+        if (type === "root") return DATA["/"];
+        if (type === "region") return DATA[`/browse/${this.props.region}`];
+        if (type === "county") return DATA[`/browse/${this.props.region}/${this.props.county}`];
+        if (type === "city") return DATA[`/browse/${this.props.region}/${this.props.county}/${this.props.city}`];
     };
 
     getChildNodes(node) {
         if (!node.children) return [];
-        return node.children.map(path => treeData[path]).sort(sortAsc);
+        return node.children.map(path => DATA[path]).sort(sortAsc);
     };
 
     getParentPath(type) {
         if (type === "root") return `/directory`;
-        if (type === "area") return `/directory`;
-        if (type === "county") return `/directory/browse/${this.props.area}`;
-        if (type === "city") return `/directory/browse/${this.props.area}/${this.props.county}`;
+        if (type === "region") return `/directory`;
+        if (type === "county") return `/directory/browse/${this.props.region}`;
+        if (type === "city") return `/directory/browse/${this.props.region}/${this.props.county}`;
     };
 
     render() {
