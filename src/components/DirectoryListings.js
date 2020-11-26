@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import { Link } from "@reach/router";
+import { startCase } from "lodash";
 
 import IndustryContext from "../context/IndustryContext";
 import Accordion from "./Accordion";
@@ -27,7 +28,7 @@ class DirectoryListings extends React.Component {
         const { title, city, data, state, context } = this.props;
         const { edges: listings } = data.allMarkdownRemark;
     
-        const listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(city));
+        const listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(startCase(city)));
         const listingsByIndustry = (context.industry && !!context.industry.length) ? listingsByCity.filter(listing => listing.node.frontmatter.industry.includes(context.industry)) : listingsByCity;
     
         const smbListings = listingsByIndustry.filter(listing => listing.node.frontmatter.type === "SMB");

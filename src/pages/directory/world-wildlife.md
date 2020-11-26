@@ -4,11 +4,11 @@ title: World Wildlife
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor massa id neque aliquam. Eget arcu dictum varius duis at.
 region:
-  - southern-california
+  - Southern California
 county:
-  - los-angeles
+  - Los Angeles
 city:
-  - san-fernando
+  - San Fernando
 industry:
   - Conservation
 type: Non-Profit

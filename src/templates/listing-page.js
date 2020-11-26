@@ -2,17 +2,17 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby"; 
 import { Link } from "@reach/router";
-import { startCase } from 'lodash';
+import { kebabCase, startCase } from 'lodash';
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import "../components/tailwind.css"
+import "../components/tailwind.css";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 export const ListingPageTemplate = ({
         content,
         contentComponent,
         title,
-        description,
         region,
         county,
         city,
@@ -24,59 +24,139 @@ export const ListingPageTemplate = ({
         zip,
         addressLink,
         tel,
-        website
+        website,
+        mapCaption,
+        supportingImage,
+        supportingImageCaption
     }) => {
 
     const PostContent = contentComponent || Content;
-    const mapLink = addressLink || `https://www.google.com/maps/search/?api=1&query=${encodeURI(`${streetAddress} ${city} ${state} ${zip}`)}`;
+    const addressQuery = startCase(`${streetAddress} ${city} ${state} ${zip}`);
+    const mapLink = addressLink || `https://www.google.com/maps/search/?api=1&query=${encodeURI(addressQuery)}`;
 
     return (
-        <section className="ListingPage max-w-6xl mx-auto">
+        <main className="ListingPage flex flex-col max-w-6xl mx-auto px-6 lg:px-12">
             {helmet || ""}
-            <div className="flex-1 p-6 overflow-scroll">
-                <Link 
-                    to={`/directory/browse/${region}/${county}/${city}`}
-                    className="inline-block my-4 border-b-2 border-green-500 text-gray-800 font-straight font-medium"
-                    state={{ isOpen: type }}
-                >
-                    Back
-                </Link>
-                <h2 className="font-straight font-black text-4xl text-gray-900">
-                    {title}
-                </h2>
-                <p className="text-lg mb-12">
-                    {`${startCase(region[0])} > ${startCase(county[0])} > ${startCase(city[0])}`} 
-                </p>
-                <p className="text-lg mb-10 leading-relaxed">
-                    {description}
-                </p>
-                <ul className="text-lg mb-12 px-5 list-disc markdown">
-                  <li className="mb-6">
-                    <h3>Industry</h3>
-                    <ul>
-                      {industry.map((category, index) => <li key={index}>{category}</li>)}
-                    </ul>
-                  </li>
-                  <li className="mb-6">
-                    <h3>Address</h3>
-                    <a href={mapLink} target="_blank" rel="noopener noreferrer">{streetAddress}</a>
-                  </li>
-                  <li className="mb-6">
-                    <h3>Phone</h3>
-                    <a href={`tel:${tel}`}>{tel}</a>
-                  </li>
-                  <li className="mb-6">
-                    <h3>Website</h3>
-                    <a href={website} target="_blank" rel="noopener noreferrer">{website}</a>
-                  </li>
-                </ul>
-                <PostContent
-                    className="text-lg leading-relaxed"
-                    content={content}
-                />
+
+            <header className="mb-8">
+              <Link 
+                  to={`/directory/browse/${kebabCase(region)}/${kebabCase(county)}/${kebabCase(city)}`}
+                  className="inline-block my-4 border-b-2 border-green-500 text-gray-800 font-straight font-medium"
+                  state={{ isOpen: type }}
+              >
+                  Back
+              </Link>
+              <h1 className="font-straight font-black text-4xl text-gray-900">
+                  {title}
+              </h1>
+              <p className="text-lg">
+                  {`${startCase(region[0])} > ${startCase(county[0])} > ${startCase(city[0])}`} 
+              </p>
+            </header>
+
+            <div className="flex flex-col lg:flex-row lg:mb-6">
+
+              <div className="left-col">
+                {/* Replace w/ carousel component */}
+                <section >
+                  <div className="container--16-9">
+                    <iframe 
+                      className="video" 
+                      src="https://www.youtube.com/embed/nFtbf4prm78" 
+                      frameBorder="0" 
+                      allow="autoplay; fullscreen" 
+                      allowFullScreen
+                      title="Video"
+                    >
+                    </iframe>
+                  </div>
+                </section>
+              </div>
+
+              <div className="right-col p-8 bg-gray-200">
+                <address>
+                  <ul className="text-lg markdown">
+                    <li className="mb-6">
+                      <h3 className="font-curvy font-semibold">Industry</h3>
+                      <ul>
+                        {industry.map((category, index) => <li key={index}>{category}</li>)}
+                      </ul>
+                    </li>
+                    {streetAddress ? (
+                      <li className="mb-6">
+                        <h3 className="font-curvy font-semibold">Address</h3>
+                        <a href={mapLink} target="_blank" rel="noopener noreferrer">{streetAddress}</a>
+                      </li>
+                    ): null}
+                    {tel ? (
+                      <li className="mb-6">
+                        <h3 className="font-curvy font-semibold">Phone</h3>
+                        <a href={`tel:${tel}`}>{tel}</a>
+                      </li>
+                    ): null}
+                    {website ? (
+                      <li className="mb-6">
+                        <h3 className="font-curvy font-semibold">Website</h3>
+                        <a href={website} target="_blank" rel="noopener noreferrer">{website}</a>
+                      </li>
+                    ) : null}
+                  </ul>
+                </address>
+              </div>
+
             </div>
-            <div className="image-carousel flex-1 bg-gray-200"></div>
-        </section>
+            
+            <div className="flex flex-col lg:flex-row lg:mb-12">
+
+              <div className="left-col">
+                <section className="text-lg leading-relaxed markdown pr-4">
+                  <PostContent
+                    content={content}
+                  />
+                </section>
+              </div>
+
+              <div className="right-col">
+                <aside className="lg:my-4">
+                  {streetAddress ? (
+                    <div className="container--4-3">
+                      <iframe
+                        frameBorder="0"
+                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyA7Mb0Z1JfurKePCoq_Facnv68pWG-EP1k&q=${addressQuery}`}
+                        allowFullScreen
+                        className="map"
+                        title="Map"
+                      ></iframe>
+                    </div>
+                  ) : null}
+                  {mapCaption ? (
+                    <div className="mb-12">
+                      <p className="text-sm px-8 pt-4">
+                        {mapCaption}
+                      </p>
+                    </div>
+                  ) : null}
+                  {supportingImage ? (
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: supportingImage,
+                        alt: '',
+                      }}
+                    />
+                  ) : null}
+                  {supportingImageCaption ? (
+                    <div className="mb-12">
+                      <p className="text-sm px-8 pt-4">
+                        {supportingImageCaption}
+                      </p>
+                    </div>
+                  ) : null}
+                </aside>
+              </div>
+
+            </div>
+
+        </main>
     )
 };
 
@@ -110,6 +190,9 @@ const Listing = ({ data }) => {
         addressLink={post.frontmatter.addressLink}
         tel={post.frontmatter.tel}
         website={post.frontmatter.website}
+        mapCaption={post.frontmatter.mapCaption}
+        supportingImage={post.frontmatter.supportingImage}
+        supportingImageCaption={post.frontmatter.supportingImageCaption}
       />
     </Layout>
   );
@@ -136,6 +219,15 @@ export const pageQuery = graphql`
         zip
         tel
         website
+        mapCaption
+        supportingImage {
+          childImageSharp {
+            fluid(maxWidth: 600, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        supportingImageCaption
       }
     }
   }

@@ -4,11 +4,11 @@ title: Mitch’s Mobiles
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor massa id neque aliquam. Eget arcu dictum varius duis at.
 region:
-  - southern-california
+  - Southern California
 county:
-  - los-angeles
+  - Los Angeles
 city:
-  - san-gabriel
+  - San Gabriel
 industry:
   - Automotive
 type: SMB
