@@ -8,6 +8,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import "../components/tailwind.css";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import Carousel from '../components/Carousel';
 
 export const ListingPageTemplate = ({
         content,
@@ -25,6 +26,8 @@ export const ListingPageTemplate = ({
         addressLink,
         tel,
         website,
+        featuredVideos,
+        featuredImages,
         mapCaption,
         supportingImage,
         supportingImageCaption
@@ -33,6 +36,7 @@ export const ListingPageTemplate = ({
     const PostContent = contentComponent || Content;
     const addressQuery = startCase(`${streetAddress} ${city} ${state} ${zip}`);
     const mapLink = addressLink || `https://www.google.com/maps/search/?api=1&query=${encodeURI(addressQuery)}`;
+    const carouselContent = [...featuredVideos, ...featuredImages];
 
     return (
         <main className="ListingPage flex flex-col max-w-6xl mx-auto px-6 lg:px-12">
@@ -54,23 +58,10 @@ export const ListingPageTemplate = ({
               </p>
             </header>
 
-            <div className="flex flex-col lg:flex-row lg:mb-6">
+            <div className="flex flex-col lg:flex-row lg:mb-12">
 
-              <div className="left-col">
-                {/* Replace w/ carousel component */}
-                <section >
-                  <div className="container--16-9">
-                    <iframe 
-                      className="video" 
-                      src="https://www.youtube.com/embed/nFtbf4prm78" 
-                      frameBorder="0" 
-                      allow="autoplay; fullscreen" 
-                      allowFullScreen
-                      title="Video"
-                    >
-                    </iframe>
-                  </div>
-                </section>
+              <div className="left-col relative mb-8 lg:mb-0">
+                <Carousel content={ carouselContent || []} />
               </div>
 
               <div className="right-col p-8 bg-gray-200">
@@ -190,6 +181,8 @@ const Listing = ({ data }) => {
         addressLink={post.frontmatter.addressLink}
         tel={post.frontmatter.tel}
         website={post.frontmatter.website}
+        featuredVideos={post.frontmatter.featuredVideos}
+        featuredImages={post.frontmatter.featuredImages}
         mapCaption={post.frontmatter.mapCaption}
         supportingImage={post.frontmatter.supportingImage}
         supportingImageCaption={post.frontmatter.supportingImageCaption}
@@ -219,6 +212,14 @@ export const pageQuery = graphql`
         zip
         tel
         website
+        featuredVideos
+        featuredImages {
+          childImageSharp {
+            fluid(maxWidth: 600, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         mapCaption
         supportingImage {
           childImageSharp {

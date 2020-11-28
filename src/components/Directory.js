@@ -2,8 +2,7 @@ import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import { Router, Match } from "@reach/router";
 
-import { IndustryProvider } from "../context/IndustryContext";
-import IndustryContext from "../context/IndustryContext";
+import IndustryContext, { IndustryProvider } from "../context/IndustryContext";
 import DirectoryTree from "./DirectoryTree";
 
 const sortAsc = (a, b) => {
