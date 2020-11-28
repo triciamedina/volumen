@@ -8,7 +8,8 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import "../components/tailwind.css";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import Carousel from '../components/Carousel';
+import Carousel from "../components/Carousel";
+import ArrowIcon from "../components/ArrowIcon";
 
 export const ListingPageTemplate = ({
         content,
@@ -47,10 +48,11 @@ export const ListingPageTemplate = ({
             <header className="mb-8">
               <Link 
                   to={`/directory/browse/${kebabCase(region)}/${kebabCase(county)}/${kebabCase(city)}`}
-                  className="inline-block my-4 border-b-2 border-green-500 text-gray-800 font-straight font-medium"
+                  className="flex mt-6 mb-2 text-gray-900 font-straight font-medium"
                   state={{ isOpen: type }}
               >
-                  Back
+                <ArrowIcon className="w-2 transform rotate-180 mr-4" />
+                Return
               </Link>
               <h1 className="font-straight font-black text-4xl text-gray-900">
                   {title}

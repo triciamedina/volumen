@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import arrow from "../../static/img/arrow.svg";
 import storeIcon from "../../static/img/storeIcon.png";
+import ArrowIcon from "./ArrowIcon";
 
 const Carousel = (props) => {
     const { content=[] } = props;
@@ -36,7 +36,7 @@ const Carousel = (props) => {
     }
 
     return (
-        <section className="Carousel overflow-auto">
+        <section className="Carousel overflow-hidden">
             <ul 
                 className="slide-container flex flex-row"
                 style={{ transform: `translateX(-${current - 1}00%)` }}
@@ -82,7 +82,7 @@ const Carousel = (props) => {
                         onClick={() => slideBack()}
                         className="px-2 py-1 arrow"
                     >
-                        <img src={arrow} className="w-2 transform rotate-180" />
+                        <ArrowIcon className="w-2 transform rotate-180" />
                     </button>
                     <div className="flex flex-row items-center px-6">
                         {content.map((_, index) => (
@@ -97,7 +97,7 @@ const Carousel = (props) => {
                         onClick={() => slideForward()}
                         className="px-2 py-1 arrow"
                     >
-                        <img src={arrow} className="w-2" />
+                        <ArrowIcon className="w-2" />
                     </button>
                 </div>
             ): null}
