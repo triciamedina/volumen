@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Match } from "@reach/router";
-import arrow from "../../static/img/arrow.svg";
+import ArrowIcon from "./ArrowIcon";
 
 const DirectoryTreeNode = (props) => {
     const { url, name, parent, type, color } = props;
@@ -26,7 +26,7 @@ const DirectoryTreeNode = (props) => {
                         className={`DirectoryCta ${styles[type]} ${isActive ? "active" : "inactive"}`} 
                     >
                         <h3 className="inline-block">{name}</h3>
-                        <img src={arrow} />
+                        <ArrowIcon />
                     </Link>
                 )
             }}

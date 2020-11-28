@@ -3,7 +3,7 @@ import { Link } from "@reach/router";
 
 import DirectoryTreeNode from "./DirectoryTreeNode";
 import DirectoryListings from "./DirectoryListings";
-import arrow from "../../static/img/arrow.svg";
+import ArrowIcon from "./ArrowIcon";
 import DATA from '../../static/data/DATA';
 
 export default class DirectoryTree extends React.Component {
@@ -39,7 +39,7 @@ export default class DirectoryTree extends React.Component {
                         to={this.getParentPath(type)}
                         className="md:hidden inline-block p-5 text-gray-800 font-straight font-medium transform rotate-180 absolute left-0 top-0"
                     >
-                        <img src={arrow} className="w-2" />
+                        <ArrowIcon className="w-2" />
                     </Link>
                 )}
                 <div className="DirectoryTree flex flex-col">
