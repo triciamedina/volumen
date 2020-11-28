@@ -36,7 +36,9 @@ export const ListingPageTemplate = ({
     const PostContent = contentComponent || Content;
     const addressQuery = startCase(`${streetAddress} ${city} ${state} ${zip}`);
     const mapLink = addressLink || `https://www.google.com/maps/search/?api=1&query=${encodeURI(addressQuery)}`;
-    const carouselContent = [...featuredVideos, ...featuredImages];
+    const videoList = featuredVideos || [];
+    const imageList = featuredImages || [];
+    const carouselContent = [...videoList, ...imageList];
 
     return (
         <main className="ListingPage flex flex-col max-w-6xl mx-auto px-6 lg:px-12">
@@ -58,9 +60,9 @@ export const ListingPageTemplate = ({
               </p>
             </header>
 
-            <div className="flex flex-col lg:flex-row lg:mb-12">
+            <div className={`flex flex-col lg:flex-row ${carouselContent.length ? "lg:mb-12" : "lg:mb-4"}`}>
 
-              <div className="left-col relative mb-8 lg:mb-0">
+              <div className={`left-col relative ${carouselContent.length && "mb-8"} lg:mb-0`}>
                 <Carousel content={ carouselContent || []} />
               </div>
 
