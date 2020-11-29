@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import { Router, Match } from "@reach/router";
 
-import IndustryContext, { IndustryProvider } from "../context/IndustryContext";
+import DirectoryContext, { DirectoryContextProvider } from "../context/DirectoryContext";
 import DirectoryTree from "./DirectoryTree";
 
 const sortAsc = (a, b) => {
@@ -19,11 +19,12 @@ const sortAsc = (a, b) => {
 
 const Directory = (props) => {
     const { data } = props;
-    const { group } = data.allMarkdownRemark;
-    const industries = group.map(item => item.fieldValue).sort(sortAsc);
+    const { industries, categories } = data;
+    const industryList = industries.group.map(item => item.fieldValue).sort(sortAsc);
+    const categoryList = categories.group.map(item => item.fieldValue).filter(category => category !== "None" ).sort(sortAsc);
 
     return (
-        <IndustryContext.Consumer>
+        <DirectoryContext.Consumer>
             { (context) => (
                 <> 
                     <div className="flex flex-col md:flex-row justify-end my-6 md:mt-0">
@@ -35,13 +36,32 @@ const Directory = (props) => {
                             value={context.industry || ""}
                         >
                             <option value="">Select Industry</option>
-                            {industries.map((industry, index) => {
+                            {industryList.map((industry, index) => {
                                 return (
                                     <option 
                                         key={index} 
                                         value={industry}
                                     >
                                             {industry}
+                                    </option>
+                                )
+                            })}
+                        </select>
+                        <select 
+                            className="w-full md:w-1/4 text-center border-4 border-gray-900 py-1 px-4 rounded" 
+                            name="category" 
+                            id="category-select"
+                            onChange={(e) => context.onCategoryChange(e.currentTarget.value)}
+                            value={context.category || ""}
+                        >
+                            <option value="">Select Category</option>
+                            {categoryList.map((category, index) => {
+                                return (
+                                    <option 
+                                        key={index} 
+                                        value={category}
+                                    >
+                                            {category}
                                     </option>
                                 )
                             })}
@@ -97,7 +117,7 @@ const Directory = (props) => {
                     </div>
                 </>
             )}
-        </IndustryContext.Consumer>
+        </DirectoryContext.Consumer>
     )
 };
 
@@ -105,7 +125,12 @@ export default (props) => {
     return (<StaticQuery
         query={graphql`
             query DirectoryQuery {
-                allMarkdownRemark {
+                categories: allMarkdownRemark {
+                    group(field: frontmatter___category) {
+                        fieldValue
+                    }
+                }
+                industries: allMarkdownRemark {
                     group(field: frontmatter___industry) {
                         fieldValue
                     }
@@ -113,9 +138,9 @@ export default (props) => {
             }
         `}
         render={(data, count) => (
-            <IndustryProvider>
+            <DirectoryContextProvider>
                 <Directory data={data} count={count} {...props} />
-            </IndustryProvider>
+            </DirectoryContextProvider>
         )}
     />)
 };

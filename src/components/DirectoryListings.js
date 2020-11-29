@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import { startCase } from "lodash";
 
-import IndustryContext from "../context/IndustryContext";
+import DirectoryContext from "../context/DirectoryContext";
 import Accordion from "./Accordion";
 
 const DirectoryListings = (props) => {
@@ -11,9 +11,10 @@ const DirectoryListings = (props) => {
 
     const listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(startCase(city)));
     const listingsByIndustry = (context.industry && !!context.industry.length) ? listingsByCity.filter(listing => listing.node.frontmatter.industry.includes(context.industry)) : listingsByCity;
+    const listingsByCategory = (context.category && !!context.category.length) ? listingsByIndustry.filter(listing => listing.node.frontmatter.category.includes(context.category)) : listingsByIndustry;
 
-    const smbListings = listingsByIndustry.filter(listing => listing.node.frontmatter.type === "SMB");
-    const npListings = listingsByIndustry.filter(listing => listing.node.frontmatter.type === "Non-Profit");
+    const smbListings = listingsByCategory.filter(listing => listing.node.frontmatter.type === "SMB");
+    const npListings = listingsByCategory.filter(listing => listing.node.frontmatter.type === "Non-Profit");
 
     return (
         <>
@@ -79,6 +80,7 @@ export default (props) => {
                                 city
                                 type
                                 industry
+                                category
                             }
                         }
                     }
@@ -86,11 +88,11 @@ export default (props) => {
             }
         `}
         render={(data, count) => (
-            <IndustryContext.Consumer>
+            <DirectoryContext.Consumer>
                 { (context) => (
                     <DirectoryListings data={data} count={count} {...props} context={context} /> 
                 )}
-            </IndustryContext.Consumer>
+            </DirectoryContext.Consumer>
         )}
     />)
 };

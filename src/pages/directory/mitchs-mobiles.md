@@ -11,6 +11,8 @@ city:
   - San Gabriel
 industry:
   - Automotive
+category:
+  - None
 type: SMB
 streetAddress: 900 E Las Tunas Dr
 state: CA
