@@ -39,7 +39,7 @@ class DirectoryListings extends React.Component {
             <>
             
                 {/* Header */}
-                <h2 className="font-straight font-black text-xl text-center py-3 text-gray-900 border-b-4 border-gray-900">
+                <h2 className="font-straight font-black text-xl text-center py-3 text-gray-900 border-b-4 border-gray-900 overflow-hidden">
                     {title}, CA
                     <div className="-mr-2">
                         {smbListings.length} <div className={`listing-icon smb`}></div>
