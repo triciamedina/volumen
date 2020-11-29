@@ -72,14 +72,14 @@ address {
 .DirectoryTree li:first-child {
     border-top: none !important; 
 }
-.DirectoryCta.inactive img {
-    opacity: 40%;
-}
 .DirectoryCta img {
     position: absolute;
     top: 50%; right: 15px;
     transform: translate(0, -50%);
     @apply w-2;
+}
+.DirectoryCta.inactive img {
+    opacity: .4;
 }
 .listing-icon{
     @apply border-gray-900;
