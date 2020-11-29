@@ -19,9 +19,9 @@ const sortAsc = (a, b) => {
 
 const Directory = (props) => {
     const { data } = props;
-    const { industries, categories } = data;
+    const { industries, tags } = data;
     const industryList = industries.group.map(item => item.fieldValue).sort(sortAsc);
-    const categoryList = categories.group.map(item => item.fieldValue).filter(category => category !== "None" ).sort(sortAsc);
+    const tagList = tags.group.map(item => item.fieldValue).filter(tag => tag !== "None" ).sort(sortAsc);
 
     return (
         <DirectoryContext.Consumer>
@@ -49,19 +49,19 @@ const Directory = (props) => {
                         </select>
                         <select 
                             className="w-full md:w-1/4 text-center border-4 border-gray-900 py-1 px-4 rounded" 
-                            name="category" 
-                            id="category-select"
-                            onChange={(e) => context.onCategoryChange(e.currentTarget.value)}
-                            value={context.category || ""}
+                            name="tag" 
+                            id="tag-select"
+                            onChange={(e) => context.onTagChange(e.currentTarget.value)}
+                            value={context.tag || ""}
                         >
-                            <option value="">Select Category</option>
-                            {categoryList.map((category, index) => {
+                            <option value="">Select Tag</option>
+                            {tagList.map((tag, index) => {
                                 return (
                                     <option 
                                         key={index} 
-                                        value={category}
+                                        value={tag}
                                     >
-                                            {category}
+                                        {tag}
                                     </option>
                                 )
                             })}
@@ -125,8 +125,8 @@ export default (props) => {
     return (<StaticQuery
         query={graphql`
             query DirectoryQuery {
-                categories: allMarkdownRemark {
-                    group(field: frontmatter___category) {
+                tags: allMarkdownRemark {
+                    group(field: frontmatter___tag) {
                         fieldValue
                     }
                 }

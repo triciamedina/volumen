@@ -11,7 +11,7 @@ city:
   - San Fernando
 industry:
   - Conservation
-category:
+tag:
   - None
 type: Non-Profit
 streetAddress: 900 E Las Tunas Dr

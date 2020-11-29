@@ -11,10 +11,10 @@ const DirectoryListings = (props) => {
 
     const listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(startCase(city)));
     const listingsByIndustry = (context.industry && !!context.industry.length) ? listingsByCity.filter(listing => listing.node.frontmatter.industry.includes(context.industry)) : listingsByCity;
-    const listingsByCategory = (context.category && !!context.category.length) ? listingsByIndustry.filter(listing => listing.node.frontmatter.category.includes(context.category)) : listingsByIndustry;
+    const listingsByTag = (context.tag && !!context.tag.length) ? listingsByIndustry.filter(listing => listing.node.frontmatter.tag.includes(context.tag)) : listingsByIndustry;
 
-    const smbListings = listingsByCategory.filter(listing => listing.node.frontmatter.type === "SMB");
-    const npListings = listingsByCategory.filter(listing => listing.node.frontmatter.type === "Non-Profit");
+    const smbListings = listingsByTag.filter(listing => listing.node.frontmatter.type === "SMB");
+    const npListings = listingsByTag.filter(listing => listing.node.frontmatter.type === "Non-Profit");
 
     return (
         <>
@@ -80,7 +80,7 @@ export default (props) => {
                                 city
                                 type
                                 industry
-                                category
+                                tag
                             }
                         }
                     }

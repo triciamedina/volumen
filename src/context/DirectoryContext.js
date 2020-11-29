@@ -2,9 +2,9 @@ import React from "react";
 
 const defaultState = {
     industry: null,
-    category: null,
+    tag: null,
     onIndustryChange: () => {},
-    onCategoryChange: () => {}
+    onTagChange: () => {}
 }
 
 const DirectoryContext = React.createContext(defaultState);
@@ -12,7 +12,7 @@ const DirectoryContext = React.createContext(defaultState);
 class DirectoryContextProvider extends React.Component {
     state = {
         industry: null,
-        category: null
+        tag: null
     }
 
     onIndustryChange = (val) => {
@@ -20,29 +20,29 @@ class DirectoryContextProvider extends React.Component {
         this.setState({ industry: val });
     }
 
-    onCategoryChange = (val) => {
-        localStorage.setItem("category", JSON.stringify(val));
-        this.setState({ category: val });
+    onTagChange = (val) => {
+        localStorage.setItem("tag", JSON.stringify(val));
+        this.setState({ tag: val });
     }
 
     componentDidMount() {
         const selectedIndustry = JSON.parse(localStorage.getItem("industry"));
-        const selectedCategory = JSON.parse(localStorage.getItem("category"));
+        const selectedTag = JSON.parse(localStorage.getItem("tag"));
         if (selectedIndustry) {
             this.setState({ industry: selectedIndustry });
         }
-        if (selectedCategory) {
-            this.setState({ category: selectedCategory });
+        if (selectedTag) {
+            this.setState({ tag: selectedTag });
         }
     }
 
     render() {
         const { children } = this.props;
-        const { industry, category } = this.state;
+        const { industry, tag } = this.state;
 
         return (
             <DirectoryContext.Provider
-                value = {{ industry, category, onIndustryChange: this.onIndustryChange, onCategoryChange: this.onCategoryChange }}
+                value = {{ industry, tag, onIndustryChange: this.onIndustryChange, onTagChange: this.onTagChange }}
             >
                 {children}
             </DirectoryContext.Provider>

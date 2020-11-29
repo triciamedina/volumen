@@ -11,7 +11,7 @@ city:
   - San Gabriel
 industry:
   - Retail
-category:
+tag:
   - Apparel
 type: SMB
 streetAddress: 900 E Las Tunas Dr
