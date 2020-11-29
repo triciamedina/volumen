@@ -1,9 +1,15 @@
 import React from "react";
 import { Link, Match } from "@reach/router";
+
 import ArrowIcon from "./ArrowIcon";
 
 const DirectoryTreeNode = (props) => {
-    const { url, name, parent, type, color } = props;
+    const { url, name, parent, type, color, listings, context } = props;
+    const listingsByIndustry = (context.industry && !!context.industry.length) ? listings.filter(listing => listing.node.frontmatter.industry.includes(context.industry)) : listings;
+    const listingsByTag = (context.tag && !!context.tag.length) ? listingsByIndustry.filter(listing => listing.node.frontmatter.tag.includes(context.tag)) : listingsByIndustry;
+
+    const smbListings = listingsByTag.filter(listing => listing.node.frontmatter.type === "SMB");
+    const npListings = listingsByTag.filter(listing => listing.node.frontmatter.type === "Non-Profit");
 
     const styles = {
         "region" : "font-straight font-black text-xl py-4 px-4 pr-6",
@@ -24,9 +30,15 @@ const DirectoryTreeNode = (props) => {
                         style={isActive ? opaque : transparent} 
                         className={`DirectoryCta ${isActive ? "active" : "inactive"}`} 
                     >
-                        <Link to={url} className={`flex ${styles[type]}`}>
+                        <Link to={url} className={`flex flex-col ${styles[type]} ${type}`}>
                             <h3 className="inline-block">{name}</h3>
                             <ArrowIcon alt="Select" />
+                            {type === "city" ? (
+                                <div className="flex items-center">
+                                    {smbListings.length ? smbListings.length : ""} {smbListings.length ? <div className={`listing-icon smb`}></div> : ""}
+                                    {npListings.length ? npListings.length : ""} {npListings.length ? <div className={`listing-icon np`}></div> : ""}
+                                </div>
+                            ) : ""}
                         </Link>
                     </li>
                 )

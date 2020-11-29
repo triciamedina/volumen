@@ -1,16 +1,10 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import { startCase } from "lodash";
-
-import DirectoryContext from "../context/DirectoryContext";
 import Accordion from "./Accordion";
 
 const DirectoryListings = (props) => {
-    const { title, city, data, state, context } = props;
-    const { edges: listings } = data.allMarkdownRemark;
+    const { title, state, context, listings } = props;
 
-    const listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(startCase(city)));
-    const listingsByIndustry = (context.industry && !!context.industry.length) ? listingsByCity.filter(listing => listing.node.frontmatter.industry.includes(context.industry)) : listingsByCity;
+    const listingsByIndustry = (context.industry && !!context.industry.length) ? listings.filter(listing => listing.node.frontmatter.industry.includes(context.industry)) : listings;
     const listingsByTag = (context.tag && !!context.tag.length) ? listingsByIndustry.filter(listing => listing.node.frontmatter.tag.includes(context.tag)) : listingsByIndustry;
 
     const smbListings = listingsByTag.filter(listing => listing.node.frontmatter.type === "SMB");
@@ -53,46 +47,6 @@ const DirectoryListings = (props) => {
             }
         </>
     )
-}
-
-export default (props) => {
-    return (<StaticQuery
-        query={graphql`
-            query DirectoryListingsQuery {
-                allMarkdownRemark(
-                    sort: {order: ASC, fields: frontmatter___title},
-                    filter: {
-                        frontmatter: {
-                            templateKey: {eq: "listing-page"}
-                        }
-                    }
-                ) {
-                    edges {
-                        node {
-                            id
-                            fields {
-                                slug
-                            }
-                            frontmatter {
-                                description
-                                title
-                                templateKey
-                                city
-                                type
-                                industry
-                                tag
-                            }
-                        }
-                    }
-                }
-            }
-        `}
-        render={(data, count) => (
-            <DirectoryContext.Consumer>
-                { (context) => (
-                    <DirectoryListings data={data} count={count} {...props} context={context} /> 
-                )}
-            </DirectoryContext.Consumer>
-        )}
-    />)
 };
+
+export default DirectoryListings;

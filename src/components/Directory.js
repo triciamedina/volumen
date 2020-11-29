@@ -28,47 +28,53 @@ const Directory = (props) => {
             { (context) => (
                 <> 
                     <div className="flex flex-col md:flex-row justify-end my-6 md:mt-0">
-                        <select 
-                            className="w-full md:w-1/4 text-center border-4 border-gray-900 py-1 px-4 rounded" 
-                            name="industry" 
-                            id="industry-select"
-                            onChange={(e) => context.onIndustryChange(e.currentTarget.value)}
-                            value={context.industry || ""}
-                        >
-                            <option value="">Select Industry</option>
-                            {industryList.map((industry, index) => {
-                                return (
-                                    <option 
-                                        key={index} 
-                                        value={industry}
-                                    >
-                                            {industry}
-                                    </option>
-                                )
-                            })}
-                        </select>
-                        <select 
-                            className="w-full md:w-1/4 text-center border-4 border-gray-900 py-1 px-4 rounded" 
-                            name="tag" 
-                            id="tag-select"
-                            onChange={(e) => context.onTagChange(e.currentTarget.value)}
-                            value={context.tag || ""}
-                        >
-                            <option value="">Select Tag</option>
-                            {tagList.map((tag, index) => {
-                                return (
-                                    <option 
-                                        key={index} 
-                                        value={tag}
-                                    >
-                                        {tag}
-                                    </option>
-                                )
-                            })}
-                        </select>
-                        <a href="https://www.google.com" className="text-xl font-straight bg-green-600 hover:bg-green-900 text-white font-bold py-1 px-4 rounded w-full md:w-1/4 text-center">
-                            Add a Listing
-                        </a>
+                        <div className="md:py-0 py-1 md:px-2 w-full md:w-1/4">
+                            <select 
+                                className="w-full text-center border-4 border-gray-900 py-1 px-4 rounded" 
+                                name="industry" 
+                                id="industry-select"
+                                onChange={(e) => context.onIndustryChange(e.currentTarget.value)}
+                                value={context.industry || ""}
+                            >
+                                <option value="">Select Industry</option>
+                                {industryList.map((industry, index) => {
+                                    return (
+                                        <option 
+                                            key={index} 
+                                            value={industry}
+                                        >
+                                                {industry}
+                                        </option>
+                                    )
+                                })}
+                            </select>
+                        </div>
+                        <div className="md:py-0 py-1 md:px-2 w-full md:w-1/4">
+                            <select 
+                                className="w-full text-center border-4 border-gray-900 py-1 px-4 rounded" 
+                                name="tag" 
+                                id="tag-select"
+                                onChange={(e) => context.onTagChange(e.currentTarget.value)}
+                                value={context.tag || ""}
+                            >
+                                <option value="">Select Tag</option>
+                                {tagList.map((tag, index) => {
+                                    return (
+                                        <option 
+                                            key={index} 
+                                            value={tag}
+                                        >
+                                            {tag}
+                                        </option>
+                                    )
+                                })}
+                            </select>
+                        </div>
+                        <div className="md:py-0 pt-6 pb-1 md:px-2 w-full md:w-1/4">
+                            <a href="https://www.google.com" className="block text-xl font-straight bg-green-600 hover:bg-green-900 text-white font-bold py-1 px-4 rounded w-full text-center">
+                                Add a Listing
+                            </a>
+                        </div>
                     </div>
                     <div className="Directory flex flex-row border-4 border-gray-900 bg-white">
                         {

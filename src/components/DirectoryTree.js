@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "@reach/router";
+import { graphql, StaticQuery } from "gatsby";
+import { startCase } from "lodash";
+
+import DirectoryContext from "../context/DirectoryContext";
 
 import DirectoryTreeNode from "./DirectoryTreeNode";
 import DirectoryListings from "./DirectoryListings";
 import ArrowIcon from "./ArrowIcon";
 import DATA from '../../static/data/DATA';
 
-export default class DirectoryTree extends React.Component {
+class DirectoryTree extends React.Component {
     getRootNode(type) {
         if (type === "root") return DATA["/"];
         if (type === "region") return DATA[`/browse/${this.props.region}`];
@@ -27,10 +31,19 @@ export default class DirectoryTree extends React.Component {
     };
 
     render() {
-        const { type, location } = this.props;
+        const { type, location, data, context } = this.props;
+        const { edges: listings } = data.allMarkdownRemark;
 
         const rootNode = this.getRootNode(type);
         const childNodes = this.getChildNodes(rootNode);
+
+        let city;
+        let listingsByCity;
+
+        if (type === "city") {
+            city = this.props.city; 
+            listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(startCase(city)));
+        }
   
         return (
             <>
@@ -44,19 +57,28 @@ export default class DirectoryTree extends React.Component {
                 )}
                 <ul className="DirectoryTree flex flex-col" aria-labelledby={`${rootNode.name}`}>
                     {type === "city"
-                        ? <DirectoryListings 
-                            state={location.state} 
-                            city={this.props.city} 
-                            title={rootNode.name} 
-                        />
-                        : childNodes.length 
+                        ? (
+                            <DirectoryListings 
+                                state={location.state} 
+                                city={this.props.city} 
+                                title={rootNode.name}
+                                listings={listingsByCity}
+                                context={context}
+                            />
+                        ) : childNodes.length 
                             ? childNodes.map((node, index) => {
+
+                                city = node.name;
+                                listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(startCase(city)));
+
                                 return (
                                     <DirectoryTreeNode
                                         key={index}
                                         url={`/directory${node.path}`}
                                         type={type}
                                         parent={type === "root" ? "/directory" : `/directory${rootNode.path}`}
+                                        listings={listingsByCity}
+                                        context={context}
                                         {...node}
                                     />
                                 )
@@ -66,6 +88,48 @@ export default class DirectoryTree extends React.Component {
             </>
         );
     }
+};
+
+export default (props) => {
+    return (<StaticQuery
+        query={graphql`
+            query DirectoryTreeQuery {
+                allMarkdownRemark(
+                    sort: {order: ASC, fields: frontmatter___title},
+                    filter: {
+                        frontmatter: {
+                            templateKey: {eq: "listing-page"}
+                        }
+                    }
+                ) {
+                    edges {
+                        node {
+                            id
+                            fields {
+                                slug
+                            }
+                            frontmatter {
+                                description
+                                title
+                                templateKey
+                                city
+                                type
+                                industry
+                                tag
+                            }
+                        }
+                    }
+                }
+            }
+        `}
+        render={(data, count) => (
+            <DirectoryContext.Consumer>
+                { (context) => (
+                    <DirectoryTree data={data} count={count} {...props} context={context} /> 
+                )}
+            </DirectoryContext.Consumer>
+        )}
+    />)
 };
 
 // Included a sort method for now, but maybe won't need

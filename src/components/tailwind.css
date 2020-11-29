@@ -47,12 +47,17 @@ address {
     display: block;
     position: relative;
 }
+.DirectoryCta a.city {
+    min-height: 64px;
+    height: 100%;
+}
 .DirectoryCta.inactive{
     margin-bottom: -4px;
     border-top: 4px solid #1a202c4D; 
     border-bottom: 4px solid transparent;
 }
-.DirectoryCta.inactive h3 {
+.DirectoryCta.inactive h3,
+.DirectoryCta.DirectoryCta.inactive div {
     color: #1a202c4D;
 }
 .DirectoryCta.active + a.inactive{
@@ -66,7 +71,8 @@ address {
     border-top: 4px solid #1a202c; 
     border-bottom: 4px solid #1a202c;
 }
-.DirectoryCta.active h3 {
+.DirectoryCta.active h3,
+.DirectoryCta.active div {
     color: #1a202c; 
 }
 .DirectoryTree li:first-child {
@@ -78,7 +84,8 @@ address {
     transform: translate(0, -50%);
     @apply w-2;
 }
-.DirectoryCta.inactive img {
+.DirectoryCta.inactive img,
+.DirectoryCta.inactive .listing-icon {
     opacity: .4;
 }
 .listing-icon{
