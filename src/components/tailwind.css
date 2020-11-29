@@ -54,7 +54,7 @@ address {
     border-bottom: 4px solid transparent;
 }
 .DirectoryCta.active + a.inactive{
-    border-top: 4px solid #1a202c;
+    border-top: 4px solid #121722;
 }
 .DirectoryCta:last-of-type{
     border-bottom: 4px solid #1a202c4D; 
@@ -65,7 +65,7 @@ address {
     border-top: 4px solid #1a202c; 
     border-bottom: 4px solid #1a202c;
 }
-.DirectoryTree a:first-child {
+.DirectoryTree li:first-child {
     border-top: none !important; 
 }
 .DirectoryCta.inactive img {

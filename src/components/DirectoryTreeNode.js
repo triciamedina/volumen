@@ -20,14 +20,15 @@ const DirectoryTreeNode = (props) => {
                 const isActive = (props.match || props.location.pathname === parent);
 
                 return (
-                    <Link 
-                        to={url}
+                    <li
                         style={isActive ? opaque : transparent} 
-                        className={`DirectoryCta ${styles[type]} ${isActive ? "active" : "inactive"}`} 
+                        className={`DirectoryCta ${isActive ? "active" : "inactive"}`} 
                     >
-                        <h3 className="inline-block">{name}</h3>
-                        <ArrowIcon />
-                    </Link>
+                        <Link to={url} className={`flex ${styles[type]}`}>
+                            <h3 className="inline-block">{name}</h3>
+                            <ArrowIcon alt="Select" />
+                        </Link>
+                    </li>
                 )
             }}
         </Match>

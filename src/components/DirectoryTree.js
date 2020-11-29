@@ -39,10 +39,10 @@ export default class DirectoryTree extends React.Component {
                         to={this.getParentPath(type)}
                         className="md:hidden inline-block p-5 text-gray-800 font-straight font-medium transform rotate-180 absolute left-0 top-0"
                     >
-                        <ArrowIcon className="w-2" />
+                        <ArrowIcon className="w-2" alt="Back"/>
                     </Link>
                 )}
-                <div className="DirectoryTree flex flex-col">
+                <ul className="DirectoryTree flex flex-col" aria-labelledby={`${rootNode.name}`}>
                     {type === "city"
                         ? <DirectoryListings 
                             state={location.state} 
@@ -62,7 +62,7 @@ export default class DirectoryTree extends React.Component {
                                 )
                             }) : ""
                     }
-                </div>
+                </ul>
             </>
         );
     }

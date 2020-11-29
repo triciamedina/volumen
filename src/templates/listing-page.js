@@ -51,7 +51,7 @@ export const ListingPageTemplate = ({
                   className="flex mt-6 mb-2 text-gray-900 font-straight font-medium"
                   state={{ isOpen: type }}
               >
-                <ArrowIcon className="w-2 transform rotate-180 mr-4" />
+                <ArrowIcon className="w-2 transform rotate-180 mr-4" alt="Return"/>
                 Return
               </Link>
               <h1 className="font-straight font-black text-4xl text-gray-900">

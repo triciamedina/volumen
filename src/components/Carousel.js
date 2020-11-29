@@ -70,6 +70,7 @@ const Carousel = (props) => {
                             <img 
                                 src={storeIcon}
                                 className="placeholder"
+                                alt="Placeholder"
                             />
                         </div>
                         
@@ -82,7 +83,7 @@ const Carousel = (props) => {
                         onClick={() => slideBack()}
                         className="px-2 py-1 arrow"
                     >
-                        <ArrowIcon className="w-2 transform rotate-180" />
+                        <ArrowIcon className="w-2 transform rotate-180" alt="Previous" />
                     </button>
                     <div className="flex flex-row items-center px-6">
                         {content.map((_, index) => (
@@ -97,7 +98,7 @@ const Carousel = (props) => {
                         onClick={() => slideForward()}
                         className="px-2 py-1 arrow"
                     >
-                        <ArrowIcon className="w-2" />
+                        <ArrowIcon className="w-2" alt="Next" />
                     </button>
                 </div>
             ): null}
