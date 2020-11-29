@@ -49,9 +49,11 @@ address {
 }
 .DirectoryCta.inactive{
     margin-bottom: -4px;
-    color: #1a202c4D; 
     border-top: 4px solid #1a202c4D; 
     border-bottom: 4px solid transparent;
+}
+.DirectoryCta.inactive h3 {
+    color: #1a202c4D;
 }
 .DirectoryCta.active + a.inactive{
     border-top: 4px solid #121722;
@@ -61,9 +63,11 @@ address {
 }
 .DirectoryCta.active{
     margin-bottom: -4px;
-    color: #1a202c; 
     border-top: 4px solid #1a202c; 
     border-bottom: 4px solid #1a202c;
+}
+.DirectoryCta.active h3 {
+    color: #1a202c; 
 }
 .DirectoryTree li:first-child {
     border-top: none !important; 
