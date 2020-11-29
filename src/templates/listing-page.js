@@ -21,6 +21,7 @@ export const ListingPageTemplate = ({
         type,
         helmet,
         industry,
+        category,
         streetAddress,
         state,
         zip,
@@ -72,9 +73,10 @@ export const ListingPageTemplate = ({
                 <address>
                   <ul className="text-lg markdown">
                     <li className="mb-6">
-                      <h3 className="font-curvy font-semibold">Industry</h3>
-                      <ul>
-                        {industry.map((category, index) => <li key={index}>{category}</li>)}
+                      <h3 className="font-curvy font-semibold">Tags</h3>
+                      <ul className="tag-list flex flex-row">
+                        {industry.map((industry, index) => <li key={index}>{industry}</li>)}
+                        {category.filter(category => category !== "None").map((category, index) => <li key={index}>{category}</li>)}
                       </ul>
                     </li>
                     {streetAddress ? (
@@ -179,6 +181,7 @@ const Listing = ({ data }) => {
         city={post.frontmatter.city}
         type={post.frontmatter.type}
         industry={post.frontmatter.industry}
+        category={post.frontmatter.category}
         streetAddress={post.frontmatter.streetAddress}
         state={post.frontmatter.state}
         zip={post.frontmatter.zip}
@@ -210,6 +213,7 @@ export const pageQuery = graphql`
         city
         type
         industry
+        category
         streetAddress
         addressLink
         state

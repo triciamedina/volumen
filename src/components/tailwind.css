@@ -149,6 +149,13 @@ address {
 .ListingPage .right-col {
     margin-top: 1.5rem;
 }
+.ListingPage .tag-list li:after {
+    content: ",";
+    margin-right: 4px;
+}
+.ListingPage .tag-list li:last-of-type:after {
+    content: ""
+}
 .Carousel .circle {
     @apply bg-gray-400;
     border-radius: 50%;
