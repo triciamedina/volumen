@@ -35,8 +35,8 @@ const DirectoryTreeNode = (props) => {
                             <ArrowIcon alt="Select" />
                             {type === "city" ? (
                                 <div className="flex items-center">
-                                    {smbListings.length ? smbListings.length : ""} {smbListings.length ? <div className={`listing-icon smb`}></div> : ""}
-                                    {npListings.length ? npListings.length : ""} {npListings.length ? <div className={`listing-icon np`}></div> : ""}
+                                    {smbListings.length ? smbListings.length : ""} {smbListings.length ? <div className={`listing-icon smb w-4 h-4`}></div> : ""}
+                                    {npListings.length ? npListings.length : ""} {npListings.length ? <div className={`listing-icon np w-4 h-4`}></div> : ""}
                                 </div>
                             ) : ""}
                         </Link>

@@ -18,9 +18,9 @@ const DirectoryListings = (props) => {
                 id={`${title}`}
             >
                 {title}, CA
-                <div className="-mr-2">
-                    {smbListings.length} <div className={`listing-icon smb`}></div>
-                    {npListings.length} <div className={`listing-icon np`}></div>
+                <div className="-mr-2 flex justify-center items-center">
+                    {smbListings.length} <div className={`listing-icon smb w-8 h-8`}></div>
+                    {npListings.length} <div className={`listing-icon np w-8 h-8`}></div>
                 </div>
             </h2>
 

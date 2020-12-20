@@ -18,7 +18,7 @@ const Accordion = (props) => {
                 onClick={() => toggleIsOpen(!isOpen)}
             >
                 <div className="flex flex-row items-center">
-                    <div className={`listing-icon ${className}`}></div> 
+                    <div className={`listing-icon ${className} w-16 h-16 xl`}></div> 
                     <h3 
                         className="font-straight font-black text-2xl text-gray-900 py-4"
                         id={`${type}`}

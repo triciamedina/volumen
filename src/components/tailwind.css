@@ -89,19 +89,22 @@ address {
     opacity: .4;
 }
 .listing-icon{
-    @apply border-gray-900;
     display: inline-block;
-    border-width: 2px;
     border-radius: 50%;
-    height: 1rem;
-    width: 1rem;
     margin: 0 0.5rem;
+}
+.listing-icon.xl{
+    margin-left: 0;
 }
 .listing-icon.smb{
     background-color: #fcf8b7;
+    background-image: url("../../static/img/business.svg");
+    background-size: contain;
 }
 .listing-icon.np{
     background-color: #f5abb2;
+    background-image: url("../../static/img/nonprofit.svg");
+    background-size: contain;
 }
 .Accordion.smb{
     background-color: #fff5a7;
