@@ -6,7 +6,7 @@ description: >-
 region:
   - Southern California
 county:
-  - Los Angeles
+  - Los Angeles (East)
 city:
   - San Gabriel
 industry:

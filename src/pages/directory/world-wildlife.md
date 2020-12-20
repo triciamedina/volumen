@@ -6,7 +6,7 @@ description: >-
 region:
   - Southern California
 county:
-  - Los Angeles
+  - Los Angeles (North)
 city:
   - San Fernando
 industry:
