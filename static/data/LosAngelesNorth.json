@@ -1,0 +1,73 @@
+{
+    "/browse/southern-california/los-angeles-north": {
+        "name": "Los Angeles (North)",
+        "path": "/browse/southern-california/los-angeles-north",
+        "type": "county",
+        "color": "#e25d61",
+        "children": [
+            "/browse/southern-california/los-angeles-north/agoura-hills",
+            "/browse/southern-california/los-angeles-north/burbank",
+            "/browse/southern-california/los-angeles-north/calabasas",
+            "/browse/southern-california/los-angeles-north/la-canada-flintridge",
+            "/browse/southern-california/los-angeles-north/lancaster",
+            "/browse/southern-california/los-angeles-north/los-angeles",
+            "/browse/southern-california/los-angeles-north/palmdale",
+            "/browse/southern-california/los-angeles-north/santa-clarita",
+            "/browse/southern-california/los-angeles-north/san-fernando"
+        ]
+    },
+    "/browse/southern-california/los-angeles-north/agoura-hills": {
+        "name": "Agoura Hills",
+        "path": "/browse/southern-california/los-angeles-north/agoura-hills",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/southern-california/los-angeles-north/burbank": {
+        "name": "Burbank",
+        "path": "/browse/southern-california/los-angeles-north/burbank",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/southern-california/los-angeles-north/calabasas": {
+        "name": "Calabasas",
+        "path": "/browse/southern-california/los-angeles-north/calabasas",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/southern-california/los-angeles-north/la-canada-flintridge": {
+        "name": "La Cañada Flintridge",
+        "path": "/browse/southern-california/los-angeles-north/la-canada-flintridge",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/southern-california/los-angeles-north/lancaster": {
+        "name": "Lancaster",
+        "path": "/browse/southern-california/los-angeles-north/lancaster",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/southern-california/los-angeles-north/los-angeles": {
+        "name": "Los Angeles",
+        "path": "/browse/southern-california/los-angeles-north/los-angeles",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/southern-california/los-angeles-north/palmdale": {
+        "name": "Palmdale",
+        "path": "/browse/southern-california/los-angeles-north/palmdale",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/southern-california/los-angeles-north/san-fernando": {
+        "name": "San Fernando",
+        "path": "/browse/southern-california/los-angeles-north/san-fernando",
+        "type": "city",
+        "color": "#e25d61"
+    },
+    "/browse/southern-california/los-angeles-north/santa-clarita": {
+        "name": "Santa Clarita",
+        "path": "/browse/southern-california/los-angeles-north/santa-clarita",
+        "type": "city",
+        "color": "#e25d61"
+    }
+}

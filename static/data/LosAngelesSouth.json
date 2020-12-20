@@ -1,0 +1,234 @@
+{
+    "/browse/southern-california/los-angeles-south": {
+        "name": "Los Angeles (South)",
+        "path": "/browse/southern-california/los-angeles-south",
+        "type": "county",
+        "color": "#74a8db",
+        "children": [
+            "/browse/southern-california/los-angeles-south/artesia",
+            "/browse/southern-california/los-angeles-south/avalon",
+            "/browse/southern-california/los-angeles-south/bell",
+            "/browse/southern-california/los-angeles-south/bell-gardens",
+            "/browse/southern-california/los-angeles-south/carson",
+            "/browse/southern-california/los-angeles-south/cerritos",
+            "/browse/southern-california/los-angeles-south/compton",
+            "/browse/southern-california/los-angeles-south/cudahy",
+            "/browse/southern-california/los-angeles-south/downey",
+            "/browse/southern-california/los-angeles-south/gardena",
+            "/browse/southern-california/los-angeles-south/hawaiian-gardens",
+            "/browse/southern-california/los-angeles-south/hawthorne",
+            "/browse/southern-california/los-angeles-south/huntington-park",
+            "/browse/southern-california/los-angeles-south/inglewood",
+            "/browse/southern-california/los-angeles-south/la-mirada",
+            "/browse/southern-california/los-angeles-south/lakewood",
+            "/browse/southern-california/los-angeles-south/lawndale",
+            "/browse/southern-california/los-angeles-south/lomita",
+            "/browse/southern-california/los-angeles-south/long-beach",
+            "/browse/southern-california/los-angeles-south/lynwood",
+            "/browse/southern-california/los-angeles-south/maywood",
+            "/browse/southern-california/los-angeles-south/norwalk",
+            "/browse/southern-california/los-angeles-south/palos-verdes-estates",
+            "/browse/southern-california/los-angeles-south/paramount",
+            "/browse/southern-california/los-angeles-south/rancho-palos-verdes",
+            "/browse/southern-california/los-angeles-south/redondo-beach",
+            "/browse/southern-california/los-angeles-south/rolling-hills",
+            "/browse/southern-california/los-angeles-south/rolling-hills-estates",
+            "/browse/southern-california/los-angeles-south/signal-hill",
+            "/browse/southern-california/los-angeles-south/south-gate",
+            "/browse/southern-california/los-angeles-south/torrance",
+            "/browse/southern-california/los-angeles-south/vernon"
+        ]
+    },
+    "/browse/southern-california/los-angeles-south/artesia": {
+        "name": "Artesia",
+        "path": "/browse/southern-california/los-angeles-south/artesia",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/avalon": {
+        "name": "Avalon",
+        "path": "/browse/southern-california/los-angeles-south/avalon",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/bell": {
+        "name": "Bell",
+        "path": "/browse/southern-california/los-angeles-south/bell",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/bell-gardens": {
+        "name": "Bell Gardens",
+        "path": "/browse/southern-california/los-angeles-south/bell-gardens",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/carson": {
+        "name": "Carson",
+        "path": "/browse/southern-california/los-angeles-south/carson",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/cerritos": {
+        "name": "Cerritos",
+        "path": "/browse/southern-california/los-angeles-south/cerritos",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/compton": {
+        "name": "Compton",
+        "path": "/browse/southern-california/los-angeles-south/compton",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/cudahy": {
+        "name": "Cudahy",
+        "path": "/browse/southern-california/los-angeles-south/cudahy",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/downey": {
+        "name": "Downey",
+        "path": "/browse/southern-california/los-angeles-south/downey",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/gardena": {
+        "name": "Gardena",
+        "path": "/browse/southern-california/los-angeles-south/gardena",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/hawaiian-gardens": {
+        "name": "Hawaiian Gardens",
+        "path": "/browse/southern-california/los-angeles-south/hawaiian-gardens",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/hawthorne": {
+        "name": "Hawthorne",
+        "path": "/browse/southern-california/los-angeles-south/hawthorne",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/huntington-park": {
+        "name": "Huntington Park",
+        "path": "/browse/southern-california/los-angeles-south/huntington-park",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/inglewood": {
+        "name": "Inglewood",
+        "path": "/browse/southern-california/los-angeles-south/inglewood",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/la-mirada": {
+        "name": "La Mirada",
+        "path": "/browse/southern-california/los-angeles-south/la-mirada",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/lakewood": {
+        "name": "Lakewood",
+        "path": "/browse/southern-california/los-angeles-south/lakewood",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/lawndale": {
+        "name": "Lawndale",
+        "path": "/browse/southern-california/los-angeles-south/lawndale",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/lomita": {
+        "name": "Lomita",
+        "path": "/browse/southern-california/los-angeles-south/lomita",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/long-beach": {
+        "name": "Long Beach",
+        "path": "/browse/southern-california/los-angeles-south/long-beach",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/lynwood": {
+        "name": "Lynwood",
+        "path": "/browse/southern-california/los-angeles-south/lynwood",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/maywood": {
+        "name": "Maywood",
+        "path": "/browse/southern-california/los-angeles-south/maywood",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/norwalk": {
+        "name": "Norwalk",
+        "path": "/browse/southern-california/los-angeles-south/norwalk",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/palos-verdes-estates": {
+        "name": "Palos Verdes Estates",
+        "path": "/browse/southern-california/los-angeles-south/palos-verdes-estates",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/paramount": {
+        "name": "Paramount",
+        "path": "/browse/southern-california/los-angeles-south/paramount",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/rancho-palos-verdes": {
+        "name": "Rancho Palos Verdes",
+        "path": "/browse/southern-california/los-angeles-south/rancho-palos-verdes",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/redondo-beach": {
+        "name": "Redondo Beach",
+        "path": "/browse/southern-california/los-angeles-south/redondo-beach",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/rolling-hills": {
+        "name": "Rolling Hills",
+        "path": "/browse/southern-california/los-angeles-south/rolling-hills",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/rolling-hills-estates": {
+        "name": "Rolling Hills Estates",
+        "path": "/browse/southern-california/los-angeles-south/rolling-hills-estates",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/signal-hill": {
+        "name": "Signal Hill",
+        "path": "/browse/southern-california/los-angeles-south/signal-hill",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/south-gate": {
+        "name": "South Gate",
+        "path": "/browse/southern-california/los-angeles-south/south-gate",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/torrance": {
+        "name": "Torrance",
+        "path": "/browse/southern-california/los-angeles-south/torrance",
+        "type": "city",
+        "color": "#74a8db"
+    },
+    "/browse/southern-california/los-angeles-south/vernon": {
+        "name": "Vernon",
+        "path": "/browse/southern-california/los-angeles-south/vernon",
+        "type": "city",
+        "color": "#74a8db"
+    }
+}

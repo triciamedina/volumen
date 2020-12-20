@@ -1,42 +1,45 @@
-import Alameda from './Alameda.json';
-import ContraCosta from './ContraCosta.json';
-import Marin from './Marin.json';
-import Napa from './Napa.json';
-import SanFrancisco from './SanFrancisco.json';
-import SanMateo from './SanMateo.json';
-import SantaClara from './SantaClara.json';
-import Solano from './Solano.json';
-import Sonoma from './Sonoma.json';
-import Butte from './Butte.json';
-import Colusa from './Colusa.json';
-import Glenn from './Glenn.json';
-import Placer from './Placer.json';
-import Sacramento from './Sacramento.json';
-import SanJoaquin from './SanJoaquin.json';
-import Shasta from './Shasta.json';
-import Sutter from './Sutter.json';
-import Tehama from './Tehama.json';
-import Yolo from './Yolo.json';
-import Yuba from './Yuba.json';
-import Fresno from './Fresno.json';
-import Kern from './Kern.json';
-import Kings from './Kings.json';
-import Madera from './Madera.json';
-import Merced from './Merced.json';
-import Stanislaus from './Stanislaus.json';
-import Tulare from './Tulare.json';
-import LosAngeles from './LosAngeles.json';
-import Orange from './Orange.json';
-import Riverside from './Riverside.json';
-import SanBernardino from './SanBernardino.json';
-import Ventura from './Ventura.json';
-import SanDiego from './SanDiego.json';
-import Imperial from './Imperial.json';
-import SantaBarbara from './SantaBarbara.json';
-import Monterey from './Monterey.json';
-import SanBenito from './SanBenito.json';
-import SanLuisObispo from './SanLuisObispo.json';
-import SantaCruz from './SantaCruz.json';
+import Alameda from "./Alameda.json";
+import ContraCosta from "./ContraCosta.json";
+import Marin from "./Marin.json";
+import Napa from "./Napa.json";
+import SanFrancisco from "./SanFrancisco.json";
+import SanMateo from "./SanMateo.json";
+import SantaClara from "./SantaClara.json";
+import Solano from "./Solano.json";
+import Sonoma from "./Sonoma.json";
+import Butte from "./Butte.json";
+import Colusa from "./Colusa.json";
+import Glenn from "./Glenn.json";
+import Placer from "./Placer.json";
+import Sacramento from "./Sacramento.json";
+import SanJoaquin from "./SanJoaquin.json";
+import Shasta from "./Shasta.json";
+import Sutter from "./Sutter.json";
+import Tehama from "./Tehama.json";
+import Yolo from "./Yolo.json";
+import Yuba from "./Yuba.json";
+import Fresno from "./Fresno.json";
+import Kern from "./Kern.json";
+import Kings from "./Kings.json";
+import Madera from "./Madera.json";
+import Merced from "./Merced.json";
+import Stanislaus from "./Stanislaus.json";
+import Tulare from "./Tulare.json";
+import LosAngelesEast from "./LosAngelesEast.json";
+import LosAngelesNorth from "./LosAngelesNorth.json";
+import LosAngelesSouth from "./LosAngelesSouth.json";
+import LosAngelesWest from "./LosAngelesWest.json";
+import Orange from "./Orange.json";
+import Riverside from "./Riverside.json";
+import SanBernardino from "./SanBernardino.json";
+import Ventura from "./Ventura.json";
+import SanDiego from "./SanDiego.json";
+import Imperial from "./Imperial.json";
+import SantaBarbara from "./SantaBarbara.json";
+import Monterey from "./Monterey.json";
+import SanBenito from "./SanBenito.json";
+import SanLuisObispo from "./SanLuisObispo.json";
+import SantaCruz from "./SantaCruz.json";
 
 const root = {
     "/": {
@@ -110,7 +113,10 @@ const regions = {
         "type": "region",
         "color": "#e6e66d",
         "children": [
-            "/browse/southern-california/los-angeles",
+            "/browse/southern-california/los-angeles-east",
+            "/browse/southern-california/los-angeles-north",
+            "/browse/southern-california/los-angeles-south",
+            "/browse/southern-california/los-angeles-west",
             "/browse/southern-california/orange",
             "/browse/southern-california/riverside",
             "/browse/southern-california/san-bernardino",
@@ -164,7 +170,10 @@ export default {
     ...Merced,
     ...Stanislaus,
     ...Tulare,
-    ...LosAngeles,
+    ...LosAngelesEast,
+    ...LosAngelesNorth,
+    ...LosAngelesSouth,
+    ...LosAngelesWest,
     ...Orange,
     ...Riverside,
     ...SanBernardino,

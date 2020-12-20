@@ -73,7 +73,7 @@ export const ListingPageTemplate = ({
                 <address>
                   <ul className="text-lg markdown">
                     <li className="mb-6">
-                      <h3 className="font-curvy font-semibold">Tags</h3>
+                      <h3 className="font-curvy font-semibold">Industry/Tags</h3>
                       <ul className="tag-list flex flex-row">
                         {industry.map((industry, index) => <li key={index}>{industry}</li>)}
                         {tag.filter(tag => tag !== "None").map((tag, index) => <li key={index}>{tag}</li>)}

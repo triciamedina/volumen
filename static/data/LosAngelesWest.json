@@ -1,0 +1,73 @@
+{
+    "/browse/southern-california/los-angeles-west": {
+        "name": "Los Angeles (West)",
+        "path": "/browse/southern-california/los-angeles-west",
+        "type": "county",
+        "color": "#8fc162",
+        "children": [
+            "/browse/southern-california/los-angeles-west/beverly-hills",
+            "/browse/southern-california/los-angeles-west/culver-city",
+            "/browse/southern-california/los-angeles-west/el-segundo",
+            "/browse/southern-california/los-angeles-west/hermosa-beach",
+            "/browse/southern-california/los-angeles-west/hidden-hills",
+            "/browse/southern-california/los-angeles-west/malibu",
+            "/browse/southern-california/los-angeles-west/manhattan-beach",
+            "/browse/southern-california/los-angeles-west/santa-monica",
+            "/browse/southern-california/los-angeles-west/west-hollywood"
+        ]
+    },
+    "/browse/southern-california/los-angeles-west/beverly-hills": {
+        "name": "Beverly Hills",
+        "path": "/browse/southern-california/los-angeles-west/beverly-hills",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/los-angeles-west/culver-city": {
+        "name": "Culver City",
+        "path": "/browse/southern-california/los-angeles-west/culver-city",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/los-angeles-west/el-segundo": {
+        "name": "El Segundo",
+        "path": "/browse/southern-california/los-angeles-west/el-segundo",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/los-angeles-west/hermosa-beach": {
+        "name": "Hermosa Beach",
+        "path": "/browse/southern-california/los-angeles-west/hermosa-beach",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/los-angeles-west/hidden-hills": {
+        "name": "Hidden Hills",
+        "path": "/browse/southern-california/los-angeles-west/hidden-hills",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/los-angeles-west/malibu": {
+        "name": "Malibu",
+        "path": "/browse/southern-california/los-angeles-west/malibu",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/los-angeles-west/manhattan-beach": {
+        "name": "Manhattan Beach",
+        "path": "/browse/southern-california/los-angeles-west/manhattan-beach",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/los-angeles-west/santa-monica": {
+        "name": "Santa Monica",
+        "path": "/browse/southern-california/los-angeles-west/santa-monica",
+        "type": "city",
+        "color": "#8fc162"
+    },
+    "/browse/southern-california/los-angeles-west/west-hollywood": {
+        "name": "West Hollywood",
+        "path": "/browse/southern-california/los-angeles-west/west-hollywood",
+        "type": "city",
+        "color": "#8fc162"
+    }
+}

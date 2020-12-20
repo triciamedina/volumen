@@ -67,7 +67,7 @@ class DirectoryTree extends React.Component {
                             />
                         ) : childNodes.length 
                             ? childNodes.map((node, index) => {
-
+                                
                                 city = node.name;
                                 listingsByCity = listings.filter(listing => listing.node.frontmatter.city.includes(startCase(city)));
 

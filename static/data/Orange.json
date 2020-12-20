@@ -3,7 +3,7 @@
         "name": "Orange",
         "path": "/browse/southern-california/orange",
         "type": "county",
-        "color": "#e25d61",
+        "color": "#d1ecf1",
         "children": [
             "/browse/southern-california/orange/aliso-viejo",
             "/browse/southern-california/orange/anaheim",
@@ -45,204 +45,204 @@
         "name": "Aliso Viejo",
         "path": "/browse/southern-california/orange/aliso-viejo",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/anaheim": {
         "name": "Anaheim",
         "path": "/browse/southern-california/orange/anaheim",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/brea": {
         "name": "Brea",
         "path": "/browse/southern-california/orange/brea",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/buena-park": {
         "name": "Buena Park",
         "path": "/browse/southern-california/orange/buena-park",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/costa-mesa": {
         "name": "Costa Mesa",
         "path": "/browse/southern-california/orange/costa-mesa",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/cypress": {
         "name": "Cypress",
         "path": "/browse/southern-california/orange/cypress",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/dana-point": {
         "name": "Dana Point",
         "path": "/browse/southern-california/orange/dana-point",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/fountain-valley": {
         "name": "Fountain Valley",
         "path": "/browse/southern-california/orange/fountain-valley",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/fullerton": {
         "name": "Fullerton",
         "path": "/browse/southern-california/orange/fullerton",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/garden-grove": {
         "name": "Garden Grove",
         "path": "/browse/southern-california/orange/garden-grove",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/huntington-beach": {
         "name": "Huntington Beach",
         "path": "/browse/southern-california/orange/huntington-beach",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/irvine": {
         "name": "Irvine",
         "path": "/browse/southern-california/orange/irvine",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/la-habra": {
         "name": "La Habra",
         "path": "/browse/southern-california/orange/la-habra",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/la-palma": {
         "name": "La Palma",
         "path": "/browse/southern-california/orange/la-palma",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/laguna-beach": {
         "name": "Laguna Beach",
         "path": "/browse/southern-california/orange/laguna-beach",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/laguna-hills": {
         "name": "Laguna Hills",
         "path": "/browse/southern-california/orange/laguna-hills",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/laguna-niguel": {
         "name": "Laguna Niguel",
         "path": "/browse/southern-california/orange/laguna-niguel",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/laguna-woods": {
         "name": "Laguna Woods",
         "path": "/browse/southern-california/orange/laguna-woods",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/lake-forest": {
         "name": "Lake Forest",
         "path": "/browse/southern-california/orange/lake-forest",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/los-alamitos": {
         "name": "Los Alamitos",
         "path": "/browse/southern-california/orange/los-alamitos",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/mission-viejo": {
         "name": "Mission Viejo",
         "path": "/browse/southern-california/orange/mission-viejo",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/newport-beach": {
         "name": "Newport Beach",
         "path": "/browse/southern-california/orange/newport-beach",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/orange": {
         "name": "Orange",
         "path": "/browse/southern-california/orange/orange",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/placentia": {
         "name": "Placentia",
         "path": "/browse/southern-california/orange/placentia",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/rancho-santa-margarita": {
         "name": "Rancho Santa Margarita",
         "path": "/browse/southern-california/orange/rancho-santa-margarita",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/san-clemente": {
         "name": "San Clemente",
         "path": "/browse/southern-california/orange/san-clemente",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/san-juan-capistrano": {
         "name": "San Juan Capistrano",
         "path": "/browse/southern-california/orange/san-juan-capistrano",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/santa-ana": {
         "name": "Santa Ana",
         "path": "/browse/southern-california/orange/santa-ana",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/seal-beach": {
         "name": "Seal Beach",
         "path": "/browse/southern-california/orange/seal-beach",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/stanton": {
         "name": "Stanton",
         "path": "/browse/southern-california/orange/stanton",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/tustin": {
         "name": "Tustin",
         "path": "/browse/southern-california/orange/tustin",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/villa-park": {
         "name": "Villa Park",
         "path": "/browse/southern-california/orange/villa-park",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/westminster": {
         "name": "Westminster",
         "path": "/browse/southern-california/orange/westminster",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     },
     "/browse/southern-california/orange/yorba-linda": {
         "name": "Yorba Linda",
         "path": "/browse/southern-california/orange/yorba-linda",
         "type": "city",
-        "color": "#e25d61"
+        "color": "#d1ecf1"
     }
 }
